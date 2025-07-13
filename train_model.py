@@ -1,4 +1,56 @@
-import pandas as pd
+def initialize_models(self, dataset_size):
+        """Initialize models optimized for dataset size"""
+        
+        if dataset_size >= 10000:
+            # Professional-grade models for 10K+ horses
+            self.models = {
+                'Logistic Regression': LogisticRegression(
+                    random_state=42,
+                    max_iter=3000,
+                    class_weight='balanced',
+                    C=0.5,  # More regularization for large dataset
+                    solver='lbfgs'
+                ),
+                'Random Forest': RandomForestClassifier(
+                    n_estimators=300,  # More trees for large dataset
+                    random_state=42,
+                    max_depth=20,      # Deeper for complex patterns
+                    min_samples_split=20,
+                    min_samples_leaf=10,
+                    class_weight='balanced',
+                    n_jobs=-1  # Use all CPU cores
+                ),
+                'Gradient Boosting': GradientBoostingClassifier(
+                    n_estimators=300,
+                    random_state=42,
+                    max_depth=10,
+                    learning_rate=0.08,  # Slightly lower for stability
+                    min_samples_split=20,
+                    min_samples_leaf=10,
+                    subsample=0.8  # Add stochasticity
+                ),
+                'Extra Trees': RandomForestClassifier(
+                    n_estimators=200,
+                    random_state=42,
+                    max_depth=15,
+                    min_samples_split=15,
+                    min_samples_leaf=8,
+                    class_weight='balanced',
+                    bootstrap=False,  # Extra Trees variation
+                    n_jobs=-1
+                )
+            }
+            print("🏆 PROFESSIONAL-GRADE MODELS initialized for 10,000+ horses:")
+            
+        elif dataset_size >= 5000:
+            # Enhanced models for large datasets
+            self.models = {
+                'Logistic Regression': LogisticRegression(
+                    random_state=42,
+                    max_iter=2000,
+                    class_weight='balanced',
+                    C=1.0
+                ),import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split, cross_val_score, StratifiedKFold
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
@@ -16,18 +68,47 @@ class WinProbabilityTrainer:
         self.best_model = None
         self.feature_importance = None
         
-    def load_processed_data(self, X_path='data/win_prediction_X.csv', y_path='data/win_prediction_y.csv'):
-        """Load the preprocessed win prediction data"""
+    def load_processed_data(self, X_path=None, y_path=None):
+        """Load the preprocessed win prediction data - auto-detect largest dataset"""
+        
+        # Auto-detect processed data files
+        if X_path is None or y_path is None:
+            import glob
+            x_files = glob.glob('data/win_prediction_*_X.csv')
+            y_files = glob.glob('data/win_prediction_*_y.csv')
+            
+            if x_files and y_files:
+                # Sort by file size to get largest dataset
+                x_files.sort(key=lambda x: os.path.getsize(x), reverse=True)
+                y_files.sort(key=lambda x: os.path.getsize(x), reverse=True)
+                X_path = x_files[0]
+                y_path = y_files[0]
+            else:
+                # Fallback to default names
+                X_path = 'data/win_prediction_X.csv'
+                y_path = 'data/win_prediction_y.csv'
+        
         try:
             X = pd.read_csv(X_path)
             y = pd.read_csv(y_path).values.ravel()
             
-            print(f"SUCCESS: Loaded win prediction data:")
+            print(f"SUCCESS: Loaded enhanced win prediction data:")
+            print(f"   Dataset: {X_path}")
             print(f"   Features shape: {X.shape}")
             print(f"   Target shape: {y.shape}")
-            print(f"   Win rate: {y.mean()*100:.1f}%")
-            print(f"   Total winners: {y.sum()}")
-            print(f"   Total losers: {len(y) - y.sum()}")
+            print(f"   Win rate: {y.mean()*100:.2f}%")
+            print(f"   Total winners: {y.sum():,}")
+            print(f"   Total losers: {len(y) - y.sum():,}")
+            
+            # Dataset size classification
+            if len(X) >= 10000:
+                print(f"   🏆 PROFESSIONAL-GRADE DATASET ({len(X):,} horses)")
+            elif len(X) >= 5000:
+                print(f"   ✅ LARGE DATASET ({len(X):,} horses)")
+            elif len(X) >= 1000:
+                print(f"   📊 MEDIUM DATASET ({len(X):,} horses)")
+            else:
+                print(f"   ⚠️  SMALL DATASET ({len(X):,} horses)")
             
             return X, y
         except Exception as e:
