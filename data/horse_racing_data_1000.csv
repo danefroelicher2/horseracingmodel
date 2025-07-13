@@ -1,0 +1,1001 @@
+race_date,track_name,race_number,distance,surface,track_condition,horse_name,jockey,trainer,post_position,final_time,finish_position,odds,weight,margin,speed_rating
+2024-01-02,Golden Gate Fields,1,6.5f,Dirt,Sloppy,Dancing Spirit,I. Ortiz,B. Baffert,5,1:17.61,1,3.91,122,Won by 2.5,94
+2024-01-02,Golden Gate Fields,1,6.5f,Dirt,Sloppy,Fast Storm,A. Gryder,M. Casse,2,1:17.64,2,10.53,122,1.4,94
+2024-01-02,Golden Gate Fields,1,6.5f,Dirt,Sloppy,Thunder Gazer,K. Desormeaux,G. Weaver,4,1:17.47,3,7.44,123,3.0,95
+2024-01-02,Golden Gate Fields,1,6.5f,Dirt,Sloppy,Dancing Streak,R. Gonzalez,P. Miller,6,1:19.80,4,6.75,119,2.9,83
+2024-01-02,Golden Gate Fields,1,6.5f,Dirt,Sloppy,Swift Peak,C. Lopez,P. Eurton,1,1:18.69,5,14.18,120,7.3,89
+2024-01-02,Golden Gate Fields,1,6.5f,Dirt,Sloppy,Noble Streak,J. Castellano,G. Weaver,8,1:19.09,6,9.94,123,4.6,87
+2024-01-02,Golden Gate Fields,1,6.5f,Dirt,Sloppy,Proud Strike,J. Rosario,R. Mandella,7,1:17.99,7,10.62,118,8.2,92
+2024-01-02,Golden Gate Fields,1,6.5f,Dirt,Sloppy,Noble Storm,M. Franco,C. Brown,3,1:19.46,8,4.49,126,3.9,85
+2024-01-02,Oaklawn Park,2,1m,Turf,Good,Star King,D. Van Dyke,M. Maker,7,1:37.18,1,12.86,123,Won by 1.6,99
+2024-01-02,Oaklawn Park,2,1m,Turf,Good,Quick Streak,R. Santana,M. Casse,2,1:37.04,2,11.9,117,1.0,99
+2024-01-02,Oaklawn Park,2,1m,Turf,Good,Midnight Prince,J. Lezcano,A. Dutrow,4,1:37.71,3,10.77,116,2.5,96
+2024-01-02,Oaklawn Park,2,1m,Turf,Good,Noble Streak,K. Desormeaux,J. Sadler,5,1:38.36,4,5.34,125,5.5,93
+2024-01-02,Oaklawn Park,2,1m,Turf,Good,Fire King,A. Cedillo,H. Bond,1,1:39.33,5,9.82,118,7.3,88
+2024-01-02,Oaklawn Park,2,1m,Turf,Good,Golden Streak,M. Smith,K. McPeek,8,1:39.51,6,4.91,125,1.1,87
+2024-01-02,Oaklawn Park,2,1m,Turf,Good,Quick Peak,D. Davis,H. Bond,3,1:38.97,7,6.73,116,8.3,90
+2024-01-02,Oaklawn Park,2,1m,Turf,Good,Strong Rush,J. Velazquez,D. O'Neill,6,1:38.62,8,13.82,122,9.7,91
+2024-01-02,Keeneland,3,5.5f,Turf,Sloppy,Rapid Demon,C. Lopez,J. Sadler,4,1:03.94,1,11.55,123,Won by 0.7,105
+2024-01-02,Keeneland,3,5.5f,Turf,Sloppy,Lightning Demon,T. Baze,W. Mott,6,1:04.01,2,3.98,118,0.3,104
+2024-01-02,Keeneland,3,5.5f,Turf,Sloppy,Desert Blaze,J. Rosario,S. Asmussen,8,1:04.04,3,9.32,120,1.4,104
+2024-01-02,Keeneland,3,5.5f,Turf,Sloppy,Thunder Knight,I. Ortiz,S. Asmussen,3,1:03.74,4,14.87,117,0.5,106
+2024-01-02,Keeneland,3,5.5f,Turf,Sloppy,Mountain Wind,L. Saez,D. O'Neill,1,1:03.10,5,7.29,126,5.7,109
+2024-01-02,Keeneland,3,5.5f,Turf,Sloppy,Brave Blaze,L. Saez,S. Asmussen,2,1:03.57,6,11.27,115,4.1,107
+2024-01-02,Keeneland,3,5.5f,Turf,Sloppy,Storm Bolt,J. Velazquez,B. Baffert,5,1:04.76,7,12.25,125,10.4,101
+2024-01-02,Keeneland,3,5.5f,Turf,Sloppy,Galloping Chaser,M. Garcia,W. Mott,7,1:04.93,8,6.44,122,10.9,100
+2024-01-02,Saratoga,4,7.0f,Turf,Good,Strong Rush,T. Baze,D. O'Neill,1,1:23.42,1,3.95,119,Won by 1.8,102
+2024-01-02,Saratoga,4,7.0f,Turf,Good,Proud Queen,J. Lezcano,J. Shirreffs,7,1:24.20,2,11.69,122,1.6,99
+2024-01-02,Saratoga,4,7.0f,Turf,Good,Flying Fury,R. Gonzalez,T. Pletcher,5,1:24.34,3,9.69,119,3.6,98
+2024-01-02,Saratoga,4,7.0f,Turf,Good,Blazing Express,I. Ortiz,J. Hollendorfer,6,1:25.25,4,11.17,121,1.0,93
+2024-01-02,Saratoga,4,7.0f,Turf,Good,Thunder Jet,A. Gryder,P. Miller,3,1:23.74,5,26.82,125,3.4,101
+2024-01-02,Saratoga,4,7.0f,Turf,Good,Fire Bolt,J. Velazquez,J. Sadler,2,1:24.31,6,13.45,126,2.6,98
+2024-01-02,Saratoga,4,7.0f,Turf,Good,Speed Jet,A. Gryder,M. Casse,8,1:24.48,7,23.27,125,4.8,97
+2024-01-02,Saratoga,4,7.0f,Turf,Good,Golden Streak,T. Baze,H. Bond,4,1:25.40,8,29.29,122,12.8,92
+2024-01-02,Saratoga,5,1.125m,Dirt,Good,Storm Storm,T. Baze,J. Sadler,6,1:48.46,1,10.15,118,Won by 0.9,97
+2024-01-02,Saratoga,5,1.125m,Dirt,Good,Royal Storm,A. Gryder,J. Hollendorfer,2,1:49.10,2,12.06,115,1.2,94
+2024-01-02,Saratoga,5,1.125m,Dirt,Good,Valley Jet,D. Van Dyke,R. Mandella,7,1:49.60,3,13.78,120,3.8,91
+2024-01-02,Saratoga,5,1.125m,Dirt,Good,Mountain Rocket,D. Davis,P. Miller,8,1:49.30,4,11.56,120,1.0,93
+2024-01-02,Saratoga,5,1.125m,Dirt,Good,Star Strike,L. Saez,B. Baffert,3,1:49.85,5,6.23,124,4.4,90
+2024-01-02,Saratoga,5,1.125m,Dirt,Good,Golden Flash,J. Castellano,M. Maker,5,1:49.64,6,13.88,120,5.9,91
+2024-01-02,Saratoga,5,1.125m,Dirt,Good,Fire Streak,D. Davis,P. Eurton,4,1:50.72,7,7.18,115,1.1,86
+2024-01-02,Saratoga,5,1.125m,Dirt,Good,Star King,J. Lezcano,K. McPeek,1,1:50.87,8,17.45,116,6.8,85
+2024-01-02,Golden Gate Fields,6,5.5f,Turf,Firm,Dancing Breeze,J. Velazquez,J. Shirreffs,7,1:06.15,1,12.75,117,Won by 0.8,94
+2024-01-02,Golden Gate Fields,6,5.5f,Turf,Firm,Swift Peak,E. Maldonado,L. Jones,3,1:06.10,2,14.54,116,1.6,94
+2024-01-02,Golden Gate Fields,6,5.5f,Turf,Firm,Thunder Gazer,J. Lezcano,M. Casse,4,1:06.29,3,13.2,125,2.6,93
+2024-01-02,Golden Gate Fields,6,5.5f,Turf,Firm,Star Runner,C. Lopez,J. Sadler,1,1:06.76,4,14.27,120,3.9,91
+2024-01-02,Golden Gate Fields,6,5.5f,Turf,Firm,Golden Express,J. Lezcano,M. Maker,6,1:07.48,5,7.14,122,0.6,87
+2024-01-02,Golden Gate Fields,6,5.5f,Turf,Firm,Flying Wind,C. Lopez,A. Dutrow,2,1:08.43,6,25.77,126,3.4,82
+2024-01-02,Golden Gate Fields,6,5.5f,Turf,Firm,Blazing Flash,J. Castellano,H. Bond,8,1:07.27,7,14.51,115,12.0,88
+2024-01-02,Golden Gate Fields,6,5.5f,Turf,Firm,Rapid Demon,R. Gonzalez,G. Weaver,5,1:07.63,8,12.45,116,0.5,86
+2024-01-02,Santa Anita,7,6.5f,Turf,Fast,Fire Blaze,M. Smith,H. Bond,6,1:16.49,1,3.78,124,Won by 2.7,105
+2024-01-02,Santa Anita,7,6.5f,Turf,Fast,Fire Jet,J. Lezcano,M. Maker,4,1:16.15,2,6.78,116,1.6,106
+2024-01-02,Santa Anita,7,6.5f,Turf,Fast,Swift Queen,J. Velazquez,S. Asmussen,3,1:15.29,3,7.15,118,1.7,111
+2024-01-02,Santa Anita,7,6.5f,Turf,Fast,Flying Fury,J. Castellano,K. McPeek,1,1:17.99,4,11.28,119,2.7,97
+2024-01-02,Santa Anita,7,6.5f,Turf,Fast,Fast Spirit,M. Garcia,A. Dutrow,7,1:16.36,5,14.53,120,0.9,105
+2024-01-02,Santa Anita,7,6.5f,Turf,Fast,Desert Flash,L. Saez,H. Bond,2,1:17.50,6,13.71,122,7.8,100
+2024-01-02,Santa Anita,7,6.5f,Turf,Fast,Storm Flash,D. Van Dyke,M. Casse,5,1:16.93,7,8.96,124,9.7,102
+2024-01-02,Santa Anita,7,6.5f,Turf,Fast,Lightning Storm,M. Franco,K. McPeek,8,1:16.54,8,10.03,126,0.4,104
+2024-01-02,Belmont Park,8,5.5f,Turf,Muddy,Silver Dash,K. Desormeaux,R. Mandella,2,1:04.42,1,10.33,122,Won by 0.7,102
+2024-01-02,Belmont Park,8,5.5f,Turf,Muddy,Fire Prince,K. Desormeaux,J. Hollendorfer,6,1:05.22,2,6.6,124,0.7,98
+2024-01-02,Belmont Park,8,5.5f,Turf,Muddy,Speed Jet,M. Garcia,K. McPeek,8,1:05.12,3,9.98,125,2.8,99
+2024-01-02,Belmont Park,8,5.5f,Turf,Muddy,Thunder Knight,J. Velazquez,P. Eurton,1,1:04.72,4,11.64,123,1.2,101
+2024-01-02,Belmont Park,8,5.5f,Turf,Muddy,Quick Peak,K. Desormeaux,J. Hollendorfer,7,1:05.16,5,12.38,124,7.4,99
+2024-01-02,Belmont Park,8,5.5f,Turf,Muddy,Fast Fire,A. Cedillo,H. Bond,3,1:05.11,6,16.46,115,8.3,99
+2024-01-02,Belmont Park,8,5.5f,Turf,Muddy,Speed Knight,D. Van Dyke,P. Miller,4,1:05.97,7,18.25,115,0.5,95
+2024-01-02,Belmont Park,8,5.5f,Turf,Muddy,Blazing King,R. Gonzalez,S. Asmussen,5,1:05.46,8,16.18,121,4.9,97
+2024-01-02,Del Mar,9,1.25m,Turf,Sloppy,Silver Dash,C. Lopez,T. Pletcher,2,1:59.76,1,6.88,126,Won by 2.3,106
+2024-01-02,Del Mar,9,1.25m,Turf,Sloppy,Blazing Flash,A. Cedillo,M. Casse,8,1:59.39,2,6.35,122,0.4,108
+2024-01-02,Del Mar,9,1.25m,Turf,Sloppy,Lightning Breeze,E. Maldonado,M. Casse,1,1:59.81,3,6.52,118,2.8,105
+2024-01-02,Del Mar,9,1.25m,Turf,Sloppy,Jumping Spirit,T. Baze,P. Miller,4,1:59.14,4,6.86,126,2.0,109
+2024-01-02,Del Mar,9,1.25m,Turf,Sloppy,Galloping Champion,M. Franco,P. Miller,5,1:59.65,5,12.06,117,7.9,106
+2024-01-02,Del Mar,9,1.25m,Turf,Sloppy,Running Fire,M. Garcia,K. McPeek,7,2:01.44,6,14.64,126,5.7,97
+2024-01-02,Del Mar,9,1.25m,Turf,Sloppy,Silver Express,R. Santana,B. Baffert,6,2:01.45,7,6.78,123,11.7,97
+2024-01-02,Del Mar,9,1.25m,Turf,Sloppy,Brave Flash,D. Van Dyke,D. O'Neill,3,2:00.62,8,13.18,121,9.5,101
+2024-01-02,Aqueduct,10,1m,Turf,Good,Noble Fire,J. Castellano,J. Shirreffs,4,1:34.66,1,5.08,126,Won by 2.8,111
+2024-01-02,Aqueduct,10,1m,Turf,Good,Brave Flash,D. Van Dyke,P. Miller,5,1:34.08,2,10.64,126,1.7,114
+2024-01-02,Aqueduct,10,1m,Turf,Good,Midnight Chaser,M. Smith,D. O'Neill,1,1:34.55,3,10.59,125,2.4,112
+2024-01-02,Aqueduct,10,1m,Turf,Good,Dancing Breeze,M. Smith,C. Brown,7,1:36.60,4,6.49,117,4.3,101
+2024-01-02,Aqueduct,10,1m,Turf,Good,Brave Fury,E. Maldonado,R. Baltas,3,1:35.74,5,7.88,124,7.3,106
+2024-01-02,Aqueduct,10,1m,Turf,Good,Golden Express,I. Ortiz,D. O'Neill,8,1:35.54,6,6.28,120,1.4,107
+2024-01-02,Aqueduct,10,1m,Turf,Good,Mountain Thunder,C. Lopez,B. Baffert,6,1:35.99,7,25.3,117,8.8,105
+2024-01-02,Aqueduct,10,1m,Turf,Good,Blazing Rush,I. Ortiz,G. Weaver,2,1:35.40,8,6.76,121,13.5,107
+2024-01-03,Gulfstream Park,1,6.5f,Turf,Firm,Speed Jet,R. Santana,G. Weaver,1,1:17.54,1,7.59,126,Won by 1.3,99
+2024-01-03,Gulfstream Park,1,6.5f,Turf,Firm,Fast Streak,J. Castellano,W. Mott,8,1:17.44,2,6.25,116,0.7,100
+2024-01-03,Gulfstream Park,1,6.5f,Turf,Firm,Fire Jet,I. Ortiz,P. Eurton,6,1:17.38,3,14.17,118,1.6,100
+2024-01-03,Gulfstream Park,1,6.5f,Turf,Firm,Jumping Spirit,L. Saez,D. O'Neill,4,1:17.47,4,12.37,119,3.5,100
+2024-01-03,Gulfstream Park,1,6.5f,Turf,Firm,Dancing Prince,J. Velazquez,L. Jones,2,1:17.99,5,12.23,125,1.9,97
+2024-01-03,Gulfstream Park,1,6.5f,Turf,Firm,Bold King,D. Van Dyke,L. Jones,3,1:18.32,6,26.91,122,3.2,95
+2024-01-03,Gulfstream Park,1,6.5f,Turf,Firm,Thunder Knight,M. Smith,B. Baffert,7,1:18.60,7,6.21,122,5.4,94
+2024-01-03,Gulfstream Park,1,6.5f,Turf,Firm,Midnight Chaser,F. Prat,J. Hollendorfer,5,1:18.58,8,10.48,124,6.8,94
+2024-01-03,Churchill Downs,2,6.5f,Dirt,Sloppy,Lightning Demon,M. Franco,D. O'Neill,1,1:16.46,1,5.78,119,Won by 2.4,100
+2024-01-03,Churchill Downs,2,6.5f,Dirt,Sloppy,Ocean Demon,T. Baze,J. Hollendorfer,6,1:16.22,2,6.99,123,1.0,101
+2024-01-03,Churchill Downs,2,6.5f,Dirt,Sloppy,Fire Blaze,J. Velazquez,S. Asmussen,2,1:16.97,3,4.9,121,3.4,97
+2024-01-03,Churchill Downs,2,6.5f,Dirt,Sloppy,Speed Jet,L. Saez,A. Dutrow,4,1:16.61,4,3.86,115,5.1,99
+2024-01-03,Churchill Downs,2,6.5f,Dirt,Sloppy,Thunder Knight,J. Castellano,H. Bond,8,1:17.55,5,27.37,121,3.6,94
+2024-01-03,Churchill Downs,2,6.5f,Dirt,Sloppy,Desert Blaze,D. Davis,R. Baltas,7,1:17.62,6,14.38,116,1.7,94
+2024-01-03,Churchill Downs,2,6.5f,Dirt,Sloppy,Noble Storm,D. Van Dyke,R. Mandella,5,1:17.60,7,14.38,123,10.0,94
+2024-01-03,Churchill Downs,2,6.5f,Dirt,Sloppy,Noble Breeze,M. Garcia,H. Bond,3,1:17.72,8,23.6,126,4.6,93
+2024-01-03,Oaklawn Park,3,1.25m,Turf,Fast,Star Peak,L. Saez,K. McPeek,1,2:01.11,1,11.08,123,Won by 1.2,99
+2024-01-03,Oaklawn Park,3,1.25m,Turf,Fast,Golden Streak,D. Davis,K. McPeek,8,2:01.01,2,7.8,116,0.3,99
+2024-01-03,Oaklawn Park,3,1.25m,Turf,Fast,Swift Gazer,M. Smith,R. Mandella,4,2:00.81,3,14.84,120,0.4,100
+2024-01-03,Oaklawn Park,3,1.25m,Turf,Fast,Rapid Rocket,A. Cedillo,A. Dutrow,3,2:01.57,4,12.51,125,2.4,97
+2024-01-03,Oaklawn Park,3,1.25m,Turf,Fast,Lightning Bolt,L. Saez,A. Dutrow,2,2:00.83,5,12.25,120,2.0,100
+2024-01-03,Oaklawn Park,3,1.25m,Turf,Fast,Fast Spirit,F. Prat,W. Mott,5,2:01.27,6,3.9,121,9.0,98
+2024-01-03,Oaklawn Park,3,1.25m,Turf,Fast,Wild Warrior,D. Davis,W. Mott,6,2:01.60,7,14.03,122,3.7,97
+2024-01-03,Oaklawn Park,3,1.25m,Turf,Fast,Brave Flash,A. Gryder,S. Asmussen,7,2:02.39,8,24.89,116,9.7,93
+2024-01-03,Keeneland,4,6.5f,Dirt,Muddy,Wild Warrior,C. Lopez,P. Eurton,3,1:15.96,1,4.65,126,Won by 0.8,102
+2024-01-03,Keeneland,4,6.5f,Dirt,Muddy,Brave Blaze,L. Saez,A. Dutrow,8,1:16.99,2,8.09,122,1.5,97
+2024-01-03,Keeneland,4,6.5f,Dirt,Muddy,Thunder Gazer,K. Desormeaux,M. Maker,1,1:15.79,3,7.02,116,0.8,103
+2024-01-03,Keeneland,4,6.5f,Dirt,Muddy,Running Blaze,M. Franco,J. Hollendorfer,4,1:16.10,4,11.04,125,1.5,101
+2024-01-03,Keeneland,4,6.5f,Dirt,Muddy,Running Fire,F. Prat,L. Jones,5,1:16.86,5,5.41,116,3.4,98
+2024-01-03,Keeneland,4,6.5f,Dirt,Muddy,Bold Blaze,J. Velazquez,R. Mandella,2,1:17.75,6,3.03,119,0.3,93
+2024-01-03,Keeneland,4,6.5f,Dirt,Muddy,Valley Jet,I. Ortiz,D. O'Neill,6,1:16.93,7,9.05,126,1.3,97
+2024-01-03,Keeneland,4,6.5f,Dirt,Muddy,Dancing Bolt,R. Gonzalez,L. Jones,7,1:17.55,8,20.92,119,7.8,94
+2024-01-03,Golden Gate Fields,5,1.125m,Dirt,Muddy,Swift Bullet,K. Desormeaux,G. Weaver,8,1:46.65,1,10.61,119,Won by 1.5,106
+2024-01-03,Golden Gate Fields,5,1.125m,Dirt,Muddy,Desert Blaze,A. Cedillo,K. McPeek,2,1:47.22,2,7.43,123,1.6,103
+2024-01-03,Golden Gate Fields,5,1.125m,Dirt,Muddy,Proud Rocket,L. Saez,G. Weaver,6,1:47.26,3,9.32,120,2.0,103
+2024-01-03,Golden Gate Fields,5,1.125m,Dirt,Muddy,Brave King,I. Ortiz,D. O'Neill,1,1:46.61,4,8.43,125,5.4,106
+2024-01-03,Golden Gate Fields,5,1.125m,Dirt,Muddy,Wild Wind,R. Santana,R. Mandella,4,1:47.56,5,3.58,123,3.3,102
+2024-01-03,Golden Gate Fields,5,1.125m,Dirt,Muddy,Speed Jet,J. Lezcano,W. Mott,7,1:47.53,6,6.12,118,7.5,102
+2024-01-03,Golden Gate Fields,5,1.125m,Dirt,Muddy,Silver Express,A. Gryder,J. Hollendorfer,3,1:48.35,7,9.91,125,10.7,98
+2024-01-03,Golden Gate Fields,5,1.125m,Dirt,Muddy,Thunder Gazer,F. Prat,A. Dutrow,5,1:48.52,8,8.0,126,5.0,97
+2024-01-03,Oaklawn Park,6,1.125m,Dirt,Good,Dancing Prince,M. Franco,B. Baffert,1,1:49.84,1,3.3,120,Won by 1.6,90
+2024-01-03,Oaklawn Park,6,1.125m,Dirt,Good,Star Prince,M. Smith,W. Mott,6,1:48.89,2,4.79,125,1.7,95
+2024-01-03,Oaklawn Park,6,1.125m,Dirt,Good,Wild Warrior,I. Ortiz,J. Shirreffs,4,1:48.82,3,10.33,124,3.6,95
+2024-01-03,Oaklawn Park,6,1.125m,Dirt,Good,Strong Strike,D. Davis,P. Eurton,3,1:48.99,4,15.38,115,2.5,95
+2024-01-03,Oaklawn Park,6,1.125m,Dirt,Good,Lightning Storm,A. Gryder,C. Brown,5,1:49.89,5,10.56,121,2.8,90
+2024-01-03,Oaklawn Park,6,1.125m,Dirt,Good,Royal Rocket,L. Saez,M. Maker,8,1:50.77,6,7.49,118,8.6,86
+2024-01-03,Oaklawn Park,6,1.125m,Dirt,Good,Storm Fury,E. Maldonado,M. Casse,2,1:51.44,7,11.85,119,0.5,82
+2024-01-03,Oaklawn Park,6,1.125m,Dirt,Good,Star Runner,C. Lopez,P. Eurton,7,1:50.09,8,16.32,119,1.7,89
+2024-01-03,Churchill Downs,7,5.5f,Turf,Fast,Storm Jet,J. Velazquez,J. Sadler,5,1:04.65,1,10.99,120,Won by 1.9,101
+2024-01-03,Churchill Downs,7,5.5f,Turf,Fast,Valley Jet,K. Desormeaux,K. McPeek,1,1:05.56,2,7.82,120,0.9,97
+2024-01-03,Churchill Downs,7,5.5f,Turf,Fast,Swift Runner,M. Smith,W. Mott,2,1:04.61,3,7.67,115,3.8,101
+2024-01-03,Churchill Downs,7,5.5f,Turf,Fast,Star Fire,C. Lopez,C. Brown,7,1:05.15,4,11.47,118,3.3,99
+2024-01-03,Churchill Downs,7,5.5f,Turf,Fast,Golden Wind,D. Van Dyke,P. Eurton,4,1:05.52,5,19.69,119,6.3,97
+2024-01-03,Churchill Downs,7,5.5f,Turf,Fast,Speed Comet,I. Ortiz,H. Bond,6,1:05.98,6,12.58,121,8.5,95
+2024-01-03,Churchill Downs,7,5.5f,Turf,Fast,Royal Rocket,A. Gryder,L. Jones,8,1:06.66,7,25.91,118,10.9,91
+2024-01-03,Churchill Downs,7,5.5f,Turf,Fast,Swift Rocket,T. Baze,M. Maker,3,1:05.96,8,9.79,122,9.3,95
+2024-01-03,Belmont Park,8,6.0f,Turf,Firm,Fire Knight,J. Rosario,B. Baffert,4,1:08.58,1,6.07,115,Won by 2.3,112
+2024-01-03,Belmont Park,8,6.0f,Turf,Firm,Brave Blaze,A. Gryder,J. Hollendorfer,7,1:09.66,2,18.85,119,0.3,106
+2024-01-03,Belmont Park,8,6.0f,Turf,Firm,Golden Storm,E. Maldonado,A. Dutrow,1,1:08.57,3,10.87,126,0.9,112
+2024-01-03,Belmont Park,8,6.0f,Turf,Firm,Running Fury,R. Gonzalez,J. Hollendorfer,8,1:09.70,4,9.47,121,3.8,106
+2024-01-03,Belmont Park,8,6.0f,Turf,Firm,Desert Rocket,M. Franco,M. Casse,3,1:09.45,5,6.57,124,1.0,107
+2024-01-03,Belmont Park,8,6.0f,Turf,Firm,Thunder Jet,R. Santana,S. Asmussen,5,1:09.95,6,11.25,126,1.3,105
+2024-01-03,Belmont Park,8,6.0f,Turf,Firm,Lightning Demon,M. Garcia,R. Mandella,6,1:10.51,7,27.8,121,4.0,102
+2024-01-03,Belmont Park,8,6.0f,Turf,Firm,Midnight Chaser,D. Davis,P. Miller,2,1:11.08,8,27.68,124,11.8,99
+2024-01-03,Churchill Downs,9,1.25m,Dirt,Fast,Royal Comet,J. Lezcano,R. Baltas,8,1:58.66,1,5.21,125,Won by 2.5,106
+2024-01-03,Churchill Downs,9,1.25m,Dirt,Fast,Storm King,A. Cedillo,J. Hollendorfer,4,1:59.36,2,4.51,117,0.6,103
+2024-01-03,Churchill Downs,9,1.25m,Dirt,Fast,Lightning Breeze,R. Santana,J. Shirreffs,6,2:00.05,3,7.38,125,3.2,99
+2024-01-03,Churchill Downs,9,1.25m,Dirt,Fast,Noble Spirit,J. Rosario,J. Shirreffs,1,2:00.08,4,5.22,118,3.1,99
+2024-01-03,Churchill Downs,9,1.25m,Dirt,Fast,Jumping Arrow,M. Franco,S. Asmussen,3,1:59.88,5,6.87,120,6.8,100
+2024-01-03,Churchill Downs,9,1.25m,Dirt,Fast,Golden Flash,R. Santana,R. Mandella,5,2:00.66,6,14.54,119,6.1,96
+2024-01-03,Churchill Downs,9,1.25m,Dirt,Fast,Storm Flash,J. Velazquez,J. Sadler,7,2:00.45,7,4.24,125,2.3,97
+2024-01-03,Churchill Downs,9,1.25m,Dirt,Fast,Midnight Prince,D. Davis,M. Casse,2,2:00.27,8,11.94,125,3.8,98
+2024-01-03,Santa Anita,10,1.125m,Dirt,Good,Jumping Arrow,M. Franco,A. Dutrow,6,1:44.73,1,11.16,118,Won by 1.1,116
+2024-01-03,Santa Anita,10,1.125m,Dirt,Good,Golden Streak,M. Smith,P. Eurton,2,1:45.54,2,6.81,124,0.8,112
+2024-01-03,Santa Anita,10,1.125m,Dirt,Good,Bold Breeze,I. Ortiz,T. Pletcher,3,1:45.89,3,3.93,126,1.0,110
+2024-01-03,Santa Anita,10,1.125m,Dirt,Good,Star Runner,D. Van Dyke,T. Pletcher,4,1:46.19,4,12.45,125,4.0,109
+2024-01-03,Santa Anita,10,1.125m,Dirt,Good,Proud Strike,J. Velazquez,L. Jones,1,1:45.88,5,6.5,116,3.9,110
+2024-01-03,Santa Anita,10,1.125m,Dirt,Good,Star Dash,M. Franco,M. Casse,5,1:46.56,6,23.76,117,7.8,107
+2024-01-03,Santa Anita,10,1.125m,Dirt,Good,Blazing Flash,D. Van Dyke,T. Pletcher,8,1:45.84,7,5.91,117,5.3,110
+2024-01-03,Santa Anita,10,1.125m,Dirt,Good,Blazing Spirit,A. Gryder,W. Mott,7,1:47.03,8,12.36,121,9.4,104
+2024-01-04,Santa Anita,1,6.5f,Turf,Firm,Swift Rocket,L. Saez,T. Pletcher,6,1:17.43,1,3.77,123,Won by 2.9,100
+2024-01-04,Santa Anita,1,6.5f,Turf,Firm,Wild Fire,D. Davis,J. Sadler,5,1:17.98,2,6.13,116,1.1,97
+2024-01-04,Santa Anita,1,6.5f,Turf,Firm,Storm Storm,M. Franco,L. Jones,7,1:18.07,3,7.53,116,3.3,97
+2024-01-04,Santa Anita,1,6.5f,Turf,Firm,Silver Warrior,F. Prat,P. Eurton,1,1:18.29,4,3.67,115,2.4,96
+2024-01-04,Santa Anita,1,6.5f,Turf,Firm,Dancing Thunder,J. Lezcano,J. Hollendorfer,4,1:19.60,5,5.77,122,3.9,89
+2024-01-04,Santa Anita,1,6.5f,Turf,Firm,Bold Streak,F. Prat,M. Maker,2,1:18.38,6,24.11,126,2.3,95
+2024-01-04,Santa Anita,1,6.5f,Turf,Firm,Swift Queen,F. Prat,M. Maker,8,1:18.46,7,11.28,124,8.9,95
+2024-01-04,Santa Anita,1,6.5f,Turf,Firm,Fast Storm,A. Gryder,M. Maker,3,1:19.62,8,11.76,120,2.9,89
+2024-01-04,Gulfstream Park,2,5.5f,Turf,Firm,Thunder Dash,M. Garcia,R. Baltas,1,1:09.64,1,6.79,124,Won by 1.3,76
+2024-01-04,Gulfstream Park,2,5.5f,Turf,Firm,Midnight Chaser,D. Van Dyke,J. Hollendorfer,3,1:10.37,2,3.25,117,1.6,73
+2024-01-04,Gulfstream Park,2,5.5f,Turf,Firm,Lightning Storm,M. Garcia,J. Shirreffs,5,1:10.33,3,7.63,116,3.2,73
+2024-01-04,Gulfstream Park,2,5.5f,Turf,Firm,Galloping Demon,J. Velazquez,T. Pletcher,6,1:09.39,4,14.58,117,2.0,78
+2024-01-04,Gulfstream Park,2,5.5f,Turf,Firm,Blazing Flash,F. Prat,T. Pletcher,2,1:10.40,5,10.22,122,2.7,72
+2024-01-04,Gulfstream Park,2,5.5f,Turf,Firm,Valley Chaser,E. Maldonado,D. O'Neill,8,1:10.41,6,15.93,119,5.2,72
+2024-01-04,Gulfstream Park,2,5.5f,Turf,Firm,Brave King,I. Ortiz,J. Hollendorfer,7,1:10.83,7,7.42,126,3.5,70
+2024-01-04,Gulfstream Park,2,5.5f,Turf,Firm,Wild Demon,D. Davis,W. Mott,4,1:10.40,8,13.66,123,9.9,73
+2024-01-04,Golden Gate Fields,3,5.5f,Dirt,Fast,Desert Flash,R. Gonzalez,J. Sadler,6,1:03.69,1,4.75,121,Won by 2.0,101
+2024-01-04,Golden Gate Fields,3,5.5f,Dirt,Fast,Star Fire,J. Rosario,G. Weaver,8,1:02.91,2,7.37,117,1.5,105
+2024-01-04,Golden Gate Fields,3,5.5f,Dirt,Fast,Dancing Prince,K. Desormeaux,C. Brown,3,1:03.31,3,6.6,125,3.0,103
+2024-01-04,Golden Gate Fields,3,5.5f,Dirt,Fast,Star Dash,C. Lopez,P. Eurton,5,1:04.17,4,7.65,118,5.6,99
+2024-01-04,Golden Gate Fields,3,5.5f,Dirt,Fast,Proud Rocket,D. Van Dyke,S. Asmussen,7,1:02.73,5,10.28,126,6.9,106
+2024-01-04,Golden Gate Fields,3,5.5f,Dirt,Fast,Jumping Bolt,M. Smith,L. Jones,1,1:03.62,6,13.95,115,3.7,101
+2024-01-04,Golden Gate Fields,3,5.5f,Dirt,Fast,Lightning Strike,A. Cedillo,W. Mott,2,1:05.09,7,14.06,122,6.2,94
+2024-01-04,Golden Gate Fields,3,5.5f,Dirt,Fast,Bold Breeze,A. Cedillo,M. Maker,4,1:04.39,8,14.06,125,6.9,98
+2024-01-04,Santa Anita,4,5.0f,Dirt,Sloppy,Jumping Spirit,M. Franco,B. Baffert,7,1:00.44,1,6.89,122,Won by 2.8,87
+2024-01-04,Santa Anita,4,5.0f,Dirt,Sloppy,Blazing Streak,M. Garcia,W. Mott,4,1:00.41,2,9.8,123,2.0,87
+2024-01-04,Santa Anita,4,5.0f,Dirt,Sloppy,Valley Thunder,A. Gryder,R. Baltas,6,1:00.55,3,9.09,126,1.6,87
+2024-01-04,Santa Anita,4,5.0f,Dirt,Sloppy,Running Blaze,E. Maldonado,W. Mott,2,1:00.44,4,15.28,118,2.4,87
+2024-01-04,Santa Anita,4,5.0f,Dirt,Sloppy,Noble Breeze,M. Garcia,M. Maker,8,1:01.04,5,9.17,119,5.1,84
+2024-01-04,Santa Anita,4,5.0f,Dirt,Sloppy,Ocean Demon,J. Lezcano,S. Asmussen,1,1:01.27,6,13.15,119,7.0,83
+2024-01-04,Santa Anita,4,5.0f,Dirt,Sloppy,Royal Peak,T. Baze,M. Maker,3,1:00.85,7,14.42,126,7.7,85
+2024-01-04,Santa Anita,4,5.0f,Dirt,Sloppy,Royal Prince,J. Lezcano,H. Bond,5,1:00.74,8,18.28,120,5.6,86
+2024-01-04,Oaklawn Park,5,5.0f,Turf,Firm,Fast Streak,R. Santana,R. Baltas,3,0:58.06,1,7.2,123,Won by 1.2,104
+2024-01-04,Oaklawn Park,5,5.0f,Turf,Firm,Storm Storm,E. Maldonado,D. O'Neill,4,0:58.63,2,17.84,118,0.3,101
+2024-01-04,Oaklawn Park,5,5.0f,Turf,Firm,Fire Bullet,K. Desormeaux,W. Mott,7,0:59.25,3,14.22,118,2.0,98
+2024-01-04,Oaklawn Park,5,5.0f,Turf,Firm,Desert Warrior,J. Velazquez,M. Casse,6,0:59.46,4,15.57,120,1.1,97
+2024-01-04,Oaklawn Park,5,5.0f,Turf,Firm,Speed Warrior,A. Cedillo,P. Eurton,5,0:59.08,5,12.45,118,4.9,99
+2024-01-04,Oaklawn Park,5,5.0f,Turf,Firm,Blazing Spirit,J. Rosario,C. Brown,8,1:00.09,6,6.89,119,7.7,94
+2024-01-04,Oaklawn Park,5,5.0f,Turf,Firm,Fire Runner,J. Velazquez,L. Jones,1,0:59.68,7,13.93,121,11.0,96
+2024-01-04,Oaklawn Park,5,5.0f,Turf,Firm,Blazing Flash,J. Castellano,G. Weaver,2,0:59.94,8,12.3,118,5.9,95
+2024-01-04,Golden Gate Fields,6,5.0f,Turf,Yielding,Fast Rush,L. Saez,J. Shirreffs,4,0:57.24,1,4.03,123,Won by 0.9,108
+2024-01-04,Golden Gate Fields,6,5.0f,Turf,Yielding,Speed Comet,K. Desormeaux,T. Pletcher,1,0:57.91,2,4.72,121,2.0,105
+2024-01-04,Golden Gate Fields,6,5.0f,Turf,Yielding,Strong Strike,J. Castellano,J. Hollendorfer,2,0:57.94,3,7.48,123,1.8,105
+2024-01-04,Golden Gate Fields,6,5.0f,Turf,Yielding,Fire Blaze,A. Cedillo,J. Sadler,3,0:56.93,4,7.13,116,3.5,110
+2024-01-04,Golden Gate Fields,6,5.0f,Turf,Yielding,Storm Bolt,T. Baze,M. Casse,5,0:57.37,5,6.87,119,3.4,108
+2024-01-04,Golden Gate Fields,6,5.0f,Turf,Yielding,Brave Fury,M. Garcia,P. Eurton,6,0:58.36,6,14.55,120,7.1,103
+2024-01-04,Golden Gate Fields,6,5.0f,Turf,Yielding,Valley Chaser,L. Saez,M. Maker,7,0:58.61,7,12.68,118,3.2,101
+2024-01-04,Golden Gate Fields,6,5.0f,Turf,Yielding,Royal Prince,A. Cedillo,L. Jones,8,0:58.52,8,14.79,122,5.2,102
+2024-01-04,Golden Gate Fields,7,1.125m,Dirt,Sloppy,Fast Spirit,J. Rosario,P. Miller,8,1:46.52,1,14.65,115,Won by 1.8,107
+2024-01-04,Golden Gate Fields,7,1.125m,Dirt,Sloppy,Fire Streak,F. Prat,D. O'Neill,7,1:46.86,2,6.49,122,1.4,105
+2024-01-04,Golden Gate Fields,7,1.125m,Dirt,Sloppy,Fire Runner,L. Saez,P. Eurton,2,1:46.95,3,8.36,119,1.9,105
+2024-01-04,Golden Gate Fields,7,1.125m,Dirt,Sloppy,Bold King,L. Saez,M. Casse,4,1:47.40,4,14.73,117,5.8,102
+2024-01-04,Golden Gate Fields,7,1.125m,Dirt,Sloppy,Thunder Dash,A. Gryder,T. Pletcher,5,1:47.47,5,13.16,126,4.4,102
+2024-01-04,Golden Gate Fields,7,1.125m,Dirt,Sloppy,Royal Comet,A. Cedillo,R. Mandella,1,1:47.64,6,7.86,116,6.3,101
+2024-01-04,Golden Gate Fields,7,1.125m,Dirt,Sloppy,Dancing Bolt,M. Garcia,M. Maker,3,1:47.37,7,11.33,125,1.0,103
+2024-01-04,Golden Gate Fields,7,1.125m,Dirt,Sloppy,Speed Jet,M. Franco,M. Maker,6,1:48.05,8,9.96,124,3.6,99
+2024-01-04,Keeneland,8,1.25m,Turf,Fast,Golden Streak,J. Velazquez,W. Mott,7,2:02.59,1,4.1,121,Won by 0.9,92
+2024-01-04,Keeneland,8,1.25m,Turf,Fast,Ocean Demon,M. Smith,P. Miller,4,2:02.72,2,11.61,118,0.6,91
+2024-01-04,Keeneland,8,1.25m,Turf,Fast,Desert Flash,D. Davis,D. O'Neill,2,2:03.51,3,14.93,124,3.2,87
+2024-01-04,Keeneland,8,1.25m,Turf,Fast,Running Fire,A. Gryder,J. Hollendorfer,1,2:02.99,4,12.03,120,0.4,90
+2024-01-04,Keeneland,8,1.25m,Turf,Fast,Midnight Demon,M. Smith,M. Maker,8,2:03.77,5,6.75,124,0.7,86
+2024-01-04,Keeneland,8,1.25m,Turf,Fast,Wild Fire,A. Gryder,J. Hollendorfer,6,2:03.19,6,20.83,119,7.0,89
+2024-01-04,Keeneland,8,1.25m,Turf,Fast,Blazing Express,D. Van Dyke,A. Dutrow,3,2:03.81,7,7.28,124,9.6,85
+2024-01-04,Keeneland,8,1.25m,Turf,Fast,Golden Knight,R. Gonzalez,T. Pletcher,5,2:04.29,8,8.93,116,12.2,83
+2024-01-04,Belmont Park,9,6.0f,Dirt,Good,Valley Jet,M. Smith,M. Casse,3,1:11.67,1,10.63,115,Won by 1.9,91
+2024-01-04,Belmont Park,9,6.0f,Dirt,Good,Wild Fire,D. Davis,K. McPeek,7,1:12.79,2,12.41,123,1.2,86
+2024-01-04,Belmont Park,9,6.0f,Dirt,Good,Rapid Storm,R. Gonzalez,P. Eurton,4,1:13.54,3,12.27,118,3.4,82
+2024-01-04,Belmont Park,9,6.0f,Dirt,Good,Noble Breeze,J. Rosario,C. Brown,2,1:12.88,4,3.29,118,3.5,85
+2024-01-04,Belmont Park,9,6.0f,Dirt,Good,Speed Warrior,R. Gonzalez,C. Brown,6,1:13.36,5,9.3,121,3.9,83
+2024-01-04,Belmont Park,9,6.0f,Dirt,Good,Star Dash,M. Garcia,L. Jones,8,1:12.81,6,9.93,120,4.2,85
+2024-01-04,Belmont Park,9,6.0f,Dirt,Good,Valley Thunder,A. Gryder,P. Eurton,5,1:14.39,7,28.19,121,5.0,78
+2024-01-04,Belmont Park,9,6.0f,Dirt,Good,Fire Runner,K. Desormeaux,P. Eurton,1,1:13.91,8,5.62,119,6.8,80
+2024-01-04,Del Mar,10,1.125m,Dirt,Fast,Jumping Strike,D. Van Dyke,T. Pletcher,7,1:46.33,1,4.29,124,Won by 1.1,108
+2024-01-04,Del Mar,10,1.125m,Dirt,Fast,Desert Blaze,I. Ortiz,J. Sadler,1,1:45.63,2,10.17,119,1.4,111
+2024-01-04,Del Mar,10,1.125m,Dirt,Fast,Running Dash,F. Prat,J. Shirreffs,6,1:45.63,3,8.24,119,0.6,111
+2024-01-04,Del Mar,10,1.125m,Dirt,Fast,Swift Bolt,M. Smith,G. Weaver,5,1:46.73,4,5.74,120,3.0,106
+2024-01-04,Del Mar,10,1.125m,Dirt,Fast,Proud Queen,D. Van Dyke,P. Miller,4,1:46.32,5,14.94,124,4.8,108
+2024-01-04,Del Mar,10,1.125m,Dirt,Fast,Lightning Jet,L. Saez,R. Mandella,3,1:46.99,6,2.44,126,8.0,105
+2024-01-04,Del Mar,10,1.125m,Dirt,Fast,Rapid Rush,M. Garcia,B. Baffert,2,1:47.41,7,9.78,115,9.6,102
+2024-01-04,Del Mar,10,1.125m,Dirt,Fast,Speed Warrior,M. Franco,J. Shirreffs,8,1:46.77,8,21.9,120,10.9,106
+2024-01-05,Del Mar,1,5.0f,Dirt,Muddy,Mountain Thunder,M. Garcia,S. Asmussen,6,0:58.69,1,10.76,121,Won by 2.6,96
+2024-01-05,Del Mar,1,5.0f,Dirt,Muddy,Speed Streak,M. Smith,R. Mandella,4,0:59.39,2,6.01,126,1.5,93
+2024-01-05,Del Mar,1,5.0f,Dirt,Muddy,Fire Runner,I. Ortiz,R. Baltas,2,0:59.55,3,6.56,120,3.7,92
+2024-01-05,Del Mar,1,5.0f,Dirt,Muddy,Storm Fury,F. Prat,H. Bond,8,1:00.17,4,11.66,120,4.8,89
+2024-01-05,Del Mar,1,5.0f,Dirt,Muddy,Noble Fire,C. Lopez,R. Baltas,5,1:01.28,5,29.97,116,5.9,83
+2024-01-05,Del Mar,1,5.0f,Dirt,Muddy,Star King,M. Smith,J. Shirreffs,7,1:00.75,6,7.78,125,9.5,86
+2024-01-05,Del Mar,1,5.0f,Dirt,Muddy,Star Prince,R. Gonzalez,R. Mandella,1,1:00.55,7,14.82,122,5.5,87
+2024-01-05,Del Mar,1,5.0f,Dirt,Muddy,Golden Knight,T. Baze,R. Baltas,3,1:00.08,8,7.36,116,3.3,89
+2024-01-05,Saratoga,2,6.5f,Dirt,Sloppy,Speed Streak,J. Lezcano,H. Bond,7,1:15.92,1,28.99,125,Won by 1.7,102
+2024-01-05,Saratoga,2,6.5f,Dirt,Sloppy,Galloping Demon,J. Castellano,L. Jones,1,1:16.29,2,6.12,116,0.9,101
+2024-01-05,Saratoga,2,6.5f,Dirt,Sloppy,Running Fire,J. Velazquez,P. Eurton,8,1:15.85,3,11.31,122,2.9,103
+2024-01-05,Saratoga,2,6.5f,Dirt,Sloppy,Brave King,D. Van Dyke,T. Pletcher,6,1:16.45,4,28.52,122,3.3,100
+2024-01-05,Saratoga,2,6.5f,Dirt,Sloppy,Blazing Flash,A. Gryder,S. Asmussen,3,1:17.58,5,12.2,120,3.8,94
+2024-01-05,Saratoga,2,6.5f,Dirt,Sloppy,Fire Bullet,J. Lezcano,B. Baffert,2,1:17.36,6,25.61,122,0.7,95
+2024-01-05,Saratoga,2,6.5f,Dirt,Sloppy,Quick Streak,M. Smith,J. Sadler,5,1:16.52,7,12.2,122,11.1,99
+2024-01-05,Saratoga,2,6.5f,Dirt,Sloppy,Fire Jet,R. Gonzalez,A. Dutrow,4,1:17.84,8,21.69,118,3.0,93
+2024-01-05,Golden Gate Fields,3,5.0f,Dirt,Fast,Ocean Demon,A. Cedillo,R. Mandella,7,0:57.01,1,11.54,125,Won by 2.9,104
+2024-01-05,Golden Gate Fields,3,5.0f,Dirt,Fast,Lightning Jet,J. Rosario,J. Sadler,5,0:57.52,2,11.65,121,1.3,102
+2024-01-05,Golden Gate Fields,3,5.0f,Dirt,Fast,Mountain Wind,E. Maldonado,M. Maker,8,0:57.42,3,9.13,115,1.3,102
+2024-01-05,Golden Gate Fields,3,5.0f,Dirt,Fast,Fast Spirit,A. Gryder,G. Weaver,6,0:57.28,4,6.49,117,5.8,103
+2024-01-05,Golden Gate Fields,3,5.0f,Dirt,Fast,Flying Rocket,D. Davis,R. Mandella,4,0:56.81,5,13.87,121,1.3,105
+2024-01-05,Golden Gate Fields,3,5.0f,Dirt,Fast,Strong Rush,K. Desormeaux,H. Bond,2,0:58.04,6,14.25,124,7.4,99
+2024-01-05,Golden Gate Fields,3,5.0f,Dirt,Fast,Desert Flash,T. Baze,W. Mott,3,0:57.56,7,4.84,125,5.4,102
+2024-01-05,Golden Gate Fields,3,5.0f,Dirt,Fast,Star Dash,J. Velazquez,B. Baffert,1,0:57.41,8,9.0,123,13.4,102
+2024-01-05,Santa Anita,4,5.0f,Dirt,Sloppy,Fast Rush,J. Rosario,T. Pletcher,2,0:58.06,1,2.52,115,Won by 1.3,99
+2024-01-05,Santa Anita,4,5.0f,Dirt,Sloppy,Running Blaze,M. Smith,P. Miller,3,0:57.98,2,11.91,126,1.1,100
+2024-01-05,Santa Anita,4,5.0f,Dirt,Sloppy,Thunder Dash,R. Gonzalez,T. Pletcher,7,0:58.82,3,11.87,126,2.5,95
+2024-01-05,Santa Anita,4,5.0f,Dirt,Sloppy,Ocean Flash,D. Van Dyke,H. Bond,6,0:58.59,4,25.8,119,0.6,97
+2024-01-05,Santa Anita,4,5.0f,Dirt,Sloppy,Wild Fire,D. Davis,R. Baltas,8,0:58.27,5,6.39,118,7.6,98
+2024-01-05,Santa Anita,4,5.0f,Dirt,Sloppy,Golden Streak,J. Rosario,D. O'Neill,5,0:58.27,6,4.46,121,4.9,98
+2024-01-05,Santa Anita,4,5.0f,Dirt,Sloppy,Quick Streak,M. Franco,P. Miller,1,0:59.19,7,12.46,123,2.2,94
+2024-01-05,Santa Anita,4,5.0f,Dirt,Sloppy,Silver Express,E. Maldonado,G. Weaver,4,0:58.58,8,9.2,124,5.7,97
+2024-01-05,Churchill Downs,5,5.0f,Dirt,Sloppy,Jumping Arrow,A. Cedillo,H. Bond,6,1:01.36,1,14.67,117,Won by 1.6,83
+2024-01-05,Churchill Downs,5,5.0f,Dirt,Sloppy,Brave Bolt,F. Prat,R. Mandella,3,1:01.04,2,14.75,125,0.4,84
+2024-01-05,Churchill Downs,5,5.0f,Dirt,Sloppy,Golden Express,J. Velazquez,R. Mandella,8,1:00.94,3,6.65,116,3.8,85
+2024-01-05,Churchill Downs,5,5.0f,Dirt,Sloppy,Strong Rush,J. Castellano,W. Mott,7,1:01.43,4,14.75,117,3.9,82
+2024-01-05,Churchill Downs,5,5.0f,Dirt,Sloppy,Speed Streak,L. Saez,R. Mandella,5,1:01.06,5,9.91,120,1.7,84
+2024-01-05,Churchill Downs,5,5.0f,Dirt,Sloppy,Quick Express,M. Smith,P. Eurton,4,1:01.89,6,10.66,120,6.3,80
+2024-01-05,Churchill Downs,5,5.0f,Dirt,Sloppy,Noble Storm,K. Desormeaux,M. Maker,2,1:01.62,7,6.25,120,4.6,81
+2024-01-05,Churchill Downs,5,5.0f,Dirt,Sloppy,Swift Bolt,M. Franco,H. Bond,1,1:00.85,8,7.72,121,6.9,85
+2024-01-05,Saratoga,6,7.0f,Turf,Yielding,Dancing Spirit,J. Rosario,H. Bond,6,1:23.06,1,13.22,122,Won by 2.3,104
+2024-01-05,Saratoga,6,7.0f,Turf,Yielding,Star Dash,C. Lopez,J. Sadler,8,1:21.95,2,6.11,116,1.4,110
+2024-01-05,Saratoga,6,7.0f,Turf,Yielding,Dancing Streak,J. Rosario,J. Shirreffs,1,1:23.09,3,3.64,120,3.5,104
+2024-01-05,Saratoga,6,7.0f,Turf,Yielding,Proud Breeze,R. Gonzalez,D. O'Neill,2,1:22.79,4,10.52,120,2.3,106
+2024-01-05,Saratoga,6,7.0f,Turf,Yielding,Storm Flash,A. Gryder,H. Bond,5,1:24.11,5,10.65,126,0.8,99
+2024-01-05,Saratoga,6,7.0f,Turf,Yielding,Brave Blaze,A. Cedillo,L. Jones,3,1:24.21,6,25.94,122,1.3,98
+2024-01-05,Saratoga,6,7.0f,Turf,Yielding,Brave Comet,R. Santana,J. Hollendorfer,4,1:23.63,7,11.07,121,3.8,101
+2024-01-05,Saratoga,6,7.0f,Turf,Yielding,Golden Knight,A. Cedillo,M. Maker,7,1:23.74,8,14.57,116,10.6,101
+2024-01-05,Golden Gate Fields,7,1.25m,Dirt,Sloppy,Royal Storm,D. Van Dyke,L. Jones,5,1:57.59,1,13.72,121,Won by 2.4,112
+2024-01-05,Golden Gate Fields,7,1.25m,Dirt,Sloppy,Golden Storm,F. Prat,C. Brown,4,1:57.26,2,3.79,122,1.0,113
+2024-01-05,Golden Gate Fields,7,1.25m,Dirt,Sloppy,Swift Comet,M. Smith,W. Mott,8,1:58.84,3,6.83,121,3.5,105
+2024-01-05,Golden Gate Fields,7,1.25m,Dirt,Sloppy,Proud Breeze,A. Gryder,S. Asmussen,7,1:57.88,4,7.41,122,3.2,110
+2024-01-05,Golden Gate Fields,7,1.25m,Dirt,Sloppy,Midnight Prince,F. Prat,H. Bond,2,1:58.33,5,11.85,122,6.4,108
+2024-01-05,Golden Gate Fields,7,1.25m,Dirt,Sloppy,Lightning Jet,K. Desormeaux,J. Shirreffs,6,1:58.68,6,10.11,120,0.4,106
+2024-01-05,Golden Gate Fields,7,1.25m,Dirt,Sloppy,Desert Demon,M. Garcia,S. Asmussen,3,1:59.04,7,11.31,121,10.3,104
+2024-01-05,Golden Gate Fields,7,1.25m,Dirt,Sloppy,Galloping Chaser,I. Ortiz,R. Mandella,1,1:59.81,8,7.98,121,2.2,100
+2024-01-05,Santa Anita,8,7.0f,Turf,Firm,Desert Rocket,I. Ortiz,J. Sadler,6,1:23.17,1,7.27,120,Won by 0.8,104
+2024-01-05,Santa Anita,8,7.0f,Turf,Firm,Fire King,L. Saez,M. Casse,4,1:23.24,2,5.99,118,1.0,103
+2024-01-05,Santa Anita,8,7.0f,Turf,Firm,Swift Comet,I. Ortiz,G. Weaver,5,1:24.23,3,10.5,115,0.3,98
+2024-01-05,Santa Anita,8,7.0f,Turf,Firm,Bold King,J. Lezcano,G. Weaver,8,1:23.75,4,7.4,125,1.0,101
+2024-01-05,Santa Anita,8,7.0f,Turf,Firm,Jumping Strike,M. Garcia,D. O'Neill,1,1:23.63,5,3.41,115,3.8,101
+2024-01-05,Santa Anita,8,7.0f,Turf,Firm,Desert Warrior,A. Cedillo,J. Sadler,3,1:23.41,6,12.58,118,9.3,102
+2024-01-05,Santa Anita,8,7.0f,Turf,Firm,Fire Bolt,M. Garcia,R. Baltas,2,1:24.48,7,11.48,122,8.2,97
+2024-01-05,Santa Anita,8,7.0f,Turf,Firm,Silver Dash,A. Gryder,J. Hollendorfer,7,1:24.64,8,8.61,118,1.1,96
+2024-01-05,Saratoga,9,7.0f,Turf,Muddy,Quick Express,L. Saez,A. Dutrow,5,1:27.38,1,10.87,118,Won by 2.5,83
+2024-01-05,Saratoga,9,7.0f,Turf,Muddy,Galloping Express,L. Saez,A. Dutrow,2,1:27.25,2,10.85,122,0.8,83
+2024-01-05,Saratoga,9,7.0f,Turf,Muddy,Thunder Dash,T. Baze,J. Sadler,3,1:28.80,3,6.62,120,0.3,76
+2024-01-05,Saratoga,9,7.0f,Turf,Muddy,Dancing Breeze,J. Castellano,H. Bond,7,1:28.97,4,7.13,124,1.7,75
+2024-01-05,Saratoga,9,7.0f,Turf,Muddy,Rapid Rocket,K. Desormeaux,W. Mott,1,1:29.80,5,7.98,115,7.0,71
+2024-01-05,Saratoga,9,7.0f,Turf,Muddy,Quick Storm,J. Velazquez,W. Mott,6,1:29.79,6,12.92,117,1.4,71
+2024-01-05,Saratoga,9,7.0f,Turf,Muddy,Proud Breeze,A. Cedillo,L. Jones,4,1:29.77,7,6.15,119,10.7,71
+2024-01-05,Saratoga,9,7.0f,Turf,Muddy,Mountain Rocket,E. Maldonado,D. O'Neill,8,1:29.64,8,6.3,119,9.4,71
+2024-01-05,Saratoga,10,5.5f,Dirt,Yielding,Jumping Spirit,I. Ortiz,S. Asmussen,2,1:07.06,1,5.74,116,Won by 1.1,84
+2024-01-05,Saratoga,10,5.5f,Dirt,Yielding,Star Breeze,R. Santana,G. Weaver,5,1:05.02,2,6.9,119,1.7,94
+2024-01-05,Saratoga,10,5.5f,Dirt,Yielding,Galloping Champion,R. Santana,R. Baltas,1,1:07.13,3,4.17,125,2.8,84
+2024-01-05,Saratoga,10,5.5f,Dirt,Yielding,Golden Wind,K. Desormeaux,H. Bond,3,1:06.64,4,11.63,120,2.7,86
+2024-01-05,Saratoga,10,5.5f,Dirt,Yielding,Running Fire,L. Saez,W. Mott,4,1:07.08,5,6.25,116,3.5,84
+2024-01-05,Saratoga,10,5.5f,Dirt,Yielding,Blazing Rush,M. Garcia,J. Sadler,8,1:07.27,6,23.96,116,9.5,83
+2024-01-05,Saratoga,10,5.5f,Dirt,Yielding,Wild Demon,A. Cedillo,P. Eurton,7,1:06.53,7,6.8,122,6.7,87
+2024-01-05,Saratoga,10,5.5f,Dirt,Yielding,Mountain Thunder,D. Van Dyke,P. Eurton,6,1:06.89,8,13.73,117,8.3,85
+2024-01-06,Aqueduct,1,1m,Dirt,Firm,Valley Jet,R. Santana,C. Brown,6,1:35.14,1,6.37,121,Won by 1.9,104
+2024-01-06,Aqueduct,1,1m,Dirt,Firm,Dancing Spirit,R. Gonzalez,A. Dutrow,7,1:36.61,2,27.62,119,0.6,96
+2024-01-06,Aqueduct,1,1m,Dirt,Firm,Star Fire,K. Desormeaux,C. Brown,8,1:36.60,3,3.81,124,0.9,97
+2024-01-06,Aqueduct,1,1m,Dirt,Firm,Galloping Warrior,F. Prat,R. Baltas,3,1:37.08,4,2.2,120,2.3,94
+2024-01-06,Aqueduct,1,1m,Dirt,Firm,Jumping Jet,C. Lopez,S. Asmussen,5,1:37.95,5,14.87,119,2.0,90
+2024-01-06,Aqueduct,1,1m,Dirt,Firm,Golden Storm,L. Saez,L. Jones,4,1:36.66,6,8.08,123,2.6,96
+2024-01-06,Aqueduct,1,1m,Dirt,Firm,Wild Flash,T. Baze,K. McPeek,2,1:37.65,7,11.26,126,5.9,91
+2024-01-06,Aqueduct,1,1m,Dirt,Firm,Bold Peak,C. Lopez,K. McPeek,1,1:37.64,8,10.89,119,13.7,91
+2024-01-06,Belmont Park,2,5.0f,Turf,Yielding,Quick Streak,I. Ortiz,M. Casse,6,1:02.53,1,8.22,126,Won by 0.7,82
+2024-01-06,Belmont Park,2,5.0f,Turf,Yielding,Strong Strike,L. Saez,W. Mott,4,1:02.34,2,6.17,122,1.6,83
+2024-01-06,Belmont Park,2,5.0f,Turf,Yielding,Quick Storm,F. Prat,D. O'Neill,7,1:01.35,3,6.5,123,1.2,88
+2024-01-06,Belmont Park,2,5.0f,Turf,Yielding,Brave Comet,T. Baze,D. O'Neill,1,1:02.60,4,11.04,123,2.2,82
+2024-01-06,Belmont Park,2,5.0f,Turf,Yielding,Strong Rush,K. Desormeaux,R. Baltas,8,1:02.21,5,16.26,125,6.5,83
+2024-01-06,Belmont Park,2,5.0f,Turf,Yielding,Proud King,F. Prat,G. Weaver,3,1:02.66,6,6.23,121,9.8,81
+2024-01-06,Belmont Park,2,5.0f,Turf,Yielding,Speed Warrior,M. Franco,L. Jones,5,1:02.77,7,14.11,120,2.2,81
+2024-01-06,Belmont Park,2,5.0f,Turf,Yielding,Bold Strike,J. Lezcano,R. Mandella,2,1:02.64,8,20.83,118,5.3,81
+2024-01-06,Oaklawn Park,3,1m,Dirt,Fast,Golden Express,J. Castellano,L. Jones,5,1:34.52,1,16.06,115,Won by 1.4,107
+2024-01-06,Oaklawn Park,3,1m,Dirt,Fast,Thunder Jet,F. Prat,J. Sadler,7,1:34.33,2,5.13,124,2.0,108
+2024-01-06,Oaklawn Park,3,1m,Dirt,Fast,Desert Blaze,J. Velazquez,L. Jones,8,1:34.56,3,5.05,120,2.1,107
+2024-01-06,Oaklawn Park,3,1m,Dirt,Fast,Lightning Bolt,F. Prat,J. Hollendorfer,6,1:33.61,4,11.13,122,5.8,111
+2024-01-06,Oaklawn Park,3,1m,Dirt,Fast,Blazing Runner,I. Ortiz,M. Casse,2,1:35.79,5,7.97,123,5.3,101
+2024-01-06,Oaklawn Park,3,1m,Dirt,Fast,Valley Thunder,J. Castellano,W. Mott,1,1:35.58,6,12.58,115,1.0,102
+2024-01-06,Oaklawn Park,3,1m,Dirt,Fast,Jumping Bolt,D. Davis,C. Brown,3,1:36.86,7,7.63,123,8.6,95
+2024-01-06,Oaklawn Park,3,1m,Dirt,Fast,Lightning Jet,D. Davis,H. Bond,4,1:35.85,8,14.77,121,8.0,100
+2024-01-06,Oaklawn Park,4,7.0f,Dirt,Muddy,Dancing Breeze,L. Saez,S. Asmussen,8,1:26.86,1,7.15,124,Won by 1.3,80
+2024-01-06,Oaklawn Park,4,7.0f,Dirt,Muddy,Fire Streak,F. Prat,D. O'Neill,6,1:26.82,2,3.9,117,1.6,80
+2024-01-06,Oaklawn Park,4,7.0f,Dirt,Muddy,Royal Prince,M. Garcia,J. Shirreffs,3,1:27.12,3,9.77,119,0.9,79
+2024-01-06,Oaklawn Park,4,7.0f,Dirt,Muddy,Silver Express,D. Davis,D. O'Neill,1,1:27.97,4,4.5,120,3.0,75
+2024-01-06,Oaklawn Park,4,7.0f,Dirt,Muddy,Dancing Streak,J. Rosario,J. Hollendorfer,2,1:28.09,5,4.35,123,7.8,74
+2024-01-06,Oaklawn Park,4,7.0f,Dirt,Muddy,Blazing Runner,R. Santana,J. Shirreffs,5,1:28.10,6,9.99,118,6.7,74
+2024-01-06,Oaklawn Park,4,7.0f,Dirt,Muddy,Silver Dash,A. Gryder,G. Weaver,4,1:27.53,7,12.37,126,1.6,77
+2024-01-06,Oaklawn Park,4,7.0f,Dirt,Muddy,Brave Comet,J. Rosario,J. Shirreffs,7,1:28.39,8,11.38,115,0.7,73
+2024-01-06,Churchill Downs,5,6.0f,Turf,Fast,Blazing Streak,I. Ortiz,C. Brown,2,1:11.07,1,4.69,120,Won by 1.7,99
+2024-01-06,Churchill Downs,5,6.0f,Turf,Fast,Blazing Express,J. Castellano,R. Baltas,6,1:11.00,2,7.77,123,1.0,100
+2024-01-06,Churchill Downs,5,6.0f,Turf,Fast,Golden Express,D. Davis,A. Dutrow,1,1:10.64,3,8.49,123,0.5,101
+2024-01-06,Churchill Downs,5,6.0f,Turf,Fast,Swift Queen,J. Velazquez,J. Hollendorfer,8,1:11.38,4,14.72,115,0.6,98
+2024-01-06,Churchill Downs,5,6.0f,Turf,Fast,Desert Blaze,M. Smith,C. Brown,5,1:11.78,5,3.75,115,5.0,96
+2024-01-06,Churchill Downs,5,6.0f,Turf,Fast,Quick Peak,A. Gryder,H. Bond,3,1:11.99,6,12.5,116,0.6,95
+2024-01-06,Churchill Downs,5,6.0f,Turf,Fast,Silver Warrior,A. Gryder,A. Dutrow,4,1:11.59,7,12.45,124,9.8,97
+2024-01-06,Churchill Downs,5,6.0f,Turf,Fast,Silver Dash,R. Gonzalez,G. Weaver,7,1:11.80,8,17.17,124,2.5,95
+2024-01-06,Saratoga,6,1.125m,Turf,Fast,Jumping Jet,J. Velazquez,W. Mott,4,1:45.16,1,6.13,117,Won by 0.8,119
+2024-01-06,Saratoga,6,1.125m,Turf,Fast,Dancing Bolt,J. Velazquez,J. Sadler,6,1:45.86,2,7.81,123,0.4,115
+2024-01-06,Saratoga,6,1.125m,Turf,Fast,Strong Rush,J. Lezcano,J. Hollendorfer,7,1:45.47,3,14.24,126,3.5,117
+2024-01-06,Saratoga,6,1.125m,Turf,Fast,Proud Knight,E. Maldonado,D. O'Neill,2,1:45.61,4,29.13,115,1.6,116
+2024-01-06,Saratoga,6,1.125m,Turf,Fast,Thunder Peak,D. Davis,M. Maker,5,1:46.86,5,16.83,119,5.0,110
+2024-01-06,Saratoga,6,1.125m,Turf,Fast,Speed Comet,D. Van Dyke,L. Jones,1,1:46.62,6,13.84,119,1.4,111
+2024-01-06,Saratoga,6,1.125m,Turf,Fast,Noble Breeze,M. Garcia,L. Jones,3,1:46.46,7,11.58,123,4.7,112
+2024-01-06,Saratoga,6,1.125m,Turf,Fast,Galloping Chaser,K. Desormeaux,J. Shirreffs,8,1:47.56,8,8.27,119,7.4,107
+2024-01-06,Belmont Park,7,6.5f,Dirt,Fast,Proud Blaze,M. Garcia,M. Maker,1,1:14.37,1,6.14,117,Won by 2.1,110
+2024-01-06,Belmont Park,7,6.5f,Dirt,Fast,Valley Chaser,J. Rosario,A. Dutrow,6,1:14.56,2,7.43,118,0.9,109
+2024-01-06,Belmont Park,7,6.5f,Dirt,Fast,Running Fury,R. Gonzalez,R. Baltas,5,1:13.73,3,12.48,125,0.3,113
+2024-01-06,Belmont Park,7,6.5f,Dirt,Fast,Mountain Thunder,J. Lezcano,M. Casse,3,1:15.33,4,5.59,123,0.9,105
+2024-01-06,Belmont Park,7,6.5f,Dirt,Fast,Swift Bolt,J. Rosario,K. McPeek,4,1:14.98,5,5.12,120,6.8,107
+2024-01-06,Belmont Park,7,6.5f,Dirt,Fast,Galloping Express,L. Saez,H. Bond,7,1:15.83,6,7.86,117,3.3,103
+2024-01-06,Belmont Park,7,6.5f,Dirt,Fast,Thunder Jet,R. Santana,K. McPeek,8,1:15.72,7,13.85,119,2.4,103
+2024-01-06,Belmont Park,7,6.5f,Dirt,Fast,Brave King,J. Lezcano,G. Weaver,2,1:15.52,8,9.1,118,11.6,104
+2024-01-06,Gulfstream Park,8,6.5f,Turf,Yielding,Fire Knight,D. Van Dyke,M. Casse,4,1:20.48,1,11.89,125,Won by 1.6,85
+2024-01-06,Gulfstream Park,8,6.5f,Turf,Yielding,Fire Jet,E. Maldonado,K. McPeek,5,1:22.18,2,4.49,116,0.4,76
+2024-01-06,Gulfstream Park,8,6.5f,Turf,Yielding,Galloping Demon,M. Franco,S. Asmussen,7,1:21.55,3,9.37,122,3.4,79
+2024-01-06,Gulfstream Park,8,6.5f,Turf,Yielding,Galloping Arrow,I. Ortiz,P. Miller,1,1:22.26,4,5.82,118,5.6,76
+2024-01-06,Gulfstream Park,8,6.5f,Turf,Yielding,Rapid Storm,M. Franco,B. Baffert,2,1:21.59,5,14.93,125,2.9,79
+2024-01-06,Gulfstream Park,8,6.5f,Turf,Yielding,Galloping Strike,J. Velazquez,B. Baffert,8,1:22.22,6,5.06,116,4.9,76
+2024-01-06,Gulfstream Park,8,6.5f,Turf,Yielding,Rapid Demon,M. Franco,L. Jones,6,1:22.69,7,19.77,124,5.5,74
+2024-01-06,Gulfstream Park,8,6.5f,Turf,Yielding,Blazing Express,A. Cedillo,K. McPeek,3,1:23.31,8,8.99,115,3.5,70
+2024-01-06,Keeneland,9,6.5f,Turf,Sloppy,Dancing Breeze,M. Smith,G. Weaver,7,1:19.45,1,12.32,124,Won by 1.0,90
+2024-01-06,Keeneland,9,6.5f,Turf,Sloppy,Dancing Spirit,M. Garcia,L. Jones,2,1:20.22,2,6.98,123,1.4,86
+2024-01-06,Keeneland,9,6.5f,Turf,Sloppy,Fast Spirit,E. Maldonado,K. McPeek,1,1:19.75,3,6.06,122,1.0,88
+2024-01-06,Keeneland,9,6.5f,Turf,Sloppy,Thunder Knight,A. Gryder,J. Hollendorfer,8,1:19.87,4,11.93,120,0.3,88
+2024-01-06,Keeneland,9,6.5f,Turf,Sloppy,Speed Jet,J. Rosario,C. Brown,5,1:19.81,5,3.32,115,3.5,88
+2024-01-06,Keeneland,9,6.5f,Turf,Sloppy,Flying Fury,M. Smith,D. O'Neill,6,1:20.21,6,10.16,122,9.4,86
+2024-01-06,Keeneland,9,6.5f,Turf,Sloppy,Storm Jet,L. Saez,D. O'Neill,3,1:20.96,7,4.32,124,9.7,82
+2024-01-06,Keeneland,9,6.5f,Turf,Sloppy,Thunder Dash,J. Velazquez,L. Jones,4,1:20.79,8,9.13,115,10.5,83
+2024-01-06,Churchill Downs,10,1m,Turf,Good,Blazing King,M. Smith,S. Asmussen,5,1:35.55,1,9.81,120,Won by 1.7,107
+2024-01-06,Churchill Downs,10,1m,Turf,Good,Jumping Bolt,M. Smith,B. Baffert,8,1:35.44,2,3.12,123,1.0,107
+2024-01-06,Churchill Downs,10,1m,Turf,Good,Lightning Jet,I. Ortiz,J. Sadler,7,1:36.78,3,13.98,118,3.6,101
+2024-01-06,Churchill Downs,10,1m,Turf,Good,Quick Express,R. Santana,B. Baffert,2,1:36.35,4,7.37,125,0.4,103
+2024-01-06,Churchill Downs,10,1m,Turf,Good,Running Blaze,E. Maldonado,K. McPeek,3,1:37.12,5,8.74,116,4.2,99
+2024-01-06,Churchill Downs,10,1m,Turf,Good,Rapid Demon,J. Lezcano,W. Mott,6,1:37.04,6,28.2,120,1.2,99
+2024-01-06,Churchill Downs,10,1m,Turf,Good,Galloping Demon,C. Lopez,P. Miller,1,1:37.25,7,10.43,126,10.5,98
+2024-01-06,Churchill Downs,10,1m,Turf,Good,Galloping Chaser,L. Saez,M. Casse,4,1:37.71,8,10.11,117,2.5,96
+2024-01-07,Saratoga,1,7.0f,Dirt,Muddy,Fast Streak,L. Saez,P. Miller,4,1:25.84,1,7.8,116,Won by 1.4,85
+2024-01-07,Saratoga,1,7.0f,Dirt,Muddy,Noble Streak,J. Velazquez,M. Casse,8,1:26.73,2,9.66,124,0.7,81
+2024-01-07,Saratoga,1,7.0f,Dirt,Muddy,Brave Flash,R. Santana,W. Mott,5,1:25.80,3,3.85,121,2.3,85
+2024-01-07,Saratoga,1,7.0f,Dirt,Muddy,Running Fury,I. Ortiz,P. Miller,3,1:26.74,4,6.32,121,5.5,81
+2024-01-07,Saratoga,1,7.0f,Dirt,Muddy,Proud Breeze,M. Franco,P. Miller,1,1:28.01,5,13.62,123,0.5,74
+2024-01-07,Saratoga,1,7.0f,Dirt,Muddy,Bold Blaze,A. Gryder,W. Mott,6,1:28.20,6,25.54,122,0.3,74
+2024-01-07,Saratoga,1,7.0f,Dirt,Muddy,Dancing Breeze,M. Smith,W. Mott,7,1:27.85,7,11.66,120,10.4,75
+2024-01-07,Saratoga,1,7.0f,Dirt,Muddy,Thunder Gazer,M. Smith,G. Weaver,2,1:28.34,8,13.61,116,0.4,73
+2024-01-07,Churchill Downs,2,6.5f,Turf,Yielding,Noble Spirit,I. Ortiz,G. Weaver,2,1:18.84,1,3.79,123,Won by 2.9,93
+2024-01-07,Churchill Downs,2,6.5f,Turf,Yielding,Running Fury,C. Lopez,C. Brown,8,1:18.67,2,6.32,125,0.9,94
+2024-01-07,Churchill Downs,2,6.5f,Turf,Yielding,Wild Flash,R. Gonzalez,H. Bond,6,1:19.32,3,8.94,118,0.9,90
+2024-01-07,Churchill Downs,2,6.5f,Turf,Yielding,Noble Fire,A. Gryder,R. Mandella,4,1:19.18,4,10.37,125,2.7,91
+2024-01-07,Churchill Downs,2,6.5f,Turf,Yielding,Strong Strike,D. Davis,K. McPeek,7,1:19.91,5,24.11,122,6.7,87
+2024-01-07,Churchill Downs,2,6.5f,Turf,Yielding,Lightning Bolt,J. Velazquez,M. Maker,3,1:19.98,6,3.82,126,2.3,87
+2024-01-07,Churchill Downs,2,6.5f,Turf,Yielding,Rapid Queen,A. Gryder,J. Hollendorfer,1,1:19.34,7,20.89,120,5.5,90
+2024-01-07,Churchill Downs,2,6.5f,Turf,Yielding,Midnight Chaser,D. Van Dyke,P. Miller,5,1:20.66,8,7.74,117,12.1,84
+2024-01-07,Oaklawn Park,3,5.5f,Dirt,Firm,Thunder Gazer,K. Desormeaux,D. O'Neill,6,1:01.20,1,12.66,123,Won by 1.4,114
+2024-01-07,Oaklawn Park,3,5.5f,Dirt,Firm,Fire Streak,K. Desormeaux,S. Asmussen,2,1:00.88,2,7.12,123,1.0,115
+2024-01-07,Oaklawn Park,3,5.5f,Dirt,Firm,Brave Comet,J. Castellano,P. Miller,7,1:01.50,3,13.51,121,1.6,112
+2024-01-07,Oaklawn Park,3,5.5f,Dirt,Firm,Ocean Flash,M. Garcia,R. Mandella,4,1:02.18,4,13.84,125,5.9,109
+2024-01-07,Oaklawn Park,3,5.5f,Dirt,Firm,Blazing Flash,C. Lopez,M. Casse,5,1:02.09,5,8.98,119,4.7,109
+2024-01-07,Oaklawn Park,3,5.5f,Dirt,Firm,Quick Rush,D. Davis,H. Bond,3,1:02.07,6,7.11,125,7.2,109
+2024-01-07,Oaklawn Park,3,5.5f,Dirt,Firm,Bold Blaze,M. Smith,P. Miller,1,1:02.52,7,4.97,126,11.5,107
+2024-01-07,Oaklawn Park,3,5.5f,Dirt,Firm,Speed Comet,M. Smith,L. Jones,8,1:01.66,8,13.93,118,10.2,111
+2024-01-07,Belmont Park,4,6.5f,Turf,Sloppy,Blazing Express,M. Garcia,A. Dutrow,4,1:13.92,1,13.79,124,Won by 0.5,117
+2024-01-07,Belmont Park,4,6.5f,Turf,Sloppy,Storm Flash,J. Castellano,M. Maker,5,1:14.09,2,7.03,119,1.6,117
+2024-01-07,Belmont Park,4,6.5f,Turf,Sloppy,Silver Express,J. Velazquez,R. Baltas,6,1:13.82,3,14.4,118,2.3,118
+2024-01-07,Belmont Park,4,6.5f,Turf,Sloppy,Storm Storm,K. Desormeaux,J. Shirreffs,3,1:14.08,4,9.49,120,3.5,117
+2024-01-07,Belmont Park,4,6.5f,Turf,Sloppy,Star Breeze,K. Desormeaux,H. Bond,8,1:14.09,5,10.45,120,2.6,117
+2024-01-07,Belmont Park,4,6.5f,Turf,Sloppy,Midnight Demon,M. Garcia,W. Mott,1,1:15.03,6,11.83,115,0.7,112
+2024-01-07,Belmont Park,4,6.5f,Turf,Sloppy,Desert Rocket,K. Desormeaux,J. Shirreffs,2,1:14.92,7,8.76,119,3.0,112
+2024-01-07,Belmont Park,4,6.5f,Turf,Sloppy,Running Fire,D. Van Dyke,K. McPeek,7,1:14.88,8,6.23,124,10.9,113
+2024-01-07,Oaklawn Park,5,6.5f,Turf,Yielding,Brave Flash,M. Garcia,M. Casse,1,1:18.81,1,10.9,123,Won by 1.8,93
+2024-01-07,Oaklawn Park,5,6.5f,Turf,Yielding,Storm King,D. Davis,C. Brown,6,1:18.48,2,14.49,116,0.3,95
+2024-01-07,Oaklawn Park,5,6.5f,Turf,Yielding,Bold King,J. Rosario,R. Baltas,2,1:19.09,3,7.26,119,3.4,92
+2024-01-07,Oaklawn Park,5,6.5f,Turf,Yielding,Jumping Arrow,D. Davis,T. Pletcher,5,1:19.55,4,11.8,123,1.0,89
+2024-01-07,Oaklawn Park,5,6.5f,Turf,Yielding,Star Strike,A. Gryder,L. Jones,4,1:18.92,5,8.02,118,2.0,92
+2024-01-07,Oaklawn Park,5,6.5f,Turf,Yielding,Quick Thunder,M. Smith,T. Pletcher,8,1:19.45,6,3.4,126,4.9,90
+2024-01-07,Oaklawn Park,5,6.5f,Turf,Yielding,Fire Knight,J. Velazquez,B. Baffert,7,1:19.33,7,22.78,118,6.1,90
+2024-01-07,Oaklawn Park,5,6.5f,Turf,Yielding,Star Runner,E. Maldonado,A. Dutrow,3,1:20.77,8,11.47,124,12.2,83
+2024-01-07,Oaklawn Park,6,1.25m,Dirt,Firm,Fast Rush,M. Smith,W. Mott,1,2:02.30,1,5.18,126,Won by 1.9,88
+2024-01-07,Oaklawn Park,6,1.25m,Dirt,Firm,Fire Runner,L. Saez,C. Brown,2,2:01.97,2,6.44,120,2.0,90
+2024-01-07,Oaklawn Park,6,1.25m,Dirt,Firm,Royal Storm,D. Davis,P. Miller,6,2:02.67,3,9.52,125,2.4,86
+2024-01-07,Oaklawn Park,6,1.25m,Dirt,Firm,Swift Bolt,M. Franco,M. Maker,4,2:02.64,4,20.31,125,5.7,86
+2024-01-07,Oaklawn Park,6,1.25m,Dirt,Firm,Thunder Peak,J. Rosario,J. Shirreffs,7,2:01.97,5,5.8,125,7.5,90
+2024-01-07,Oaklawn Park,6,1.25m,Dirt,Firm,Fast Spirit,C. Lopez,M. Maker,5,2:03.09,6,13.48,117,5.3,84
+2024-01-07,Oaklawn Park,6,1.25m,Dirt,Firm,Bold King,F. Prat,K. McPeek,8,2:03.31,7,11.47,119,2.6,83
+2024-01-07,Oaklawn Park,6,1.25m,Dirt,Firm,Galloping Strike,J. Lezcano,R. Mandella,3,2:02.84,8,22.68,115,6.7,85
+2024-01-07,Golden Gate Fields,7,6.5f,Turf,Yielding,Dancing Prince,T. Baze,R. Baltas,6,1:18.42,1,13.74,125,Won by 2.3,95
+2024-01-07,Golden Gate Fields,7,6.5f,Turf,Yielding,Bold King,J. Rosario,R. Mandella,1,1:17.91,2,7.24,123,1.6,97
+2024-01-07,Golden Gate Fields,7,6.5f,Turf,Yielding,Desert Blaze,K. Desormeaux,P. Eurton,3,1:18.53,3,5.48,126,1.3,94
+2024-01-07,Golden Gate Fields,7,6.5f,Turf,Yielding,Star Prince,A. Gryder,P. Miller,2,1:18.66,4,8.52,115,3.6,94
+2024-01-07,Golden Gate Fields,7,6.5f,Turf,Yielding,Noble Storm,J. Castellano,B. Baffert,5,1:18.03,5,13.92,117,2.2,97
+2024-01-07,Golden Gate Fields,7,6.5f,Turf,Yielding,Storm Jet,R. Gonzalez,B. Baffert,8,1:18.71,6,13.28,123,0.9,93
+2024-01-07,Golden Gate Fields,7,6.5f,Turf,Yielding,Desert Warrior,M. Smith,R. Baltas,4,1:18.08,7,9.52,121,3.3,97
+2024-01-07,Golden Gate Fields,7,6.5f,Turf,Yielding,Blazing King,A. Cedillo,J. Sadler,7,1:19.34,8,21.23,115,12.3,90
+2024-01-07,Aqueduct,8,1m,Dirt,Firm,Desert Arrow,J. Lezcano,B. Baffert,1,1:35.17,1,6.31,117,Won by 1.2,104
+2024-01-07,Aqueduct,8,1m,Dirt,Firm,Noble Fire,E. Maldonado,G. Weaver,3,1:35.56,2,6.15,123,1.3,102
+2024-01-07,Aqueduct,8,1m,Dirt,Firm,Bold King,I. Ortiz,J. Shirreffs,2,1:35.38,3,4.65,122,3.3,103
+2024-01-07,Aqueduct,8,1m,Dirt,Firm,Fire Streak,J. Velazquez,R. Baltas,4,1:36.57,4,8.19,121,2.4,97
+2024-01-07,Aqueduct,8,1m,Dirt,Firm,Brave Arrow,I. Ortiz,L. Jones,7,1:36.33,5,7.26,116,5.3,98
+2024-01-07,Aqueduct,8,1m,Dirt,Firm,Blazing Flash,M. Franco,B. Baffert,6,1:36.23,6,11.66,117,3.5,98
+2024-01-07,Aqueduct,8,1m,Dirt,Firm,Swift Queen,F. Prat,B. Baffert,8,1:37.59,7,6.24,117,6.3,92
+2024-01-07,Aqueduct,8,1m,Dirt,Firm,Wild Flash,J. Rosario,K. McPeek,5,1:36.98,8,14.3,120,12.2,95
+2024-01-07,Del Mar,9,1.25m,Turf,Good,Wild Jet,R. Gonzalez,A. Dutrow,3,2:01.99,1,8.82,126,Won by 1.8,95
+2024-01-07,Del Mar,9,1.25m,Turf,Good,Strong Rocket,D. Van Dyke,C. Brown,2,2:01.99,2,14.43,116,1.7,95
+2024-01-07,Del Mar,9,1.25m,Turf,Good,Mountain Thunder,L. Saez,S. Asmussen,1,2:02.48,3,5.89,121,0.5,92
+2024-01-07,Del Mar,9,1.25m,Turf,Good,Swift Runner,I. Ortiz,B. Baffert,6,2:02.97,4,4.13,122,0.5,90
+2024-01-07,Del Mar,9,1.25m,Turf,Good,Fire Prince,C. Lopez,P. Eurton,5,2:03.16,5,22.4,124,4.9,89
+2024-01-07,Del Mar,9,1.25m,Turf,Good,Swift Knight,E. Maldonado,A. Dutrow,8,2:03.69,6,11.45,116,1.6,86
+2024-01-07,Del Mar,9,1.25m,Turf,Good,Galloping Streak,I. Ortiz,T. Pletcher,7,2:03.01,7,6.48,125,2.6,89
+2024-01-07,Del Mar,9,1.25m,Turf,Good,Noble Streak,E. Maldonado,M. Maker,4,2:03.86,8,12.9,124,8.0,85
+2024-01-07,Oaklawn Park,10,1.125m,Turf,Fast,Thunder Knight,D. Van Dyke,M. Maker,5,1:49.04,1,4.3,125,Won by 0.9,99
+2024-01-07,Oaklawn Park,10,1.125m,Turf,Fast,Quick Rush,I. Ortiz,T. Pletcher,2,1:48.62,2,2.16,122,0.5,101
+2024-01-07,Oaklawn Park,10,1.125m,Turf,Fast,Storm Bolt,M. Garcia,J. Shirreffs,4,1:47.92,3,8.88,125,4.0,105
+2024-01-07,Oaklawn Park,10,1.125m,Turf,Fast,Golden Streak,T. Baze,J. Hollendorfer,8,1:49.60,4,4.75,123,2.8,97
+2024-01-07,Oaklawn Park,10,1.125m,Turf,Fast,Bold Peak,J. Lezcano,A. Dutrow,7,1:49.82,5,21.18,118,3.3,95
+2024-01-07,Oaklawn Park,10,1.125m,Turf,Fast,Midnight Chaser,A. Cedillo,G. Weaver,1,1:50.04,6,7.65,124,7.1,94
+2024-01-07,Oaklawn Park,10,1.125m,Turf,Fast,Golden Storm,J. Velazquez,G. Weaver,3,1:50.04,7,6.42,125,1.0,94
+2024-01-07,Oaklawn Park,10,1.125m,Turf,Fast,Proud Knight,M. Franco,G. Weaver,6,1:50.87,8,25.77,116,6.3,90
+2024-01-08,Gulfstream Park,1,1.125m,Dirt,Good,Running Blaze,M. Franco,R. Baltas,8,1:49.68,1,8.82,125,Won by 0.8,91
+2024-01-08,Gulfstream Park,1,1.125m,Dirt,Good,Strong Rocket,A. Cedillo,R. Baltas,2,1:48.43,2,5.92,121,0.3,97
+2024-01-08,Gulfstream Park,1,1.125m,Dirt,Good,Storm Jet,K. Desormeaux,T. Pletcher,4,1:48.48,3,13.49,120,2.9,97
+2024-01-08,Gulfstream Park,1,1.125m,Dirt,Good,Swift Bullet,J. Rosario,A. Dutrow,3,1:48.17,4,7.89,126,2.9,99
+2024-01-08,Gulfstream Park,1,1.125m,Dirt,Good,Proud Breeze,E. Maldonado,K. McPeek,5,1:49.31,5,11.9,116,4.8,93
+2024-01-08,Gulfstream Park,1,1.125m,Dirt,Good,Fast Streak,K. Desormeaux,P. Eurton,6,1:50.33,6,7.43,122,5.3,88
+2024-01-08,Gulfstream Park,1,1.125m,Dirt,Good,Proud Express,K. Desormeaux,H. Bond,1,1:49.61,7,10.54,118,7.3,91
+2024-01-08,Gulfstream Park,1,1.125m,Dirt,Good,Lightning Demon,J. Lezcano,L. Jones,7,1:48.85,8,17.0,116,11.7,95
+2024-01-08,Saratoga,2,5.0f,Turf,Yielding,Running Fire,M. Garcia,J. Shirreffs,1,0:54.20,1,11.36,125,Won by 2.4,120
+2024-01-08,Saratoga,2,5.0f,Turf,Yielding,Fire Jet,T. Baze,P. Miller,7,0:55.38,2,8.9,122,1.8,118
+2024-01-08,Saratoga,2,5.0f,Turf,Yielding,Fast Spirit,D. Davis,T. Pletcher,6,0:55.68,3,14.63,116,0.7,116
+2024-01-08,Saratoga,2,5.0f,Turf,Yielding,Desert Demon,C. Lopez,D. O'Neill,5,0:56.06,4,13.33,117,2.4,114
+2024-01-08,Saratoga,2,5.0f,Turf,Yielding,Galloping Chaser,R. Gonzalez,A. Dutrow,3,0:55.97,5,11.08,123,4.6,115
+2024-01-08,Saratoga,2,5.0f,Turf,Yielding,Flying Fury,J. Castellano,H. Bond,8,0:56.41,6,21.37,117,6.6,112
+2024-01-08,Saratoga,2,5.0f,Turf,Yielding,Galloping Champion,R. Santana,J. Shirreffs,2,0:56.06,7,7.7,115,2.2,114
+2024-01-08,Saratoga,2,5.0f,Turf,Yielding,Golden Wind,C. Lopez,P. Miller,4,0:56.15,8,10.25,122,2.1,114
+2024-01-08,Keeneland,3,6.5f,Turf,Yielding,Proud Blaze,J. Rosario,M. Casse,5,1:19.39,1,4.39,120,Won by 2.1,90
+2024-01-08,Keeneland,3,6.5f,Turf,Yielding,Star Strike,R. Santana,D. O'Neill,4,1:19.18,2,6.23,122,0.7,91
+2024-01-08,Keeneland,3,6.5f,Turf,Yielding,Quick Thunder,E. Maldonado,B. Baffert,1,1:20.11,3,7.68,120,1.4,86
+2024-01-08,Keeneland,3,6.5f,Turf,Yielding,Lightning Bolt,R. Gonzalez,T. Pletcher,2,1:20.02,4,7.27,120,1.3,87
+2024-01-08,Keeneland,3,6.5f,Turf,Yielding,Lightning Strike,A. Gryder,M. Maker,3,1:20.35,5,12.91,119,2.2,85
+2024-01-08,Keeneland,3,6.5f,Turf,Yielding,Fast Rush,A. Gryder,P. Eurton,8,1:20.54,6,12.33,124,3.6,84
+2024-01-08,Keeneland,3,6.5f,Turf,Yielding,Jumping Bolt,D. Van Dyke,J. Sadler,7,1:21.63,7,8.26,125,8.0,79
+2024-01-08,Keeneland,3,6.5f,Turf,Yielding,Galloping Warrior,C. Lopez,G. Weaver,6,1:20.33,8,20.71,117,12.7,85
+2024-01-08,Oaklawn Park,4,1m,Dirt,Firm,Proud King,J. Rosario,R. Baltas,1,1:37.92,1,5.15,122,Won by 1.3,90
+2024-01-08,Oaklawn Park,4,1m,Dirt,Firm,Fire Bolt,M. Franco,J. Hollendorfer,5,1:38.03,2,13.66,124,0.4,89
+2024-01-08,Oaklawn Park,4,1m,Dirt,Firm,Galloping Warrior,J. Castellano,R. Baltas,8,1:39.11,3,10.23,117,2.1,84
+2024-01-08,Oaklawn Park,4,1m,Dirt,Firm,Bold King,L. Saez,W. Mott,3,1:38.34,4,8.29,122,5.8,88
+2024-01-08,Oaklawn Park,4,1m,Dirt,Firm,Silver Demon,I. Ortiz,P. Miller,2,1:38.87,5,3.48,124,3.5,85
+2024-01-08,Oaklawn Park,4,1m,Dirt,Firm,Wild Wind,D. Van Dyke,G. Weaver,7,1:39.64,6,8.64,116,5.6,81
+2024-01-08,Oaklawn Park,4,1m,Dirt,Firm,Royal Storm,A. Cedillo,J. Sadler,4,1:39.84,7,9.16,124,9.2,80
+2024-01-08,Oaklawn Park,4,1m,Dirt,Firm,Dancing Spirit,F. Prat,D. O'Neill,6,1:40.48,8,7.23,125,11.3,77
+2024-01-08,Del Mar,5,5.0f,Turf,Muddy,Rapid Storm,L. Saez,K. McPeek,3,1:02.09,1,7.48,122,Won by 2.1,84
+2024-01-08,Del Mar,5,5.0f,Turf,Muddy,Jumping Jet,A. Cedillo,L. Jones,5,1:01.85,2,12.61,116,0.9,85
+2024-01-08,Del Mar,5,5.0f,Turf,Muddy,Bold Strike,E. Maldonado,P. Eurton,2,1:02.16,3,6.32,122,3.6,84
+2024-01-08,Del Mar,5,5.0f,Turf,Muddy,Thunder Knight,J. Castellano,J. Sadler,8,1:02.29,4,4.77,123,4.5,83
+2024-01-08,Del Mar,5,5.0f,Turf,Muddy,Galloping Streak,D. Davis,J. Shirreffs,6,1:02.60,5,15.01,117,7.9,82
+2024-01-08,Del Mar,5,5.0f,Turf,Muddy,Wild Demon,R. Gonzalez,W. Mott,7,1:02.79,6,10.84,124,3.1,81
+2024-01-08,Del Mar,5,5.0f,Turf,Muddy,Lightning Breeze,A. Gryder,J. Shirreffs,4,1:02.10,7,12.34,120,5.8,84
+2024-01-08,Del Mar,5,5.0f,Turf,Muddy,Valley Chaser,C. Lopez,S. Asmussen,1,1:03.51,8,29.65,126,7.5,77
+2024-01-08,Aqueduct,6,5.5f,Turf,Yielding,Quick Express,J. Castellano,A. Dutrow,2,1:03.39,1,6.81,120,Won by 2.0,108
+2024-01-08,Aqueduct,6,5.5f,Turf,Yielding,Dancing Prince,I. Ortiz,J. Sadler,8,1:03.82,2,6.94,120,0.8,105
+2024-01-08,Aqueduct,6,5.5f,Turf,Yielding,Golden Queen,I. Ortiz,A. Dutrow,7,1:03.40,3,7.78,123,0.7,107
+2024-01-08,Aqueduct,6,5.5f,Turf,Yielding,Brave Comet,J. Castellano,P. Eurton,3,1:04.16,4,4.93,124,0.5,104
+2024-01-08,Aqueduct,6,5.5f,Turf,Yielding,Royal Prince,M. Franco,D. O'Neill,6,1:03.28,5,13.77,116,2.8,108
+2024-01-08,Aqueduct,6,5.5f,Turf,Yielding,Thunder Jet,J. Lezcano,B. Baffert,5,1:04.45,6,12.28,118,3.3,102
+2024-01-08,Aqueduct,6,5.5f,Turf,Yielding,Golden Streak,A. Cedillo,W. Mott,4,1:04.62,7,6.79,124,7.8,101
+2024-01-08,Aqueduct,6,5.5f,Turf,Yielding,Desert Flash,J. Lezcano,J. Hollendorfer,1,1:04.82,8,18.6,123,11.2,100
+2024-01-08,Keeneland,7,7.0f,Turf,Fast,Brave King,M. Smith,J. Hollendorfer,4,1:22.94,1,11.22,123,Won by 2.2,105
+2024-01-08,Keeneland,7,7.0f,Turf,Fast,Fire Jet,M. Franco,J. Hollendorfer,8,1:22.18,2,14.78,121,1.4,109
+2024-01-08,Keeneland,7,7.0f,Turf,Fast,Bold Streak,F. Prat,A. Dutrow,2,1:22.83,3,12.46,123,2.4,105
+2024-01-08,Keeneland,7,7.0f,Turf,Fast,Speed Warrior,R. Santana,H. Bond,6,1:23.13,4,9.53,124,3.8,104
+2024-01-08,Keeneland,7,7.0f,Turf,Fast,Galloping Chaser,D. Davis,M. Maker,5,1:22.76,5,6.28,122,5.4,106
+2024-01-08,Keeneland,7,7.0f,Turf,Fast,Running Fire,D. Van Dyke,A. Dutrow,7,1:23.79,6,6.21,125,9.1,101
+2024-01-08,Keeneland,7,7.0f,Turf,Fast,Flying Fury,E. Maldonado,M. Casse,3,1:24.05,7,14.84,126,5.2,99
+2024-01-08,Keeneland,7,7.0f,Turf,Fast,Fast Fire,J. Castellano,S. Asmussen,1,1:23.96,8,13.29,124,9.7,100
+2024-01-08,Santa Anita,8,5.5f,Turf,Yielding,Fast Spirit,J. Castellano,P. Eurton,2,1:05.12,1,7.53,121,Won by 1.9,99
+2024-01-08,Santa Anita,8,5.5f,Turf,Yielding,Dancing Prince,L. Saez,D. O'Neill,5,1:05.26,2,3.82,115,0.7,98
+2024-01-08,Santa Anita,8,5.5f,Turf,Yielding,Fast Rocket,T. Baze,J. Shirreffs,8,1:05.77,3,8.89,124,2.6,96
+2024-01-08,Santa Anita,8,5.5f,Turf,Yielding,Quick Peak,D. Van Dyke,M. Maker,6,1:05.59,4,8.89,126,4.9,97
+2024-01-08,Santa Anita,8,5.5f,Turf,Yielding,Bold Peak,A. Gryder,J. Hollendorfer,1,1:06.36,5,23.89,123,3.2,93
+2024-01-08,Santa Anita,8,5.5f,Turf,Yielding,Speed Streak,D. Davis,R. Baltas,3,1:05.00,6,6.69,123,3.9,99
+2024-01-08,Santa Anita,8,5.5f,Turf,Yielding,Thunder Dash,J. Velazquez,W. Mott,7,1:06.84,7,11.03,126,11.1,90
+2024-01-08,Santa Anita,8,5.5f,Turf,Yielding,Fire Knight,J. Castellano,L. Jones,4,1:06.42,8,12.14,120,1.1,92
+2024-01-08,Belmont Park,9,1.25m,Dirt,Sloppy,Midnight Chaser,I. Ortiz,D. O'Neill,7,2:02.27,1,10.63,122,Won by 2.5,88
+2024-01-08,Belmont Park,9,1.25m,Dirt,Sloppy,Valley Jet,I. Ortiz,J. Hollendorfer,4,2:03.17,2,7.69,119,1.5,84
+2024-01-08,Belmont Park,9,1.25m,Dirt,Sloppy,Swift Bullet,R. Gonzalez,L. Jones,3,2:02.69,3,18.99,117,3.6,86
+2024-01-08,Belmont Park,9,1.25m,Dirt,Sloppy,Golden Queen,R. Santana,L. Jones,5,2:03.19,4,6.91,120,4.2,84
+2024-01-08,Belmont Park,9,1.25m,Dirt,Sloppy,Lightning Breeze,M. Franco,D. O'Neill,1,2:03.55,5,13.19,117,3.9,82
+2024-01-08,Belmont Park,9,1.25m,Dirt,Sloppy,Blazing Streak,D. Davis,M. Casse,2,2:04.54,6,27.19,126,5.1,77
+2024-01-08,Belmont Park,9,1.25m,Dirt,Sloppy,Royal Comet,J. Castellano,H. Bond,6,2:03.71,7,14.74,118,8.2,81
+2024-01-08,Belmont Park,9,1.25m,Dirt,Sloppy,Ocean Flash,J. Lezcano,M. Casse,8,2:03.63,8,16.52,119,10.4,81
+2024-01-08,Keeneland,10,1.25m,Turf,Firm,Storm Storm,T. Baze,R. Mandella,3,2:00.64,1,6.83,123,Won by 0.8,101
+2024-01-08,Keeneland,10,1.25m,Turf,Firm,Speed Jet,A. Cedillo,G. Weaver,8,1:58.95,2,12.73,118,0.4,110
+2024-01-08,Keeneland,10,1.25m,Turf,Firm,Dancing Streak,M. Garcia,J. Sadler,1,2:00.30,3,10.23,126,1.2,103
+2024-01-08,Keeneland,10,1.25m,Turf,Firm,Bold Breeze,J. Rosario,H. Bond,7,2:00.56,4,9.79,126,3.2,102
+2024-01-08,Keeneland,10,1.25m,Turf,Firm,Wild Flash,J. Rosario,P. Miller,4,2:00.81,5,11.5,119,5.3,100
+2024-01-08,Keeneland,10,1.25m,Turf,Firm,Swift Queen,J. Lezcano,D. O'Neill,2,2:00.86,6,12.35,117,6.7,100
+2024-01-08,Keeneland,10,1.25m,Turf,Firm,Running Fire,R. Santana,A. Dutrow,6,2:00.40,7,11.57,126,1.7,103
+2024-01-08,Keeneland,10,1.25m,Turf,Firm,Lightning Storm,J. Lezcano,T. Pletcher,5,2:01.44,8,14.07,121,0.8,97
+2024-01-09,Del Mar,1,1m,Turf,Yielding,Bold Peak,R. Santana,T. Pletcher,6,1:36.07,1,9.37,119,Won by 2.9,104
+2024-01-09,Del Mar,1,1m,Turf,Yielding,Swift Knight,R. Santana,H. Bond,8,1:36.78,2,12.51,122,0.4,101
+2024-01-09,Del Mar,1,1m,Turf,Yielding,Speed Jet,J. Rosario,S. Asmussen,5,1:36.93,3,8.38,124,1.7,100
+2024-01-09,Del Mar,1,1m,Turf,Yielding,Golden Flash,J. Lezcano,J. Shirreffs,4,1:37.05,4,9.96,125,2.6,99
+2024-01-09,Del Mar,1,1m,Turf,Yielding,Galloping Warrior,R. Gonzalez,R. Baltas,7,1:37.61,5,14.58,125,6.8,96
+2024-01-09,Del Mar,1,1m,Turf,Yielding,Jumping Bolt,R. Gonzalez,D. O'Neill,1,1:37.00,6,16.85,122,7.4,99
+2024-01-09,Del Mar,1,1m,Turf,Yielding,Star Dash,C. Lopez,M. Maker,2,1:37.75,7,3.7,123,10.1,96
+2024-01-09,Del Mar,1,1m,Turf,Yielding,Proud Knight,A. Cedillo,P. Miller,3,1:37.77,8,11.85,121,6.2,96
+2024-01-09,Gulfstream Park,2,6.5f,Dirt,Fast,Wild Wind,J. Castellano,T. Pletcher,3,1:14.41,1,13.53,123,Won by 0.9,110
+2024-01-09,Gulfstream Park,2,6.5f,Dirt,Fast,Flying Wind,D. Davis,H. Bond,7,1:16.47,2,10.59,115,1.5,100
+2024-01-09,Gulfstream Park,2,6.5f,Dirt,Fast,Noble Storm,D. Davis,M. Casse,4,1:15.97,3,14.82,119,2.0,102
+2024-01-09,Gulfstream Park,2,6.5f,Dirt,Fast,Fast Streak,D. Van Dyke,R. Mandella,8,1:15.81,4,7.6,116,5.7,103
+2024-01-09,Gulfstream Park,2,6.5f,Dirt,Fast,Fast Spirit,D. Davis,M. Casse,6,1:17.23,5,10.14,121,4.3,96
+2024-01-09,Gulfstream Park,2,6.5f,Dirt,Fast,Dancing Breeze,A. Cedillo,J. Hollendorfer,5,1:16.41,6,26.95,120,2.8,100
+2024-01-09,Gulfstream Park,2,6.5f,Dirt,Fast,Desert Arrow,R. Gonzalez,A. Dutrow,2,1:17.36,7,9.26,116,3.1,95
+2024-01-09,Gulfstream Park,2,6.5f,Dirt,Fast,Galloping Streak,A. Gryder,J. Hollendorfer,1,1:17.46,8,14.66,117,0.7,95
+2024-01-09,Oaklawn Park,3,7.0f,Dirt,Good,Fast Rocket,R. Santana,M. Maker,6,1:19.71,1,6.36,126,Won by 2.5,116
+2024-01-09,Oaklawn Park,3,7.0f,Dirt,Good,Star Strike,R. Gonzalez,R. Mandella,2,1:19.35,2,11.49,116,1.7,118
+2024-01-09,Oaklawn Park,3,7.0f,Dirt,Good,Dancing Spirit,K. Desormeaux,R. Baltas,8,1:19.65,3,4.62,119,1.2,116
+2024-01-09,Oaklawn Park,3,7.0f,Dirt,Good,Blazing Rush,C. Lopez,D. O'Neill,4,1:20.43,4,5.31,121,3.2,112
+2024-01-09,Oaklawn Park,3,7.0f,Dirt,Good,Speed Comet,J. Lezcano,H. Bond,1,1:20.13,5,11.04,123,2.6,114
+2024-01-09,Oaklawn Park,3,7.0f,Dirt,Good,Star Dash,D. Davis,J. Shirreffs,5,1:20.06,6,19.96,124,7.1,114
+2024-01-09,Oaklawn Park,3,7.0f,Dirt,Good,Wild Flash,J. Rosario,J. Hollendorfer,7,1:21.14,7,8.64,126,3.5,109
+2024-01-09,Oaklawn Park,3,7.0f,Dirt,Good,Valley Chaser,E. Maldonado,T. Pletcher,3,1:20.64,8,8.3,120,6.9,111
+2024-01-09,Del Mar,4,1.25m,Turf,Yielding,Silver Demon,A. Cedillo,M. Maker,8,2:00.98,1,18.04,117,Won by 2.2,100
+2024-01-09,Del Mar,4,1.25m,Turf,Yielding,Galloping Peak,I. Ortiz,J. Sadler,7,2:01.63,2,6.01,118,1.2,96
+2024-01-09,Del Mar,4,1.25m,Turf,Yielding,Lightning Breeze,J. Rosario,G. Weaver,3,2:02.40,3,25.43,118,0.6,93
+2024-01-09,Del Mar,4,1.25m,Turf,Yielding,Galloping Express,C. Lopez,A. Dutrow,6,2:01.75,4,29.82,120,4.2,96
+2024-01-09,Del Mar,4,1.25m,Turf,Yielding,Brave Fury,K. Desormeaux,M. Maker,1,2:01.73,5,10.07,120,3.1,96
+2024-01-09,Del Mar,4,1.25m,Turf,Yielding,Speed Jet,L. Saez,T. Pletcher,4,2:02.77,6,10.12,125,3.7,91
+2024-01-09,Del Mar,4,1.25m,Turf,Yielding,Golden Storm,D. Van Dyke,M. Maker,5,2:02.04,7,14.57,125,3.4,94
+2024-01-09,Del Mar,4,1.25m,Turf,Yielding,Dancing Prince,C. Lopez,T. Pletcher,2,2:02.76,8,13.92,123,4.1,91
+2024-01-09,Keeneland,5,6.5f,Turf,Good,Golden Queen,J. Velazquez,W. Mott,6,1:19.19,1,13.23,118,Won by 1.9,91
+2024-01-09,Keeneland,5,6.5f,Turf,Good,Dancing Prince,D. Van Dyke,W. Mott,5,1:19.36,2,10.24,115,1.6,90
+2024-01-09,Keeneland,5,6.5f,Turf,Good,Fire Bullet,A. Gryder,M. Maker,3,1:20.06,3,14.19,125,0.7,87
+2024-01-09,Keeneland,5,6.5f,Turf,Good,Brave Bolt,T. Baze,J. Sadler,8,1:19.50,4,12.47,118,4.3,89
+2024-01-09,Keeneland,5,6.5f,Turf,Good,Midnight Chaser,D. Van Dyke,M. Maker,4,1:21.00,5,10.96,124,1.8,82
+2024-01-09,Keeneland,5,6.5f,Turf,Good,Desert Rocket,L. Saez,G. Weaver,2,1:20.70,6,8.52,116,1.2,84
+2024-01-09,Keeneland,5,6.5f,Turf,Good,Lightning Bolt,R. Gonzalez,B. Baffert,1,1:21.35,7,11.01,122,6.0,80
+2024-01-09,Keeneland,5,6.5f,Turf,Good,Fast Streak,J. Rosario,D. O'Neill,7,1:21.25,8,10.23,116,12.5,81
+2024-01-09,Belmont Park,6,6.0f,Dirt,Sloppy,Brave Flash,I. Ortiz,M. Casse,3,1:06.11,1,3.82,118,Won by 1.7,119
+2024-01-09,Belmont Park,6,6.0f,Dirt,Sloppy,Dancing Streak,M. Smith,K. McPeek,5,1:06.69,2,6.88,124,1.1,116
+2024-01-09,Belmont Park,6,6.0f,Dirt,Sloppy,Galloping Strike,D. Davis,T. Pletcher,7,1:06.73,3,3.98,126,1.1,116
+2024-01-09,Belmont Park,6,6.0f,Dirt,Sloppy,Wild Fire,I. Ortiz,J. Hollendorfer,6,1:07.22,4,14.1,124,3.2,113
+2024-01-09,Belmont Park,6,6.0f,Dirt,Sloppy,Proud Express,T. Baze,R. Mandella,2,1:07.90,5,9.92,115,4.8,110
+2024-01-09,Belmont Park,6,6.0f,Dirt,Sloppy,Proud Breeze,M. Franco,G. Weaver,4,1:06.54,6,14.45,123,9.6,117
+2024-01-09,Belmont Park,6,6.0f,Dirt,Sloppy,Fast Fire,M. Franco,D. O'Neill,8,1:06.85,7,9.56,121,1.4,115
+2024-01-09,Belmont Park,6,6.0f,Dirt,Sloppy,Thunder Gazer,R. Santana,W. Mott,1,1:08.01,8,10.04,118,13.8,109
+2024-01-09,Oaklawn Park,7,7.0f,Dirt,Good,Jumping Express,F. Prat,H. Bond,2,1:27.36,1,11.03,116,Won by 2.1,78
+2024-01-09,Oaklawn Park,7,7.0f,Dirt,Good,Noble Breeze,R. Gonzalez,W. Mott,6,1:27.88,2,14.81,115,1.5,75
+2024-01-09,Oaklawn Park,7,7.0f,Dirt,Good,Bold King,E. Maldonado,B. Baffert,3,1:26.98,3,8.11,116,2.7,80
+2024-01-09,Oaklawn Park,7,7.0f,Dirt,Good,Swift Gazer,D. Davis,A. Dutrow,7,1:26.94,4,17.21,126,2.1,80
+2024-01-09,Oaklawn Park,7,7.0f,Dirt,Good,Golden Flash,D. Van Dyke,W. Mott,8,1:27.33,5,9.92,124,5.1,78
+2024-01-09,Oaklawn Park,7,7.0f,Dirt,Good,Rapid Rush,R. Santana,J. Shirreffs,4,1:28.17,6,8.3,125,4.7,74
+2024-01-09,Oaklawn Park,7,7.0f,Dirt,Good,Thunder Dash,D. Davis,K. McPeek,5,1:28.18,7,10.77,117,9.5,74
+2024-01-09,Oaklawn Park,7,7.0f,Dirt,Good,Fast Rocket,M. Franco,R. Mandella,1,1:29.11,8,19.31,125,2.4,69
+2024-01-09,Del Mar,8,5.0f,Dirt,Yielding,Royal Prince,R. Santana,P. Eurton,6,0:58.62,1,9.05,115,Won by 2.0,96
+2024-01-09,Del Mar,8,5.0f,Dirt,Yielding,Storm Storm,F. Prat,H. Bond,1,0:59.31,2,4.8,120,1.5,93
+2024-01-09,Del Mar,8,5.0f,Dirt,Yielding,Lightning Strike,A. Cedillo,W. Mott,8,0:59.76,3,3.37,120,3.1,91
+2024-01-09,Del Mar,8,5.0f,Dirt,Yielding,Noble Streak,L. Saez,H. Bond,3,1:00.13,4,11.85,126,5.4,89
+2024-01-09,Del Mar,8,5.0f,Dirt,Yielding,Golden Express,C. Lopez,J. Shirreffs,2,1:00.25,5,7.05,121,1.2,88
+2024-01-09,Del Mar,8,5.0f,Dirt,Yielding,Speed Streak,J. Lezcano,C. Brown,7,0:59.93,6,9.31,123,3.5,90
+2024-01-09,Del Mar,8,5.0f,Dirt,Yielding,Lightning Storm,R. Santana,A. Dutrow,5,1:00.42,7,16.52,115,11.8,87
+2024-01-09,Del Mar,8,5.0f,Dirt,Yielding,Running Blaze,A. Cedillo,W. Mott,4,1:00.17,8,18.96,116,7.7,89
+2024-01-09,Belmont Park,9,6.0f,Dirt,Good,Quick Thunder,K. Desormeaux,J. Shirreffs,1,1:11.53,1,12.92,122,Won by 1.8,92
+2024-01-09,Belmont Park,9,6.0f,Dirt,Good,Fast Rocket,R. Gonzalez,R. Mandella,4,1:10.79,2,6.25,115,0.8,96
+2024-01-09,Belmont Park,9,6.0f,Dirt,Good,Fire Bullet,K. Desormeaux,K. McPeek,7,1:11.31,3,14.14,125,3.2,93
+2024-01-09,Belmont Park,9,6.0f,Dirt,Good,Rapid Demon,I. Ortiz,R. Mandella,6,1:10.76,4,14.75,125,5.9,96
+2024-01-09,Belmont Park,9,6.0f,Dirt,Good,Storm Storm,A. Gryder,R. Mandella,5,1:10.82,5,14.68,126,7.7,95
+2024-01-09,Belmont Park,9,6.0f,Dirt,Good,Dancing Bolt,A. Cedillo,J. Sadler,2,1:12.19,6,11.99,125,2.6,89
+2024-01-09,Belmont Park,9,6.0f,Dirt,Good,Dancing Streak,D. Davis,P. Miller,8,1:12.81,7,9.34,115,5.9,85
+2024-01-09,Belmont Park,9,6.0f,Dirt,Good,Quick Express,D. Van Dyke,J. Hollendorfer,3,1:11.99,8,13.94,120,1.9,90
+2024-01-09,Keeneland,10,7.0f,Dirt,Yielding,Thunder Knight,C. Lopez,G. Weaver,4,1:23.14,1,8.4,126,Won by 1.1,99
+2024-01-09,Keeneland,10,7.0f,Dirt,Yielding,Swift Peak,C. Lopez,J. Sadler,8,1:24.68,2,10.09,119,0.6,91
+2024-01-09,Keeneland,10,7.0f,Dirt,Yielding,Galloping Demon,T. Baze,D. O'Neill,1,1:22.69,3,9.18,120,0.9,101
+2024-01-09,Keeneland,10,7.0f,Dirt,Yielding,Fire Bullet,R. Santana,J. Hollendorfer,2,1:24.15,4,7.17,121,4.1,94
+2024-01-09,Keeneland,10,7.0f,Dirt,Yielding,Blazing Runner,J. Rosario,J. Hollendorfer,6,1:23.01,5,13.98,121,7.4,99
+2024-01-09,Keeneland,10,7.0f,Dirt,Yielding,Swift Comet,J. Velazquez,A. Dutrow,3,1:24.76,6,5.01,121,3.4,91
+2024-01-09,Keeneland,10,7.0f,Dirt,Yielding,Dancing Prince,I. Ortiz,D. O'Neill,7,1:23.80,7,6.46,121,9.6,96
+2024-01-09,Keeneland,10,7.0f,Dirt,Yielding,Swift Rocket,A. Cedillo,G. Weaver,5,1:25.15,8,10.36,116,12.4,89
+2024-01-10,Churchill Downs,1,7.0f,Turf,Good,Proud Breeze,M. Franco,T. Pletcher,4,1:26.46,1,10.92,116,Won by 1.5,87
+2024-01-10,Churchill Downs,1,7.0f,Turf,Good,Blazing Express,D. Van Dyke,J. Hollendorfer,3,1:26.14,2,13.39,118,0.6,89
+2024-01-10,Churchill Downs,1,7.0f,Turf,Good,Star Breeze,M. Smith,J. Shirreffs,8,1:26.90,3,6.66,119,3.0,85
+2024-01-10,Churchill Downs,1,7.0f,Turf,Good,Dancing Bolt,M. Garcia,K. McPeek,2,1:26.19,4,9.81,120,0.3,89
+2024-01-10,Churchill Downs,1,7.0f,Turf,Good,Noble Breeze,L. Saez,L. Jones,6,1:27.37,5,10.0,121,6.3,83
+2024-01-10,Churchill Downs,1,7.0f,Turf,Good,Wild Warrior,M. Franco,M. Maker,5,1:27.41,6,16.05,118,1.8,82
+2024-01-10,Churchill Downs,1,7.0f,Turf,Good,Quick Storm,D. Davis,A. Dutrow,7,1:27.46,7,26.61,118,5.4,82
+2024-01-10,Churchill Downs,1,7.0f,Turf,Good,Fire Blaze,C. Lopez,L. Jones,1,1:26.81,8,10.93,125,11.4,85
+2024-01-10,Churchill Downs,2,6.5f,Dirt,Sloppy,Fast Spirit,M. Garcia,D. O'Neill,6,1:13.39,1,5.73,117,Won by 1.0,115
+2024-01-10,Churchill Downs,2,6.5f,Dirt,Sloppy,Running Blaze,M. Garcia,J. Hollendorfer,1,1:15.05,2,5.59,118,0.5,107
+2024-01-10,Churchill Downs,2,6.5f,Dirt,Sloppy,Storm Storm,J. Rosario,G. Weaver,2,1:14.97,3,5.93,115,1.1,107
+2024-01-10,Churchill Downs,2,6.5f,Dirt,Sloppy,Strong Rush,J. Lezcano,T. Pletcher,8,1:14.45,4,7.54,121,3.4,110
+2024-01-10,Churchill Downs,2,6.5f,Dirt,Sloppy,Blazing Rush,M. Smith,G. Weaver,4,1:15.75,5,3.25,115,1.2,103
+2024-01-10,Churchill Downs,2,6.5f,Dirt,Sloppy,Fire Runner,M. Franco,K. McPeek,7,1:14.57,6,10.0,116,5.8,109
+2024-01-10,Churchill Downs,2,6.5f,Dirt,Sloppy,Quick Peak,D. Van Dyke,W. Mott,3,1:15.76,7,15.25,126,7.7,103
+2024-01-10,Churchill Downs,2,6.5f,Dirt,Sloppy,Galloping Streak,D. Davis,B. Baffert,5,1:16.39,8,4.35,126,11.5,100
+2024-01-10,Golden Gate Fields,3,1.25m,Dirt,Firm,Galloping Strike,M. Smith,C. Brown,5,2:00.41,1,3.94,119,Won by 1.7,97
+2024-01-10,Golden Gate Fields,3,1.25m,Dirt,Firm,Proud Breeze,I. Ortiz,R. Mandella,6,2:00.31,2,19.45,115,1.7,98
+2024-01-10,Golden Gate Fields,3,1.25m,Dirt,Firm,Silver Runner,C. Lopez,L. Jones,3,1:59.83,3,14.22,118,0.7,100
+2024-01-10,Golden Gate Fields,3,1.25m,Dirt,Firm,Blazing King,A. Cedillo,C. Brown,7,2:00.26,4,13.08,122,1.8,98
+2024-01-10,Golden Gate Fields,3,1.25m,Dirt,Firm,Brave Flash,D. Davis,H. Bond,1,1:59.95,5,26.85,120,4.9,100
+2024-01-10,Golden Gate Fields,3,1.25m,Dirt,Firm,Flying Rocket,C. Lopez,P. Eurton,8,2:00.96,6,14.53,116,4.7,95
+2024-01-10,Golden Gate Fields,3,1.25m,Dirt,Firm,Proud Strike,J. Lezcano,G. Weaver,2,2:00.39,7,25.11,119,1.2,98
+2024-01-10,Golden Gate Fields,3,1.25m,Dirt,Firm,Lightning Jet,A. Gryder,J. Hollendorfer,4,2:00.58,8,8.25,121,1.3,97
+2024-01-10,Santa Anita,4,6.5f,Dirt,Firm,Lightning Storm,C. Lopez,G. Weaver,4,1:17.00,1,7.24,123,Won by 2.1,97
+2024-01-10,Santa Anita,4,6.5f,Dirt,Firm,Speed Jet,J. Rosario,L. Jones,2,1:17.15,2,6.4,115,0.8,96
+2024-01-10,Santa Anita,4,6.5f,Dirt,Firm,Storm King,A. Gryder,S. Asmussen,8,1:17.30,3,8.96,121,1.8,95
+2024-01-10,Santa Anita,4,6.5f,Dirt,Firm,Fast Storm,K. Desormeaux,D. O'Neill,6,1:17.50,4,11.22,126,4.9,94
+2024-01-10,Santa Anita,4,6.5f,Dirt,Firm,Quick Thunder,R. Gonzalez,S. Asmussen,1,1:18.28,5,21.18,125,7.8,91
+2024-01-10,Santa Anita,4,6.5f,Dirt,Firm,Noble Spirit,M. Smith,M. Maker,5,1:18.84,6,6.26,116,4.8,88
+2024-01-10,Santa Anita,4,6.5f,Dirt,Firm,Fast Fire,R. Gonzalez,S. Asmussen,3,1:17.89,7,12.36,122,2.6,93
+2024-01-10,Santa Anita,4,6.5f,Dirt,Firm,Bold Breeze,T. Baze,J. Shirreffs,7,1:18.69,8,5.33,119,1.1,89
+2024-01-10,Santa Anita,5,1.125m,Turf,Muddy,Flying Fury,T. Baze,D. O'Neill,2,1:47.33,1,2.54,118,Won by 1.5,108
+2024-01-10,Santa Anita,5,1.125m,Turf,Muddy,Desert Rocket,R. Santana,W. Mott,7,1:48.16,2,10.34,119,0.3,104
+2024-01-10,Santa Anita,5,1.125m,Turf,Muddy,Rapid Queen,D. Van Dyke,T. Pletcher,1,1:48.68,3,13.2,125,1.5,101
+2024-01-10,Santa Anita,5,1.125m,Turf,Muddy,Star Peak,K. Desormeaux,D. O'Neill,5,1:48.42,4,8.99,116,1.3,102
+2024-01-10,Santa Anita,5,1.125m,Turf,Muddy,Silver Dash,I. Ortiz,H. Bond,8,1:49.01,5,12.13,126,4.6,99
+2024-01-10,Santa Anita,5,1.125m,Turf,Muddy,Ocean Wind,J. Rosario,H. Bond,6,1:48.88,6,7.4,119,9.9,100
+2024-01-10,Santa Anita,5,1.125m,Turf,Muddy,Running Dash,M. Garcia,T. Pletcher,4,1:48.81,7,5.74,117,3.1,100
+2024-01-10,Santa Anita,5,1.125m,Turf,Muddy,Silver Demon,I. Ortiz,P. Eurton,3,1:49.80,8,10.08,125,8.3,95
+2024-01-10,Del Mar,6,1.25m,Turf,Muddy,Galloping Streak,F. Prat,M. Casse,4,1:59.35,1,10.1,125,Won by 1.3,108
+2024-01-10,Del Mar,6,1.25m,Turf,Muddy,Mountain Thunder,L. Saez,R. Baltas,3,1:59.11,2,5.04,116,0.4,109
+2024-01-10,Del Mar,6,1.25m,Turf,Muddy,Lightning Jet,R. Santana,L. Jones,8,2:00.68,3,13.8,121,2.1,101
+2024-01-10,Del Mar,6,1.25m,Turf,Muddy,Brave King,R. Santana,W. Mott,5,2:00.05,4,10.31,125,5.4,104
+2024-01-10,Del Mar,6,1.25m,Turf,Muddy,Desert Rocket,D. Van Dyke,J. Shirreffs,2,2:00.87,5,11.1,125,5.7,100
+2024-01-10,Del Mar,6,1.25m,Turf,Muddy,Star Runner,T. Baze,K. McPeek,6,2:00.44,6,18.23,115,4.9,102
+2024-01-10,Del Mar,6,1.25m,Turf,Muddy,Storm King,K. Desormeaux,J. Hollendorfer,1,2:01.18,7,7.43,120,9.9,99
+2024-01-10,Del Mar,6,1.25m,Turf,Muddy,Wild Jet,A. Gryder,M. Casse,7,2:00.81,8,24.71,116,8.4,100
+2024-01-10,Belmont Park,7,1m,Dirt,Yielding,Proud Rocket,J. Rosario,D. O'Neill,3,1:36.34,1,3.45,118,Won by 0.7,98
+2024-01-10,Belmont Park,7,1m,Dirt,Yielding,Desert Demon,E. Maldonado,M. Casse,8,1:36.94,2,7.95,116,1.0,95
+2024-01-10,Belmont Park,7,1m,Dirt,Yielding,Fire Blaze,J. Rosario,J. Hollendorfer,6,1:36.38,3,6.91,126,2.7,98
+2024-01-10,Belmont Park,7,1m,Dirt,Yielding,Bold Streak,D. Van Dyke,P. Eurton,1,1:37.13,4,5.61,116,4.8,94
+2024-01-10,Belmont Park,7,1m,Dirt,Yielding,Wild Warrior,T. Baze,M. Casse,2,1:37.04,5,5.69,118,2.2,94
+2024-01-10,Belmont Park,7,1m,Dirt,Yielding,Blazing Streak,T. Baze,P. Miller,7,1:37.23,6,6.6,122,9.4,93
+2024-01-10,Belmont Park,7,1m,Dirt,Yielding,Lightning Bolt,L. Saez,R. Baltas,4,1:38.00,7,14.2,124,7.8,90
+2024-01-10,Belmont Park,7,1m,Dirt,Yielding,Jumping Bolt,A. Gryder,K. McPeek,5,1:38.26,8,24.1,116,12.8,88
+2024-01-10,Santa Anita,8,1m,Dirt,Fast,Valley Jet,A. Gryder,M. Casse,7,1:33.43,1,4.84,120,Won by 1.9,112
+2024-01-10,Santa Anita,8,1m,Dirt,Fast,Midnight Prince,R. Santana,B. Baffert,5,1:33.51,2,3.8,115,0.8,112
+2024-01-10,Santa Anita,8,1m,Dirt,Fast,Golden Knight,R. Santana,A. Dutrow,8,1:33.33,3,10.01,116,3.2,113
+2024-01-10,Santa Anita,8,1m,Dirt,Fast,Proud Strike,J. Velazquez,M. Casse,2,1:33.48,4,5.35,123,5.6,112
+2024-01-10,Santa Anita,8,1m,Dirt,Fast,Galloping Champion,J. Castellano,R. Mandella,1,1:33.74,5,6.14,119,6.5,111
+2024-01-10,Santa Anita,8,1m,Dirt,Fast,Lightning Storm,C. Lopez,B. Baffert,3,1:34.19,6,10.97,123,2.9,109
+2024-01-10,Santa Anita,8,1m,Dirt,Fast,Fire Bullet,J. Velazquez,J. Shirreffs,6,1:34.61,7,6.29,126,1.2,106
+2024-01-10,Santa Anita,8,1m,Dirt,Fast,Wild Flash,M. Smith,J. Hollendorfer,4,1:33.81,8,4.34,125,3.4,110
+2024-01-10,Aqueduct,9,1.125m,Dirt,Yielding,Midnight Chaser,J. Rosario,B. Baffert,4,1:48.10,1,6.54,125,Won by 2.2,99
+2024-01-10,Aqueduct,9,1.125m,Dirt,Yielding,Brave Flash,T. Baze,C. Brown,6,1:47.65,2,3.05,117,0.6,101
+2024-01-10,Aqueduct,9,1.125m,Dirt,Yielding,Royal Rocket,R. Santana,L. Jones,5,1:47.85,3,6.76,122,0.7,100
+2024-01-10,Aqueduct,9,1.125m,Dirt,Yielding,Swift Rocket,I. Ortiz,W. Mott,8,1:48.66,4,14.22,124,1.5,96
+2024-01-10,Aqueduct,9,1.125m,Dirt,Yielding,Rapid Storm,K. Desormeaux,M. Maker,1,1:49.55,5,10.09,119,7.0,92
+2024-01-10,Aqueduct,9,1.125m,Dirt,Yielding,Rapid Rocket,R. Gonzalez,K. McPeek,2,1:49.50,6,12.55,121,8.0,92
+2024-01-10,Aqueduct,9,1.125m,Dirt,Yielding,Valley Chaser,D. Van Dyke,J. Shirreffs,3,1:48.62,7,12.51,116,4.9,96
+2024-01-10,Aqueduct,9,1.125m,Dirt,Yielding,Brave King,F. Prat,A. Dutrow,7,1:48.21,8,6.13,124,0.9,98
+2024-01-10,Churchill Downs,10,1.125m,Turf,Fast,Ocean Demon,I. Ortiz,H. Bond,1,1:50.54,1,6.56,120,Won by 1.0,92
+2024-01-10,Churchill Downs,10,1.125m,Turf,Fast,Proud Express,D. Davis,P. Eurton,3,1:50.35,2,11.25,121,0.4,93
+2024-01-10,Churchill Downs,10,1.125m,Turf,Fast,Thunder Knight,C. Lopez,S. Asmussen,7,1:50.56,3,12.98,123,1.6,92
+2024-01-10,Churchill Downs,10,1.125m,Turf,Fast,Dancing Streak,K. Desormeaux,C. Brown,4,1:50.39,4,3.37,119,4.6,93
+2024-01-10,Churchill Downs,10,1.125m,Turf,Fast,Rapid Storm,E. Maldonado,A. Dutrow,2,1:51.80,5,9.67,123,6.6,85
+2024-01-10,Churchill Downs,10,1.125m,Turf,Fast,Brave Comet,K. Desormeaux,R. Mandella,6,1:51.23,6,29.41,117,1.3,88
+2024-01-10,Churchill Downs,10,1.125m,Turf,Fast,Quick Express,D. Davis,J. Hollendorfer,5,1:51.57,7,26.59,125,0.6,87
+2024-01-10,Churchill Downs,10,1.125m,Turf,Fast,Dancing Bolt,C. Lopez,A. Dutrow,8,1:52.47,8,13.13,120,4.9,82
+2024-01-11,Saratoga,1,5.0f,Turf,Sloppy,Star Breeze,I. Ortiz,J. Shirreffs,1,1:01.65,1,6.53,124,Won by 1.6,86
+2024-01-11,Saratoga,1,5.0f,Turf,Sloppy,Strong Rush,C. Lopez,R. Baltas,5,1:02.43,2,10.2,116,1.3,82
+2024-01-11,Saratoga,1,5.0f,Turf,Sloppy,Galloping Streak,M. Garcia,R. Mandella,3,1:00.87,3,5.18,125,0.4,90
+2024-01-11,Saratoga,1,5.0f,Turf,Sloppy,Ocean Flash,C. Lopez,B. Baffert,2,1:01.74,4,9.34,124,3.9,86
+2024-01-11,Saratoga,1,5.0f,Turf,Sloppy,Noble Streak,J. Lezcano,S. Asmussen,6,1:01.35,5,8.92,121,3.5,88
+2024-01-11,Saratoga,1,5.0f,Turf,Sloppy,Fire Streak,A. Gryder,B. Baffert,7,1:01.65,6,26.49,125,4.3,86
+2024-01-11,Saratoga,1,5.0f,Turf,Sloppy,Royal Storm,M. Franco,W. Mott,8,1:02.61,7,24.01,121,6.0,81
+2024-01-11,Saratoga,1,5.0f,Turf,Sloppy,Star Prince,M. Garcia,D. O'Neill,4,1:02.34,8,13.37,118,8.7,83
+2024-01-11,Santa Anita,2,5.5f,Turf,Muddy,Noble Streak,A. Cedillo,R. Mandella,4,1:04.65,1,7.48,117,Won by 2.8,101
+2024-01-11,Santa Anita,2,5.5f,Turf,Muddy,Swift Bolt,T. Baze,M. Casse,7,1:04.71,2,4.36,117,0.5,101
+2024-01-11,Santa Anita,2,5.5f,Turf,Muddy,Golden Express,T. Baze,T. Pletcher,5,1:04.59,3,11.72,118,0.3,102
+2024-01-11,Santa Anita,2,5.5f,Turf,Muddy,Fast Fire,A. Gryder,B. Baffert,8,1:05.35,4,6.02,121,1.8,98
+2024-01-11,Santa Anita,2,5.5f,Turf,Muddy,Bold Peak,E. Maldonado,J. Sadler,1,1:05.77,5,14.49,126,0.9,96
+2024-01-11,Santa Anita,2,5.5f,Turf,Muddy,Wild Flash,D. Davis,M. Maker,6,1:05.97,6,17.65,119,4.0,95
+2024-01-11,Santa Anita,2,5.5f,Turf,Muddy,Star Runner,M. Franco,M. Casse,3,1:05.90,7,14.37,120,11.9,95
+2024-01-11,Santa Anita,2,5.5f,Turf,Muddy,Desert Warrior,K. Desormeaux,K. McPeek,2,1:06.81,8,9.75,120,6.8,90
+2024-01-11,Golden Gate Fields,3,1.125m,Turf,Firm,Swift Queen,L. Saez,R. Baltas,5,1:48.67,1,3.58,125,Won by 1.2,101
+2024-01-11,Golden Gate Fields,3,1.125m,Turf,Firm,Desert Blaze,A. Gryder,M. Casse,8,1:49.17,2,8.98,121,1.0,99
+2024-01-11,Golden Gate Fields,3,1.125m,Turf,Firm,Swift Comet,D. Davis,J. Sadler,4,1:49.83,3,11.82,124,1.1,95
+2024-01-11,Golden Gate Fields,3,1.125m,Turf,Firm,Desert Flash,D. Van Dyke,P. Eurton,2,1:50.32,4,17.59,118,3.3,93
+2024-01-11,Golden Gate Fields,3,1.125m,Turf,Firm,Golden Storm,D. Davis,M. Casse,3,1:50.41,5,9.27,115,6.1,92
+2024-01-11,Golden Gate Fields,3,1.125m,Turf,Firm,Swift Knight,J. Lezcano,P. Miller,6,1:49.87,6,6.85,117,8.7,95
+2024-01-11,Golden Gate Fields,3,1.125m,Turf,Firm,Storm Flash,D. Davis,J. Hollendorfer,7,1:50.92,7,22.18,117,8.1,90
+2024-01-11,Golden Gate Fields,3,1.125m,Turf,Firm,Fire Knight,D. Davis,H. Bond,1,1:50.09,8,18.03,124,4.1,94
+2024-01-11,Santa Anita,4,1.25m,Dirt,Sloppy,Royal Prince,C. Lopez,G. Weaver,8,1:59.79,1,14.12,116,Won by 1.5,101
+2024-01-11,Santa Anita,4,1.25m,Dirt,Sloppy,Fire Prince,T. Baze,J. Sadler,7,1:59.55,2,5.09,122,1.6,102
+2024-01-11,Santa Anita,4,1.25m,Dirt,Sloppy,Blazing Express,A. Cedillo,J. Shirreffs,4,1:59.90,3,14.8,116,1.8,100
+2024-01-11,Santa Anita,4,1.25m,Dirt,Sloppy,Swift Bullet,M. Franco,K. McPeek,2,2:01.33,4,7.81,118,5.1,93
+2024-01-11,Santa Anita,4,1.25m,Dirt,Sloppy,Storm King,A. Cedillo,H. Bond,6,2:00.86,5,29.2,126,4.0,95
+2024-01-11,Santa Anita,4,1.25m,Dirt,Sloppy,Galloping Express,F. Prat,W. Mott,5,2:00.98,6,12.87,116,4.1,95
+2024-01-11,Santa Anita,4,1.25m,Dirt,Sloppy,Golden Streak,D. Van Dyke,L. Jones,1,2:01.06,7,11.94,123,3.4,94
+2024-01-11,Santa Anita,4,1.25m,Dirt,Sloppy,Fast Streak,A. Cedillo,M. Maker,3,2:00.80,8,15.2,115,10.4,95
+2024-01-11,Keeneland,5,6.5f,Turf,Fast,Brave Flash,M. Smith,P. Eurton,5,1:18.49,1,7.59,115,Won by 2.0,95
+2024-01-11,Keeneland,5,6.5f,Turf,Fast,Swift Gazer,L. Saez,J. Shirreffs,2,1:18.58,2,7.2,125,1.9,94
+2024-01-11,Keeneland,5,6.5f,Turf,Fast,Brave Blaze,K. Desormeaux,R. Baltas,8,1:18.94,3,11.84,115,3.2,92
+2024-01-11,Keeneland,5,6.5f,Turf,Fast,Golden Wind,T. Baze,T. Pletcher,1,1:20.16,4,11.96,126,0.6,86
+2024-01-11,Keeneland,5,6.5f,Turf,Fast,Swift Rocket,R. Santana,W. Mott,4,1:19.55,5,11.4,122,2.4,89
+2024-01-11,Keeneland,5,6.5f,Turf,Fast,Storm Bolt,J. Lezcano,J. Hollendorfer,3,1:19.13,6,10.91,120,4.6,91
+2024-01-11,Keeneland,5,6.5f,Turf,Fast,Quick Streak,M. Franco,H. Bond,6,1:19.28,7,19.91,118,3.6,91
+2024-01-11,Keeneland,5,6.5f,Turf,Fast,Bold Breeze,T. Baze,B. Baffert,7,1:20.60,8,16.98,120,13.6,84
+2024-01-11,Churchill Downs,6,5.0f,Turf,Good,Dancing Prince,J. Lezcano,B. Baffert,7,0:58.82,1,8.83,121,Won by 1.8,100
+2024-01-11,Churchill Downs,6,5.0f,Turf,Good,Ocean Wind,R. Gonzalez,L. Jones,3,0:59.48,2,5.64,119,1.9,97
+2024-01-11,Churchill Downs,6,5.0f,Turf,Good,Noble Streak,J. Castellano,M. Casse,8,1:00.71,3,10.03,122,0.7,91
+2024-01-11,Churchill Downs,6,5.0f,Turf,Good,Royal Storm,E. Maldonado,G. Weaver,5,1:00.40,4,11.83,116,3.9,92
+2024-01-11,Churchill Downs,6,5.0f,Turf,Good,Blazing Runner,K. Desormeaux,M. Maker,6,1:00.17,5,13.21,119,7.5,94
+2024-01-11,Churchill Downs,6,5.0f,Turf,Good,Lightning Bolt,M. Garcia,H. Bond,1,1:00.34,6,11.91,119,5.4,93
+2024-01-11,Churchill Downs,6,5.0f,Turf,Good,Brave Blaze,M. Garcia,P. Miller,2,0:59.68,7,14.37,122,4.0,96
+2024-01-11,Churchill Downs,6,5.0f,Turf,Good,Running Storm,C. Lopez,P. Eurton,4,1:01.26,8,11.79,124,11.3,88
+2024-01-11,Belmont Park,7,6.5f,Dirt,Fast,Swift Queen,I. Ortiz,J. Hollendorfer,3,1:16.68,1,8.67,121,Won by 0.6,99
+2024-01-11,Belmont Park,7,6.5f,Dirt,Fast,Proud King,M. Smith,H. Bond,8,1:16.33,2,6.07,119,1.5,100
+2024-01-11,Belmont Park,7,6.5f,Dirt,Fast,Jumping Strike,J. Rosario,G. Weaver,6,1:17.22,3,9.43,116,1.9,96
+2024-01-11,Belmont Park,7,6.5f,Dirt,Fast,Fast Streak,D. Van Dyke,H. Bond,5,1:17.28,4,10.45,126,2.5,96
+2024-01-11,Belmont Park,7,6.5f,Dirt,Fast,Galloping Arrow,K. Desormeaux,C. Brown,1,1:16.52,5,27.97,123,2.6,99
+2024-01-11,Belmont Park,7,6.5f,Dirt,Fast,Silver Runner,L. Saez,H. Bond,2,1:17.07,6,12.16,126,8.2,97
+2024-01-11,Belmont Park,7,6.5f,Dirt,Fast,Mountain Wind,D. Van Dyke,K. McPeek,7,1:17.56,7,26.87,118,6.3,94
+2024-01-11,Belmont Park,7,6.5f,Dirt,Fast,Brave Arrow,L. Saez,M. Casse,4,1:18.24,8,10.77,126,5.3,91
+2024-01-11,Belmont Park,8,1m,Dirt,Good,Fast Rush,D. Van Dyke,G. Weaver,4,1:34.72,1,11.56,121,Won by 1.4,106
+2024-01-11,Belmont Park,8,1m,Dirt,Good,Running Fire,M. Garcia,P. Eurton,6,1:36.16,2,20.2,118,1.2,99
+2024-01-11,Belmont Park,8,1m,Dirt,Good,Galloping Peak,L. Saez,D. O'Neill,1,1:36.18,3,9.18,117,1.7,99
+2024-01-11,Belmont Park,8,1m,Dirt,Good,Speed Streak,M. Franco,J. Sadler,5,1:35.78,4,11.93,116,4.3,101
+2024-01-11,Belmont Park,8,1m,Dirt,Good,Wild Demon,A. Cedillo,P. Miller,7,1:36.17,5,10.47,122,5.7,99
+2024-01-11,Belmont Park,8,1m,Dirt,Good,Wild Fire,R. Gonzalez,P. Eurton,8,1:36.59,6,13.57,121,3.5,97
+2024-01-11,Belmont Park,8,1m,Dirt,Good,Golden Knight,A. Cedillo,P. Miller,3,1:36.91,7,6.79,126,7.8,95
+2024-01-11,Belmont Park,8,1m,Dirt,Good,Galloping Champion,D. Van Dyke,G. Weaver,2,1:36.52,8,28.1,115,8.6,97
+2024-01-11,Belmont Park,9,6.5f,Dirt,Good,Speed Streak,T. Baze,A. Dutrow,1,1:17.34,1,6.64,123,Won by 1.4,95
+2024-01-11,Belmont Park,9,6.5f,Dirt,Good,Galloping Express,E. Maldonado,P. Eurton,8,1:17.92,2,16.84,116,1.4,92
+2024-01-11,Belmont Park,9,6.5f,Dirt,Good,Midnight Demon,R. Santana,C. Brown,5,1:17.49,3,29.23,123,0.3,95
+2024-01-11,Belmont Park,9,6.5f,Dirt,Good,Silver Warrior,R. Gonzalez,A. Dutrow,2,1:18.23,4,8.42,125,4.0,91
+2024-01-11,Belmont Park,9,6.5f,Dirt,Good,Dancing Thunder,K. Desormeaux,R. Baltas,3,1:18.00,5,7.22,118,4.7,92
+2024-01-11,Belmont Park,9,6.5f,Dirt,Good,Swift Peak,C. Lopez,H. Bond,6,1:17.64,6,24.33,120,3.0,94
+2024-01-11,Belmont Park,9,6.5f,Dirt,Good,Proud Breeze,F. Prat,H. Bond,4,1:18.48,7,14.13,120,10.3,90
+2024-01-11,Belmont Park,9,6.5f,Dirt,Good,Bold Peak,F. Prat,C. Brown,7,1:19.26,8,10.83,117,7.3,86
+2024-01-11,Del Mar,10,6.5f,Dirt,Muddy,Strong Jet,M. Garcia,T. Pletcher,8,1:18.12,1,9.17,121,Won by 1.1,91
+2024-01-11,Del Mar,10,6.5f,Dirt,Muddy,Ocean Demon,M. Smith,D. O'Neill,1,1:18.40,2,13.08,124,2.0,90
+2024-01-11,Del Mar,10,6.5f,Dirt,Muddy,Thunder Dash,F. Prat,J. Hollendorfer,3,1:17.82,3,13.75,117,2.3,93
+2024-01-11,Del Mar,10,6.5f,Dirt,Muddy,Silver Express,T. Baze,P. Miller,2,1:19.25,4,11.4,117,0.8,86
+2024-01-11,Del Mar,10,6.5f,Dirt,Muddy,Wild Jet,M. Garcia,R. Mandella,5,1:18.67,5,10.99,115,7.0,89
+2024-01-11,Del Mar,10,6.5f,Dirt,Muddy,Fire King,D. Van Dyke,H. Bond,7,1:18.96,6,22.46,125,2.7,87
+2024-01-11,Del Mar,10,6.5f,Dirt,Muddy,Desert Blaze,J. Velazquez,H. Bond,6,1:19.43,7,29.95,120,6.6,85
+2024-01-11,Del Mar,10,6.5f,Dirt,Muddy,Storm Jet,R. Santana,G. Weaver,4,1:19.02,8,9.09,118,8.5,87
+2024-01-12,Keeneland,1,5.5f,Dirt,Firm,Wild Wind,J. Castellano,J. Sadler,6,1:01.94,1,14.67,126,Won by 1.6,110
+2024-01-12,Keeneland,1,5.5f,Dirt,Firm,Dancing Bolt,F. Prat,J. Sadler,5,1:02.34,2,6.15,120,1.3,108
+2024-01-12,Keeneland,1,5.5f,Dirt,Firm,Swift Queen,J. Velazquez,R. Baltas,2,1:02.81,3,13.73,125,1.1,105
+2024-01-12,Keeneland,1,5.5f,Dirt,Firm,Proud Queen,A. Cedillo,W. Mott,7,1:03.05,4,10.17,117,5.3,104
+2024-01-12,Keeneland,1,5.5f,Dirt,Firm,Dancing Streak,J. Lezcano,J. Shirreffs,4,1:03.74,5,10.9,118,3.1,101
+2024-01-12,Keeneland,1,5.5f,Dirt,Firm,Storm King,R. Gonzalez,G. Weaver,3,1:03.89,6,8.39,123,5.8,100
+2024-01-12,Keeneland,1,5.5f,Dirt,Firm,Midnight Demon,M. Smith,H. Bond,1,1:04.41,7,13.97,118,4.4,97
+2024-01-12,Keeneland,1,5.5f,Dirt,Firm,Midnight Queen,E. Maldonado,L. Jones,8,1:03.43,8,27.26,116,13.2,102
+2024-01-12,Golden Gate Fields,2,6.5f,Turf,Yielding,Bold Peak,L. Saez,T. Pletcher,7,1:18.76,1,7.28,120,Won by 1.7,93
+2024-01-12,Golden Gate Fields,2,6.5f,Turf,Yielding,Valley Chaser,D. Davis,D. O'Neill,8,1:17.79,2,6.99,126,0.7,98
+2024-01-12,Golden Gate Fields,2,6.5f,Turf,Yielding,Royal Rocket,F. Prat,M. Maker,3,1:17.68,3,7.14,117,2.7,99
+2024-01-12,Golden Gate Fields,2,6.5f,Turf,Yielding,Golden Knight,C. Lopez,H. Bond,5,1:18.50,4,28.27,125,2.9,94
+2024-01-12,Golden Gate Fields,2,6.5f,Turf,Yielding,Swift Bolt,I. Ortiz,M. Maker,2,1:18.85,5,9.74,124,7.1,93
+2024-01-12,Golden Gate Fields,2,6.5f,Turf,Yielding,Wild Demon,A. Gryder,M. Casse,1,1:18.81,6,12.44,119,0.8,93
+2024-01-12,Golden Gate Fields,2,6.5f,Turf,Yielding,Quick Express,A. Cedillo,S. Asmussen,6,1:19.17,7,22.52,118,11.6,91
+2024-01-12,Golden Gate Fields,2,6.5f,Turf,Yielding,Rapid Storm,E. Maldonado,P. Eurton,4,1:19.29,8,25.74,119,3.6,91
+2024-01-12,Keeneland,3,1.25m,Turf,Firm,Fast Rush,L. Saez,J. Hollendorfer,5,2:04.75,1,3.45,123,Won by 2.1,81
+2024-01-12,Keeneland,3,1.25m,Turf,Firm,Golden Flash,T. Baze,J. Sadler,2,2:05.79,2,6.31,123,1.7,76
+2024-01-12,Keeneland,3,1.25m,Turf,Firm,Swift Gazer,J. Castellano,P. Eurton,4,2:06.34,3,13.89,117,0.9,73
+2024-01-12,Keeneland,3,1.25m,Turf,Firm,Dancing Prince,L. Saez,K. McPeek,3,2:04.85,4,3.46,118,1.4,80
+2024-01-12,Keeneland,3,1.25m,Turf,Firm,Bold Strike,J. Rosario,G. Weaver,1,2:05.96,5,11.23,115,1.0,75
+2024-01-12,Keeneland,3,1.25m,Turf,Firm,Wild Jet,D. Van Dyke,P. Eurton,8,2:06.43,6,29.33,121,3.8,72
+2024-01-12,Keeneland,3,1.25m,Turf,Firm,Brave Fury,D. Davis,P. Miller,6,2:05.20,7,13.37,120,10.2,78
+2024-01-12,Keeneland,3,1.25m,Turf,Firm,Dancing Breeze,R. Gonzalez,W. Mott,7,2:06.05,8,7.04,122,9.7,74
+2024-01-12,Belmont Park,4,7.0f,Turf,Fast,Quick Rush,M. Garcia,D. O'Neill,4,1:27.41,1,6.62,124,Won by 2.4,82
+2024-01-12,Belmont Park,4,7.0f,Turf,Fast,Speed Knight,M. Garcia,P. Miller,1,1:27.26,2,4.57,119,1.8,83
+2024-01-12,Belmont Park,4,7.0f,Turf,Fast,Galloping Strike,J. Lezcano,R. Baltas,5,1:27.44,3,4.93,122,0.8,82
+2024-01-12,Belmont Park,4,7.0f,Turf,Fast,Thunder Jet,F. Prat,G. Weaver,7,1:27.60,4,7.75,126,2.1,82
+2024-01-12,Belmont Park,4,7.0f,Turf,Fast,Desert Warrior,A. Cedillo,S. Asmussen,8,1:27.52,5,18.42,117,6.7,82
+2024-01-12,Belmont Park,4,7.0f,Turf,Fast,Bold Blaze,J. Castellano,M. Casse,3,1:27.56,6,3.39,124,1.1,82
+2024-01-12,Belmont Park,4,7.0f,Turf,Fast,Mountain Wind,D. Van Dyke,B. Baffert,2,1:28.29,7,7.88,118,11.2,78
+2024-01-12,Belmont Park,4,7.0f,Turf,Fast,Wild Flash,C. Lopez,A. Dutrow,6,1:28.82,8,22.75,120,6.2,75
+2024-01-12,Churchill Downs,5,5.0f,Turf,Yielding,Wild Warrior,F. Prat,D. O'Neill,1,1:02.19,1,7.37,115,Won by 2.8,84
+2024-01-12,Churchill Downs,5,5.0f,Turf,Yielding,Blazing Flash,E. Maldonado,C. Brown,6,1:02.08,2,6.87,117,1.8,84
+2024-01-12,Churchill Downs,5,5.0f,Turf,Yielding,Noble Breeze,C. Lopez,J. Sadler,3,1:02.25,3,6.46,126,2.6,83
+2024-01-12,Churchill Downs,5,5.0f,Turf,Yielding,Swift Peak,F. Prat,S. Asmussen,4,1:01.75,4,12.96,124,3.3,86
+2024-01-12,Churchill Downs,5,5.0f,Turf,Yielding,Fire King,T. Baze,R. Mandella,5,1:02.27,5,9.03,123,4.7,83
+2024-01-12,Churchill Downs,5,5.0f,Turf,Yielding,Silver Demon,J. Castellano,H. Bond,8,1:03.56,6,13.83,115,3.3,77
+2024-01-12,Churchill Downs,5,5.0f,Turf,Yielding,Running Blaze,D. Davis,G. Weaver,7,1:03.14,7,12.4,122,5.9,79
+2024-01-12,Churchill Downs,5,5.0f,Turf,Yielding,Lightning Storm,L. Saez,K. McPeek,2,1:03.30,8,7.2,117,13.5,78
+2024-01-12,Belmont Park,6,6.5f,Turf,Fast,Silver Express,J. Rosario,L. Jones,4,1:16.29,1,5.48,126,Won by 2.7,106
+2024-01-12,Belmont Park,6,6.5f,Turf,Fast,Blazing Rush,C. Lopez,A. Dutrow,6,1:15.74,2,10.3,121,0.9,108
+2024-01-12,Belmont Park,6,6.5f,Turf,Fast,Running Dash,F. Prat,S. Asmussen,1,1:15.45,3,11.33,124,3.4,110
+2024-01-12,Belmont Park,6,6.5f,Turf,Fast,Bold King,E. Maldonado,A. Dutrow,2,1:15.70,4,6.01,115,1.3,109
+2024-01-12,Belmont Park,6,6.5f,Turf,Fast,Wild Jet,M. Garcia,J. Shirreffs,7,1:15.72,5,8.74,121,4.5,108
+2024-01-12,Belmont Park,6,6.5f,Turf,Fast,Proud Strike,E. Maldonado,R. Mandella,8,1:16.31,6,16.22,115,10.0,105
+2024-01-12,Belmont Park,6,6.5f,Turf,Fast,Golden Flash,R. Gonzalez,L. Jones,5,1:16.14,7,8.9,123,10.9,106
+2024-01-12,Belmont Park,6,6.5f,Turf,Fast,Star Fire,I. Ortiz,M. Casse,3,1:16.62,8,14.84,116,7.1,104
+2024-01-12,Oaklawn Park,7,5.0f,Dirt,Muddy,Storm King,J. Rosario,M. Casse,3,0:58.25,1,2.15,115,Won by 1.9,98
+2024-01-12,Oaklawn Park,7,5.0f,Dirt,Muddy,Running Fury,R. Gonzalez,P. Eurton,1,0:58.11,2,3.33,124,1.8,99
+2024-01-12,Oaklawn Park,7,5.0f,Dirt,Muddy,Mountain Thunder,F. Prat,J. Hollendorfer,5,0:58.37,3,12.71,122,2.0,98
+2024-01-12,Oaklawn Park,7,5.0f,Dirt,Muddy,Star Peak,J. Lezcano,K. McPeek,6,0:57.93,4,11.23,118,4.4,100
+2024-01-12,Oaklawn Park,7,5.0f,Dirt,Muddy,Quick Peak,R. Gonzalez,M. Maker,2,0:58.16,5,6.5,126,3.3,99
+2024-01-12,Oaklawn Park,7,5.0f,Dirt,Muddy,Bold Peak,M. Garcia,J. Hollendorfer,4,0:59.08,6,14.16,125,4.7,94
+2024-01-12,Oaklawn Park,7,5.0f,Dirt,Muddy,Speed Knight,I. Ortiz,W. Mott,8,0:58.79,7,7.05,122,4.6,96
+2024-01-12,Oaklawn Park,7,5.0f,Dirt,Muddy,Fast Rocket,L. Saez,W. Mott,7,0:59.45,8,17.69,116,0.9,92
+2024-01-12,Gulfstream Park,8,6.5f,Turf,Muddy,Desert Demon,J. Rosario,R. Baltas,6,1:16.56,1,7.74,125,Won by 2.0,104
+2024-01-12,Gulfstream Park,8,6.5f,Turf,Muddy,Dancing Prince,M. Franco,B. Baffert,5,1:17.06,2,17.08,120,1.9,102
+2024-01-12,Gulfstream Park,8,6.5f,Turf,Muddy,Proud Breeze,I. Ortiz,J. Sadler,2,1:17.68,3,5.22,125,2.0,99
+2024-01-12,Gulfstream Park,8,6.5f,Turf,Muddy,Storm Flash,T. Baze,T. Pletcher,4,1:16.73,4,6.77,122,5.4,103
+2024-01-12,Gulfstream Park,8,6.5f,Turf,Muddy,Speed Knight,M. Garcia,S. Asmussen,7,1:17.30,5,14.22,118,4.1,101
+2024-01-12,Gulfstream Park,8,6.5f,Turf,Muddy,Desert Flash,J. Velazquez,D. O'Neill,8,1:17.94,6,13.15,122,9.5,97
+2024-01-12,Gulfstream Park,8,6.5f,Turf,Muddy,Star Strike,D. Van Dyke,R. Baltas,1,1:18.30,7,11.96,117,10.3,96
+2024-01-12,Gulfstream Park,8,6.5f,Turf,Muddy,Thunder Jet,A. Gryder,K. McPeek,3,1:18.29,8,10.98,115,12.3,96
+2024-01-12,Del Mar,9,6.5f,Turf,Yielding,Proud Blaze,M. Smith,A. Dutrow,6,1:15.62,1,4.51,126,Won by 0.8,109
+2024-01-12,Del Mar,9,6.5f,Turf,Yielding,Golden Queen,A. Cedillo,C. Brown,7,1:16.26,2,14.23,117,0.7,106
+2024-01-12,Del Mar,9,6.5f,Turf,Yielding,Storm Storm,J. Rosario,M. Casse,2,1:16.88,3,2.57,119,1.4,103
+2024-01-12,Del Mar,9,6.5f,Turf,Yielding,Jumping Spirit,M. Franco,T. Pletcher,5,1:16.67,4,8.91,116,3.9,104
+2024-01-12,Del Mar,9,6.5f,Turf,Yielding,Golden Wind,K. Desormeaux,P. Eurton,4,1:16.08,5,6.44,116,0.7,107
+2024-01-12,Del Mar,9,6.5f,Turf,Yielding,Proud King,T. Baze,J. Hollendorfer,1,1:17.49,6,7.02,124,8.1,100
+2024-01-12,Del Mar,9,6.5f,Turf,Yielding,Swift Bullet,E. Maldonado,J. Shirreffs,8,1:18.06,7,19.08,121,4.5,97
+2024-01-12,Del Mar,9,6.5f,Turf,Yielding,Thunder Dash,I. Ortiz,M. Maker,3,1:17.66,8,10.31,117,3.7,99
+2024-01-12,Del Mar,10,1.125m,Turf,Muddy,Silver Demon,L. Saez,W. Mott,7,1:48.44,1,6.42,122,Won by 1.6,102
+2024-01-12,Del Mar,10,1.125m,Turf,Muddy,Storm Flash,A. Gryder,A. Dutrow,2,1:49.46,2,7.52,125,1.1,97
+2024-01-12,Del Mar,10,1.125m,Turf,Muddy,Storm Bolt,J. Castellano,H. Bond,4,1:48.52,3,10.4,116,2.2,102
+2024-01-12,Del Mar,10,1.125m,Turf,Muddy,Fast Rocket,M. Garcia,J. Shirreffs,3,1:49.52,4,7.49,117,5.9,97
+2024-01-12,Del Mar,10,1.125m,Turf,Muddy,Swift Comet,D. Davis,D. O'Neill,5,1:49.83,5,14.77,125,3.9,95
+2024-01-12,Del Mar,10,1.125m,Turf,Muddy,Blazing Streak,L. Saez,W. Mott,8,1:48.87,6,25.62,118,1.6,100
+2024-01-12,Del Mar,10,1.125m,Turf,Muddy,Wild Wind,F. Prat,K. McPeek,1,1:49.75,7,11.87,115,11.3,96
+2024-01-12,Del Mar,10,1.125m,Turf,Muddy,Lightning Jet,L. Saez,H. Bond,6,1:49.12,8,12.99,119,9.0,99
+2024-01-13,Santa Anita,1,1.25m,Dirt,Firm,Midnight Comet,I. Ortiz,D. O'Neill,4,1:59.57,1,6.04,126,Won by 2.4,102
+2024-01-13,Santa Anita,1,1.25m,Dirt,Firm,Star Fire,F. Prat,M. Casse,3,2:00.24,2,5.77,126,0.6,98
+2024-01-13,Santa Anita,1,1.25m,Dirt,Firm,Star Prince,K. Desormeaux,A. Dutrow,1,2:00.12,3,14.5,120,0.7,99
+2024-01-13,Santa Anita,1,1.25m,Dirt,Firm,Storm Bolt,D. Van Dyke,R. Baltas,6,2:00.40,4,4.62,124,4.7,97
+2024-01-13,Santa Anita,1,1.25m,Dirt,Firm,Storm Fury,M. Franco,K. McPeek,2,2:00.72,5,13.59,121,8.0,96
+2024-01-13,Santa Anita,1,1.25m,Dirt,Firm,Golden Storm,L. Saez,C. Brown,8,2:00.71,6,6.73,122,1.3,96
+2024-01-13,Santa Anita,1,1.25m,Dirt,Firm,Blazing Streak,J. Rosario,G. Weaver,7,2:01.11,7,9.74,119,4.7,94
+2024-01-13,Santa Anita,1,1.25m,Dirt,Firm,Fire Prince,K. Desormeaux,J. Shirreffs,5,2:01.79,8,3.57,122,0.8,91
+2024-01-13,Gulfstream Park,2,5.5f,Turf,Sloppy,Brave Arrow,K. Desormeaux,B. Baffert,5,1:07.73,1,6.72,124,Won by 2.3,86
+2024-01-13,Gulfstream Park,2,5.5f,Turf,Sloppy,Fire Prince,I. Ortiz,J. Sadler,1,1:07.73,2,3.41,126,1.6,86
+2024-01-13,Gulfstream Park,2,5.5f,Turf,Sloppy,Quick Rush,C. Lopez,P. Miller,4,1:08.01,3,10.68,120,0.7,84
+2024-01-13,Gulfstream Park,2,5.5f,Turf,Sloppy,Desert Warrior,T. Baze,M. Casse,3,1:08.86,4,5.04,120,1.1,80
+2024-01-13,Gulfstream Park,2,5.5f,Turf,Sloppy,Fire Knight,J. Velazquez,M. Maker,7,1:08.30,5,19.12,120,0.5,83
+2024-01-13,Gulfstream Park,2,5.5f,Turf,Sloppy,Strong Jet,J. Lezcano,P. Eurton,6,1:09.14,6,6.16,117,3.6,79
+2024-01-13,Gulfstream Park,2,5.5f,Turf,Sloppy,Wild Wind,J. Velazquez,A. Dutrow,2,1:09.41,7,11.64,117,7.6,77
+2024-01-13,Gulfstream Park,2,5.5f,Turf,Sloppy,Jumping Strike,J. Lezcano,J. Shirreffs,8,1:09.37,8,26.05,123,4.0,78
+2024-01-13,Del Mar,3,1m,Dirt,Sloppy,Noble Storm,A. Gryder,R. Baltas,2,1:36.76,1,14.24,119,Won by 1.7,96
+2024-01-13,Del Mar,3,1m,Dirt,Sloppy,Thunder Gazer,L. Saez,R. Mandella,5,1:37.28,2,24.92,115,1.1,93
+2024-01-13,Del Mar,3,1m,Dirt,Sloppy,Swift Bolt,L. Saez,K. McPeek,7,1:36.52,3,6.83,122,3.3,97
+2024-01-13,Del Mar,3,1m,Dirt,Sloppy,Star Dash,J. Rosario,L. Jones,3,1:36.91,4,6.07,117,1.9,95
+2024-01-13,Del Mar,3,1m,Dirt,Sloppy,Golden Queen,J. Velazquez,D. O'Neill,8,1:37.25,5,9.2,119,7.8,93
+2024-01-13,Del Mar,3,1m,Dirt,Sloppy,Blazing Runner,A. Cedillo,M. Maker,6,1:37.90,6,9.97,126,8.0,90
+2024-01-13,Del Mar,3,1m,Dirt,Sloppy,Storm King,J. Lezcano,J. Shirreffs,4,1:37.45,7,6.7,119,9.2,92
+2024-01-13,Del Mar,3,1m,Dirt,Sloppy,Running Blaze,J. Castellano,D. O'Neill,1,1:37.98,8,7.74,115,6.6,90
+2024-01-13,Keeneland,4,6.5f,Turf,Sloppy,Dancing Prince,J. Rosario,D. O'Neill,6,1:17.51,1,10.8,126,Won by 1.1,99
+2024-01-13,Keeneland,4,6.5f,Turf,Sloppy,Swift Gazer,T. Baze,L. Jones,8,1:17.78,2,5.56,121,0.4,98
+2024-01-13,Keeneland,4,6.5f,Turf,Sloppy,Dancing Streak,D. Van Dyke,D. O'Neill,1,1:19.04,3,5.12,118,0.4,92
+2024-01-13,Keeneland,4,6.5f,Turf,Sloppy,Swift Rocket,M. Smith,W. Mott,2,1:18.88,4,6.08,117,4.4,93
+2024-01-13,Keeneland,4,6.5f,Turf,Sloppy,Desert Arrow,D. Van Dyke,R. Mandella,5,1:19.08,5,10.72,122,1.6,92
+2024-01-13,Keeneland,4,6.5f,Turf,Sloppy,Fire Blaze,A. Cedillo,R. Baltas,4,1:18.91,6,6.41,119,6.5,92
+2024-01-13,Keeneland,4,6.5f,Turf,Sloppy,Galloping Chaser,D. Van Dyke,T. Pletcher,7,1:19.02,7,10.91,118,7.1,92
+2024-01-13,Keeneland,4,6.5f,Turf,Sloppy,Bold Blaze,A. Gryder,W. Mott,3,1:19.41,8,8.89,117,6.8,90
+2024-01-13,Oaklawn Park,5,7.0f,Turf,Firm,Brave Bolt,D. Van Dyke,W. Mott,1,1:21.26,1,3.05,124,Won by 0.8,113
+2024-01-13,Oaklawn Park,5,7.0f,Turf,Firm,Storm Bolt,J. Rosario,J. Sadler,2,1:21.89,2,3.78,124,0.8,110
+2024-01-13,Oaklawn Park,5,7.0f,Turf,Firm,Desert Warrior,F. Prat,M. Maker,3,1:22.16,3,8.98,115,1.0,109
+2024-01-13,Oaklawn Park,5,7.0f,Turf,Firm,Storm Storm,D. Davis,G. Weaver,6,1:22.73,4,13.79,125,1.8,106
+2024-01-13,Oaklawn Park,5,7.0f,Turf,Firm,Quick Streak,D. Davis,T. Pletcher,8,1:21.53,5,6.49,125,4.3,112
+2024-01-13,Oaklawn Park,5,7.0f,Turf,Firm,Blazing King,A. Gryder,P. Eurton,5,1:22.88,6,24.85,126,3.7,105
+2024-01-13,Oaklawn Park,5,7.0f,Turf,Firm,Speed Knight,J. Lezcano,M. Maker,4,1:22.69,7,7.1,124,8.9,106
+2024-01-13,Oaklawn Park,5,7.0f,Turf,Firm,Bold Peak,C. Lopez,M. Casse,7,1:23.67,8,29.26,125,12.0,101
+2024-01-13,Santa Anita,6,6.5f,Turf,Fast,Midnight Chaser,A. Gryder,G. Weaver,1,1:16.03,1,6.08,120,Won by 2.5,107
+2024-01-13,Santa Anita,6,6.5f,Turf,Fast,Star King,M. Smith,M. Maker,6,1:17.09,2,12.56,120,0.7,102
+2024-01-13,Santa Anita,6,6.5f,Turf,Fast,Proud Breeze,M. Franco,S. Asmussen,5,1:17.06,3,21.34,121,4.0,102
+2024-01-13,Santa Anita,6,6.5f,Turf,Fast,Desert Warrior,E. Maldonado,K. McPeek,7,1:16.74,4,10.35,115,1.9,103
+2024-01-13,Santa Anita,6,6.5f,Turf,Fast,Swift Queen,M. Garcia,J. Hollendorfer,8,1:17.27,5,13.27,123,6.6,101
+2024-01-13,Santa Anita,6,6.5f,Turf,Fast,Noble Fire,R. Santana,M. Casse,3,1:17.56,6,12.41,116,9.3,99
+2024-01-13,Santa Anita,6,6.5f,Turf,Fast,Running Blaze,M. Garcia,P. Miller,4,1:17.28,7,6.05,120,8.6,101
+2024-01-13,Santa Anita,6,6.5f,Turf,Fast,Galloping Chaser,I. Ortiz,M. Maker,2,1:17.21,8,10.07,120,13.7,101
+2024-01-13,Saratoga,7,6.5f,Turf,Good,Noble Spirit,J. Castellano,S. Asmussen,7,1:21.30,1,7.53,121,Won by 0.8,80
+2024-01-13,Saratoga,7,6.5f,Turf,Good,Galloping Warrior,L. Saez,M. Casse,8,1:22.53,2,14.16,125,1.6,74
+2024-01-13,Saratoga,7,6.5f,Turf,Good,Swift Rocket,J. Castellano,G. Weaver,5,1:22.29,3,5.37,119,2.9,76
+2024-01-13,Saratoga,7,6.5f,Turf,Good,Running Storm,J. Castellano,P. Miller,3,1:21.81,4,5.53,121,2.0,78
+2024-01-13,Saratoga,7,6.5f,Turf,Good,Blazing Streak,T. Baze,J. Sadler,2,1:23.71,5,5.42,123,2.6,68
+2024-01-13,Saratoga,7,6.5f,Turf,Good,Star Runner,R. Gonzalez,T. Pletcher,1,1:22.30,6,11.08,118,9.9,75
+2024-01-13,Saratoga,7,6.5f,Turf,Good,Desert Flash,M. Franco,R. Mandella,6,1:22.29,7,29.67,122,2.6,76
+2024-01-13,Saratoga,7,6.5f,Turf,Good,Noble Streak,E. Maldonado,H. Bond,4,1:22.93,8,21.8,123,4.0,72
+2024-01-13,Belmont Park,8,7.0f,Dirt,Muddy,Swift Rocket,K. Desormeaux,R. Mandella,5,1:24.18,1,13.6,118,Won by 1.4,94
+2024-01-13,Belmont Park,8,7.0f,Dirt,Muddy,Silver Express,J. Velazquez,D. O'Neill,4,1:25.33,2,10.62,126,1.7,88
+2024-01-13,Belmont Park,8,7.0f,Dirt,Muddy,Dancing Streak,M. Franco,W. Mott,3,1:24.37,3,8.24,126,3.5,93
+2024-01-13,Belmont Park,8,7.0f,Dirt,Muddy,Lightning Demon,C. Lopez,D. O'Neill,1,1:24.83,4,14.15,124,0.5,90
+2024-01-13,Belmont Park,8,7.0f,Dirt,Muddy,Fast Rocket,I. Ortiz,C. Brown,6,1:24.99,5,6.67,123,2.8,90
+2024-01-13,Belmont Park,8,7.0f,Dirt,Muddy,Swift Peak,E. Maldonado,L. Jones,7,1:25.75,6,14.23,116,7.4,86
+2024-01-13,Belmont Park,8,7.0f,Dirt,Muddy,Silver Warrior,D. Davis,S. Asmussen,2,1:25.17,7,18.54,120,1.6,89
+2024-01-13,Belmont Park,8,7.0f,Dirt,Muddy,Rapid Rush,M. Franco,K. McPeek,8,1:25.87,8,14.94,121,4.7,85
+2024-01-13,Keeneland,9,7.0f,Turf,Fast,Valley Jet,F. Prat,J. Shirreffs,4,1:24.64,1,5.29,126,Won by 2.6,96
+2024-01-13,Keeneland,9,7.0f,Turf,Fast,Proud Queen,J. Castellano,B. Baffert,8,1:23.98,2,10.18,123,0.8,100
+2024-01-13,Keeneland,9,7.0f,Turf,Fast,Rapid Demon,M. Franco,J. Shirreffs,7,1:24.85,3,6.85,120,0.7,95
+2024-01-13,Keeneland,9,7.0f,Turf,Fast,Wild Demon,T. Baze,H. Bond,1,1:24.80,4,7.44,120,0.9,95
+2024-01-13,Keeneland,9,7.0f,Turf,Fast,Flying Wind,L. Saez,R. Mandella,2,1:25.76,5,13.6,126,4.4,91
+2024-01-13,Keeneland,9,7.0f,Turf,Fast,Golden Express,D. Van Dyke,P. Eurton,5,1:25.10,6,14.56,120,2.5,94
+2024-01-13,Keeneland,9,7.0f,Turf,Fast,Running Fury,D. Van Dyke,M. Maker,6,1:26.11,7,3.94,116,5.5,89
+2024-01-13,Keeneland,9,7.0f,Turf,Fast,Noble Storm,J. Lezcano,P. Miller,3,1:25.00,8,12.05,121,9.4,94
+2024-01-13,Churchill Downs,10,5.0f,Dirt,Sloppy,Swift Peak,I. Ortiz,C. Brown,4,0:58.15,1,4.22,123,Won by 0.6,99
+2024-01-13,Churchill Downs,10,5.0f,Dirt,Sloppy,Midnight Comet,R. Santana,R. Baltas,6,0:58.27,2,10.61,125,0.3,98
+2024-01-13,Churchill Downs,10,5.0f,Dirt,Sloppy,Mountain Thunder,C. Lopez,H. Bond,1,0:57.45,3,14.58,118,1.0,102
+2024-01-13,Churchill Downs,10,5.0f,Dirt,Sloppy,Blazing Spirit,K. Desormeaux,M. Maker,2,0:57.80,4,8.45,126,3.7,101
+2024-01-13,Churchill Downs,10,5.0f,Dirt,Sloppy,Desert Arrow,J. Velazquez,M. Maker,5,0:57.91,5,19.22,116,7.1,100
+2024-01-13,Churchill Downs,10,5.0f,Dirt,Sloppy,Quick Streak,A. Gryder,H. Bond,8,0:59.33,6,3.34,117,4.8,93
+2024-01-13,Churchill Downs,10,5.0f,Dirt,Sloppy,Wild Jet,E. Maldonado,K. McPeek,3,0:59.04,7,6.57,121,10.1,94
+2024-01-13,Churchill Downs,10,5.0f,Dirt,Sloppy,Flying Rocket,M. Garcia,J. Hollendorfer,7,0:59.29,8,23.71,117,13.1,93
+2024-01-14,Del Mar,1,1m,Dirt,Firm,Midnight Demon,M. Garcia,C. Brown,6,1:35.60,1,12.67,118,Won by 3.0,102
+2024-01-14,Del Mar,1,1m,Dirt,Firm,Thunder Jet,M. Smith,G. Weaver,2,1:36.08,2,3.73,120,1.5,99
+2024-01-14,Del Mar,1,1m,Dirt,Firm,Silver Runner,E. Maldonado,R. Mandella,1,1:36.12,3,11.43,117,0.6,99
+2024-01-14,Del Mar,1,1m,Dirt,Firm,Wild Fire,K. Desormeaux,W. Mott,8,1:35.57,4,6.93,125,0.3,102
+2024-01-14,Del Mar,1,1m,Dirt,Firm,Blazing Spirit,R. Gonzalez,J. Sadler,7,1:35.85,5,29.33,123,5.8,100
+2024-01-14,Del Mar,1,1m,Dirt,Firm,Wild Flash,A. Gryder,S. Asmussen,3,1:37.39,6,9.57,125,1.8,93
+2024-01-14,Del Mar,1,1m,Dirt,Firm,Mountain Wind,D. Davis,J. Sadler,5,1:37.03,7,11.25,118,5.0,94
+2024-01-14,Del Mar,1,1m,Dirt,Firm,Rapid Queen,R. Gonzalez,D. O'Neill,4,1:37.86,8,9.86,117,6.1,90
+2024-01-14,Belmont Park,2,7.0f,Dirt,Sloppy,Thunder Gazer,D. Davis,M. Casse,8,1:20.72,1,7.01,125,Won by 2.7,111
+2024-01-14,Belmont Park,2,7.0f,Dirt,Sloppy,Royal Rocket,T. Baze,L. Jones,6,1:20.62,2,12.91,123,0.6,111
+2024-01-14,Belmont Park,2,7.0f,Dirt,Sloppy,Lightning Breeze,A. Gryder,D. O'Neill,1,1:21.48,3,5.41,116,2.9,107
+2024-01-14,Belmont Park,2,7.0f,Dirt,Sloppy,Fast Streak,D. Van Dyke,B. Baffert,3,1:21.57,4,4.92,115,2.4,107
+2024-01-14,Belmont Park,2,7.0f,Dirt,Sloppy,Lightning Strike,E. Maldonado,H. Bond,7,1:21.14,5,24.43,117,4.7,109
+2024-01-14,Belmont Park,2,7.0f,Dirt,Sloppy,Galloping Demon,T. Baze,M. Casse,4,1:22.28,6,12.68,126,5.2,103
+2024-01-14,Belmont Park,2,7.0f,Dirt,Sloppy,Rapid Rush,D. Davis,M. Maker,2,1:21.90,7,20.08,121,11.3,105
+2024-01-14,Belmont Park,2,7.0f,Dirt,Sloppy,Swift Bullet,R. Gonzalez,M. Maker,5,1:22.45,8,22.33,125,13.0,102
+2024-01-14,Santa Anita,3,5.5f,Turf,Fast,Mountain Rocket,J. Rosario,B. Baffert,2,1:01.54,1,3.58,122,Won by 0.7,117
+2024-01-14,Santa Anita,3,5.5f,Turf,Fast,Midnight Queen,D. Van Dyke,P. Miller,7,1:02.76,2,7.27,125,1.0,111
+2024-01-14,Santa Anita,3,5.5f,Turf,Fast,Wild Fire,M. Garcia,P. Miller,6,1:02.43,3,10.28,126,1.1,112
+2024-01-14,Santa Anita,3,5.5f,Turf,Fast,Ocean Wind,R. Gonzalez,B. Baffert,5,1:03.25,4,3.63,117,5.9,108
+2024-01-14,Santa Anita,3,5.5f,Turf,Fast,Proud Queen,L. Saez,K. McPeek,1,1:02.29,5,10.58,119,2.7,113
+2024-01-14,Santa Anita,3,5.5f,Turf,Fast,Swift Rocket,T. Baze,C. Brown,8,1:03.54,6,4.15,125,8.0,107
+2024-01-14,Santa Anita,3,5.5f,Turf,Fast,Quick Express,A. Gryder,W. Mott,4,1:02.15,7,13.45,116,9.1,114
+2024-01-14,Santa Anita,3,5.5f,Turf,Fast,Strong Jet,C. Lopez,J. Shirreffs,3,1:03.11,8,12.95,119,8.8,109
+2024-01-14,Keeneland,4,1.125m,Turf,Sloppy,Golden Queen,J. Lezcano,J. Shirreffs,7,1:48.19,1,20.95,116,Won by 2.1,104
+2024-01-14,Keeneland,4,1.125m,Turf,Sloppy,Running Fury,K. Desormeaux,M. Casse,3,1:47.64,2,7.11,123,0.9,106
+2024-01-14,Keeneland,4,1.125m,Turf,Sloppy,Swift Runner,R. Santana,S. Asmussen,5,1:48.40,3,6.29,120,1.7,102
+2024-01-14,Keeneland,4,1.125m,Turf,Sloppy,Silver Dash,R. Santana,R. Mandella,4,1:48.34,4,8.27,116,2.4,103
+2024-01-14,Keeneland,4,1.125m,Turf,Sloppy,Rapid Rocket,K. Desormeaux,P. Miller,1,1:47.69,5,4.69,124,1.5,106
+2024-01-14,Keeneland,4,1.125m,Turf,Sloppy,Galloping Warrior,J. Castellano,K. McPeek,6,1:49.00,6,11.85,119,7.3,100
+2024-01-14,Keeneland,4,1.125m,Turf,Sloppy,Storm Flash,I. Ortiz,M. Maker,8,1:48.19,7,13.03,124,3.6,104
+2024-01-14,Keeneland,4,1.125m,Turf,Sloppy,Bold Peak,L. Saez,H. Bond,2,1:48.42,8,11.24,126,1.4,102
+2024-01-14,Belmont Park,5,7.0f,Turf,Good,Midnight Demon,T. Baze,P. Eurton,4,1:23.29,1,7.77,126,Won by 0.6,103
+2024-01-14,Belmont Park,5,7.0f,Turf,Good,Dancing Breeze,C. Lopez,S. Asmussen,6,1:23.98,2,13.88,119,1.1,100
+2024-01-14,Belmont Park,5,7.0f,Turf,Good,Royal Peak,C. Lopez,D. O'Neill,3,1:23.08,3,6.32,126,2.2,104
+2024-01-14,Belmont Park,5,7.0f,Turf,Good,Galloping Chaser,L. Saez,M. Casse,7,1:24.05,4,7.0,121,3.7,99
+2024-01-14,Belmont Park,5,7.0f,Turf,Good,Jumping Arrow,C. Lopez,J. Hollendorfer,5,1:26.02,5,11.84,125,4.6,89
+2024-01-14,Belmont Park,5,7.0f,Turf,Good,Thunder Peak,M. Franco,J. Hollendorfer,1,1:24.56,6,24.72,126,5.1,97
+2024-01-14,Belmont Park,5,7.0f,Turf,Good,Rapid Rocket,A. Gryder,J. Hollendorfer,8,1:24.77,7,25.77,119,1.5,96
+2024-01-14,Belmont Park,5,7.0f,Turf,Good,Blazing Rush,L. Saez,D. O'Neill,2,1:25.95,8,6.9,116,3.7,90
