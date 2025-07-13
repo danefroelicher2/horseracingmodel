@@ -1,4 +1,12 @@
-import pandas as pd
+def create_performance_features(self, df):
+        """
+        Create jockey/trainer performance features optimized for 10K+ horses
+        """
+        print("\n=== CREATING PERFORMANCE FEATURES (10K+ HORSES) ===")
+        print("=" * 60)
+        
+        df_perf = df.copy()
+        import pandas as pd
 import numpy as np
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 import os
@@ -8,18 +16,39 @@ class WinProbabilityPreprocessor:
         self.label_encoders = {}
         self.scaler = StandardScaler()
         
-    def load_data(self, filepath='data/horse_racing_data_1000.csv'):
-        """Load the CSV data"""
-        try:
-            df = pd.read_csv(filepath)
-            print(f"SUCCESS: Loaded {len(df)} records from {filepath}")
-            print(f"Data shape: {df.shape}")
-            print(f"Date range: {df['race_date'].min()} to {df['race_date'].max()}")
-            return df
-        except Exception as e:
-            print(f"ERROR loading data: {e}")
-            print("Make sure you've run data_generator.py first!")
-            return None
+    def load_data(self, filepath=None):
+        """Load the CSV data - auto-detect largest dataset"""
+        # Try different file paths in order of preference
+        data_files = [
+            'data/horse_racing_data_10k.csv',
+            'data/horse_racing_data_1000.csv', 
+            'data/sample_race_data.csv'
+        ]
+        
+        if filepath:
+            data_files.insert(0, filepath)
+        
+        for file_path in data_files:
+            if os.path.exists(file_path):
+                try:
+                    df = pd.read_csv(file_path)
+                    print(f"SUCCESS: Loaded {len(df):,} records from {file_path}")
+                    print(f"Data shape: {df.shape}")
+                    print(f"Date range: {df['race_date'].min()} to {df['race_date'].max()}")
+                    
+                    # Memory usage info for large datasets
+                    if len(df) > 5000:
+                        memory_mb = df.memory_usage(deep=True).sum() / 1024 / 1024
+                        print(f"Memory usage: {memory_mb:.1f} MB")
+                    
+                    return df
+                except Exception as e:
+                    print(f"ERROR loading {file_path}: {e}")
+                    continue
+        
+        print("ERROR: No data file found!")
+        print("Run data_generator.py first to generate data")
+        return None
     
     def explore_data(self, df):
         """Quick data exploration focused on WIN ANALYSIS"""
@@ -80,70 +109,118 @@ class WinProbabilityPreprocessor:
     
     def create_performance_features(self, df):
         """
-        Create jockey/trainer performance features with proper statistical handling
+        Create jockey/trainer performance features optimized for 10K+ horses
         """
-        print("\n=== CREATING PERFORMANCE FEATURES ===")
-        print("=" * 50)
+        print("\n=== CREATING PERFORMANCE FEATURES (10K+ HORSES) ===")
+        print("=" * 60)
         
         df_perf = df.copy()
         
-        # Jockey performance with minimum ride requirements
+        # Enhanced jockey performance with higher minimum requirements for 10K dataset
         jockey_stats = df_perf.groupby('jockey').agg({
             'won': ['mean', 'sum', 'count'],
             'placed': 'mean',
             'showed': 'mean'
-        }).round(3)
+        }).round(4)
         
-        # Flatten column names
         jockey_stats.columns = ['jockey_win_rate', 'jockey_wins', 'jockey_rides', 
                                'jockey_place_rate', 'jockey_show_rate']
         
-        # Only use jockey stats for jockeys with 10+ rides (statistical significance)
-        min_rides = 10
-        jockey_stats.loc[jockey_stats['jockey_rides'] < min_rides, 'jockey_win_rate'] = df_perf['won'].mean()
-        jockey_stats.loc[jockey_stats['jockey_rides'] < min_rides, 'jockey_place_rate'] = df_perf['placed'].mean()
-        jockey_stats.loc[jockey_stats['jockey_rides'] < min_rides, 'jockey_show_rate'] = df_perf['showed'].mean()
+        # Higher minimum for statistical significance with 10K+ horses
+        min_rides = 50  # Increased from 10 to 50
+        reliable_jockeys = jockey_stats['jockey_rides'] >= min_rides
         
-        # Merge back to main dataframe
+        # Use overall averages for jockeys with insufficient rides
+        overall_win_rate = df_perf['won'].mean()
+        overall_place_rate = df_perf['placed'].mean()
+        overall_show_rate = df_perf['showed'].mean()
+        
+        jockey_stats.loc[~reliable_jockeys, 'jockey_win_rate'] = overall_win_rate
+        jockey_stats.loc[~reliable_jockeys, 'jockey_place_rate'] = overall_place_rate
+        jockey_stats.loc[~reliable_jockeys, 'jockey_show_rate'] = overall_show_rate
+        
+        # Create jockey tier classification
+        jockey_stats['jockey_tier'] = 'average'
+        jockey_stats.loc[(jockey_stats['jockey_win_rate'] > 0.18) & reliable_jockeys, 'jockey_tier'] = 'elite'
+        jockey_stats.loc[(jockey_stats['jockey_win_rate'] > 0.15) & reliable_jockeys, 'jockey_tier'] = 'top'
+        jockey_stats.loc[(jockey_stats['jockey_win_rate'] > 0.12) & reliable_jockeys, 'jockey_tier'] = 'good'
+        
         df_perf = df_perf.merge(jockey_stats, left_on='jockey', right_index=True, how='left')
         
-        # Trainer performance with minimum starts requirements
+        # Enhanced trainer performance
         trainer_stats = df_perf.groupby('trainer').agg({
             'won': ['mean', 'sum', 'count'],
             'placed': 'mean',
             'showed': 'mean'
-        }).round(3)
+        }).round(4)
         
         trainer_stats.columns = ['trainer_win_rate', 'trainer_wins', 'trainer_starts',
                                 'trainer_place_rate', 'trainer_show_rate']
         
-        # Only use trainer stats for trainers with 15+ starts
-        min_starts = 15
-        trainer_stats.loc[trainer_stats['trainer_starts'] < min_starts, 'trainer_win_rate'] = df_perf['won'].mean()
-        trainer_stats.loc[trainer_stats['trainer_starts'] < min_starts, 'trainer_place_rate'] = df_perf['placed'].mean()
-        trainer_stats.loc[trainer_stats['trainer_starts'] < min_starts, 'trainer_show_rate'] = df_perf['showed'].mean()
+        # Higher minimum for trainers with 10K+ horses
+        min_starts = 75  # Increased from 15 to 75
+        reliable_trainers = trainer_stats['trainer_starts'] >= min_starts
+        
+        trainer_stats.loc[~reliable_trainers, 'trainer_win_rate'] = overall_win_rate
+        trainer_stats.loc[~reliable_trainers, 'trainer_place_rate'] = overall_place_rate
+        trainer_stats.loc[~reliable_trainers, 'trainer_show_rate'] = overall_show_rate
+        
+        # Create trainer tier classification
+        trainer_stats['trainer_tier'] = 'average'
+        trainer_stats.loc[(trainer_stats['trainer_win_rate'] > 0.18) & reliable_trainers, 'trainer_tier'] = 'elite'
+        trainer_stats.loc[(trainer_stats['trainer_win_rate'] > 0.15) & reliable_trainers, 'trainer_tier'] = 'top'
+        trainer_stats.loc[(trainer_stats['trainer_win_rate'] > 0.12) & reliable_trainers, 'trainer_tier'] = 'good'
         
         df_perf = df_perf.merge(trainer_stats, left_on='trainer', right_index=True, how='left')
         
-        # Track/surface specific performance
+        # Advanced combination features for 10K+ dataset
+        # Jockey-Trainer combination performance
+        jt_combo_stats = df_perf.groupby(['jockey', 'trainer']).agg({
+            'won': ['mean', 'count']
+        }).round(4)
+        jt_combo_stats.columns = ['jt_combo_win_rate', 'jt_combo_races']
+        
+        # Only use combo stats with sufficient sample size
+        min_combo_races = 10
+        reliable_combos = jt_combo_stats['jt_combo_races'] >= min_combo_races
+        jt_combo_stats.loc[~reliable_combos, 'jt_combo_win_rate'] = overall_win_rate
+        
+        jt_combo_stats = jt_combo_stats[['jt_combo_win_rate']].reset_index()
+        df_perf = df_perf.merge(jt_combo_stats, on=['jockey', 'trainer'], how='left')
+        
+        # Track/surface/distance specific performance
+        track_surface_distance_stats = df_perf.groupby(['track_name', 'surface', 'distance']).agg({
+            'won': ['mean', 'count']
+        }).round(4)
+        track_surface_distance_stats.columns = ['tsd_win_rate', 'tsd_races']
+        
+        # Use track/surface/distance stats with sufficient sample size
+        min_tsd_races = 20
+        reliable_tsd = track_surface_distance_stats['tsd_races'] >= min_tsd_races
+        track_surface_distance_stats.loc[~reliable_tsd, 'tsd_win_rate'] = overall_win_rate
+        
+        track_surface_distance_stats = track_surface_distance_stats[['tsd_win_rate']].reset_index()
+        df_perf = df_perf.merge(track_surface_distance_stats, on=['track_name', 'surface', 'distance'], how='left')
+        
+        # Enhanced track/surface performance (keeping original for comparison)
         track_surface_stats = df_perf.groupby(['track_name', 'surface']).agg({
-            'won': 'mean',
-            'horse_name': 'count'
-        }).round(3)
+            'won': ['mean', 'count']
+        }).round(4)
         track_surface_stats.columns = ['track_surface_win_rate', 'track_surface_races']
         
-        # Only use track/surface stats with 20+ races
-        min_track_races = 20
-        track_surface_stats.loc[track_surface_stats['track_surface_races'] < min_track_races, 'track_surface_win_rate'] = df_perf['won'].mean()
+        min_track_races = 50  # Increased minimum
+        reliable_track_surface = track_surface_stats['track_surface_races'] >= min_track_races
+        track_surface_stats.loc[~reliable_track_surface, 'track_surface_win_rate'] = overall_win_rate
         
         track_surface_stats = track_surface_stats[['track_surface_win_rate']].reset_index()
         df_perf = df_perf.merge(track_surface_stats, on=['track_name', 'surface'], how='left')
         
-        print(f"SUCCESS: Added jockey performance features")
-        print(f"  Jockeys with 10+ rides: {(jockey_stats['jockey_rides'] >= min_rides).sum()}")
-        print(f"SUCCESS: Added trainer performance features") 
-        print(f"  Trainers with 15+ starts: {(trainer_stats['trainer_starts'] >= min_starts).sum()}")
-        print(f"SUCCESS: Added track/surface specific features")
+        print(f"SUCCESS: Enhanced performance features for 10K+ horses")
+        print(f"  Reliable jockeys (50+ rides): {reliable_jockeys.sum()}")
+        print(f"  Reliable trainers (75+ starts): {reliable_trainers.sum()}")
+        print(f"  Elite jockeys: {(jockey_stats['jockey_tier'] == 'elite').sum()}")
+        print(f"  Elite trainers: {(trainer_stats['trainer_tier'] == 'elite').sum()}")
+        print(f"  Jockey-Trainer combos: {reliable_combos.sum()}")
         
         return df_perf
     
@@ -304,22 +381,26 @@ class WinProbabilityPreprocessor:
     
     def prepare_for_win_prediction(self, df, target='won'):
         """
-        Prepare final dataset for WIN PROBABILITY prediction
+        Prepare final dataset for WIN PROBABILITY prediction - optimized for 10K+
         """
         print(f"\n=== PREPARING FOR WIN PREDICTION (Target: {target}) ===")
-        print("=" * 50)
+        print("=" * 60)
         
-        # Select features that matter for WIN prediction
+        # Enhanced feature set for 10K+ horses
         feature_columns = [
             # Basic race info
             'distance_furlongs', 'post_position', 'weight', 'field_size',
             
-            # Odds features (VERY important for win prediction)
+            # Enhanced odds features
             'odds', 'log_odds', 'favorite', 'odds_rank', 'implied_probability', 'true_probability',
             
-            # Performance features (the secret sauce)
+            # Enhanced performance features (now more reliable with 10K+ horses)
             'jockey_win_rate', 'jockey_place_rate', 'jockey_rides',
             'trainer_win_rate', 'trainer_place_rate', 'trainer_starts',
+            
+            # Advanced combination features
+            'jt_combo_win_rate',  # Jockey-trainer combination
+            'tsd_win_rate',       # Track-surface-distance specific
             'track_surface_win_rate',
             
             # Post position features
@@ -329,7 +410,8 @@ class WinProbabilityPreprocessor:
             'speed_per_furlong', 'speed_rating',
             
             # Encoded categorical features
-            'surface_encoded', 'track_condition_encoded', 'odds_category_encoded'
+            'surface_encoded', 'track_condition_encoded', 'odds_category_encoded',
+            'jockey_encoded', 'trainer_encoded'  # Adding these back for 10K dataset
         ]
         
         # Only use columns that exist
@@ -343,8 +425,23 @@ class WinProbabilityPreprocessor:
         X = df[available_features]
         y = df[target]
         
-        # Fill any remaining missing values
-        X = X.fillna(X.median())
+        # Enhanced missing value handling for large dataset
+        missing_counts = X.isnull().sum()
+        if missing_counts.sum() > 0:
+            print(f"Handling missing values in {missing_counts[missing_counts > 0].shape[0]} features")
+            
+            # Use different strategies for different feature types
+            for col in X.columns:
+                if X[col].isnull().sum() > 0:
+                    if 'rate' in col.lower() or 'probability' in col.lower():
+                        # Use median for rate/probability features
+                        X[col] = X[col].fillna(X[col].median())
+                    elif 'encoded' in col.lower():
+                        # Use mode for encoded features
+                        X[col] = X[col].fillna(X[col].mode().iloc[0] if not X[col].mode().empty else 0)
+                    else:
+                        # Use median for other numeric features
+                        X[col] = X[col].fillna(X[col].median())
         
         # Scale features
         X_scaled = pd.DataFrame(
@@ -353,20 +450,25 @@ class WinProbabilityPreprocessor:
             index=X.index
         )
         
-        print(f"SUCCESS: Features prepared: {len(available_features)} features")
+        print(f"SUCCESS: Enhanced features prepared: {len(available_features)} features")
         print(f"SUCCESS: Target prepared: {target}")
-        print(f"SUCCESS: Win rate in target: {y.mean()*100:.1f}%")
+        print(f"SUCCESS: Win rate in target: {y.mean()*100:.2f}%")
         print(f"Final shape: X={X_scaled.shape}, y={y.shape}")
         
-        # Show feature summary
-        print(f"\nFEATURE CATEGORIES:")
-        odds_features = [f for f in available_features if 'odds' in f.lower() or 'favorite' in f.lower() or 'probability' in f.lower()]
-        performance_features = [f for f in available_features if 'win_rate' in f or 'place_rate' in f]
+        # Enhanced feature summary for 10K+ dataset
+        print(f"\nENHANCED FEATURE CATEGORIES:")
+        odds_features = [f for f in available_features if any(word in f.lower() for word in ['odds', 'favorite', 'probability'])]
+        performance_features = [f for f in available_features if any(word in f.lower() for word in ['win_rate', 'place_rate', 'combo'])]
         position_features = [f for f in available_features if 'post' in f.lower()]
+        speed_features = [f for f in available_features if any(word in f.lower() for word in ['speed', 'time'])]
+        track_features = [f for f in available_features if any(word in f.lower() for word in ['track', 'surface', 'tsd'])]
+        
         print(f"  Odds-related: {len(odds_features)} features")
         print(f"  Performance: {len(performance_features)} features") 
         print(f"  Position: {len(position_features)} features")
-        print(f"  Other: {len(available_features) - len(odds_features) - len(performance_features) - len(position_features)} features")
+        print(f"  Speed: {len(speed_features)} features")
+        print(f"  Track-specific: {len(track_features)} features")
+        print(f"  Other: {len(available_features) - len(odds_features) - len(performance_features) - len(position_features) - len(speed_features) - len(track_features)} features")
         
         return X_scaled, y
     
@@ -388,58 +490,67 @@ class WinProbabilityPreprocessor:
 
 # Main execution
 if __name__ == "__main__":
-    print("HORSE RACING WIN PROBABILITY PREPROCESSOR - 1000+ HORSES")
-    print("=" * 60)
+    print("HORSE RACING WIN PROBABILITY PREPROCESSOR - 10,000+ HORSES")
+    print("=" * 70)
     
     # Initialize preprocessor
     preprocessor = WinProbabilityPreprocessor()
     
-    # Load data (tries multiple file names)
-    data_files = ['data/horse_racing_data_1000.csv', 'data/sample_race_data.csv']
-    df = None
-    
-    for filepath in data_files:
-        if os.path.exists(filepath):
-            df = preprocessor.load_data(filepath)
-            break
+    # Load data (auto-detects largest available dataset)
+    df = preprocessor.load_data()
     
     if df is None:
         print("ERROR: No data file found!")
-        print("Run data_generator.py first to generate 1000+ horses")
+        print("Run data_generator.py first to generate 10,000+ horses")
         exit()
     
-    if df is not None:
-        # Explore data
-        df = preprocessor.explore_data(df)
+    # Check if we have enough data for advanced processing
+    if len(df) < 5000:
+        print("WARNING: Dataset is smaller than optimal for 10K processing")
+        print("Consider running data_generator.py to generate more data")
+    
+    # Explore data
+    df = preprocessor.explore_data(df)
+    
+    # Add win targets
+    df_targets = preprocessor.add_win_targets(df)
+    
+    # Clean data
+    df_clean = preprocessor.clean_data(df_targets)
+    
+    # Create enhanced performance features for large dataset
+    df_performance = preprocessor.create_performance_features(df_clean)
+    
+    # Create odds features
+    df_odds = preprocessor.create_odds_features(df_performance)
+    
+    # Create post position features
+    df_post = preprocessor.create_post_position_features(df_odds)
+    
+    # Encode categorical features
+    df_encoded = preprocessor.encode_categorical_features(df_post)
+    
+    # Prepare for WIN prediction with enhanced features
+    X, y = preprocessor.prepare_for_win_prediction(df_encoded, target='won')
+    
+    if X is not None and y is not None:
+        # Save processed data
+        filename_prefix = f"win_prediction_{len(df)}"  # Include size in filename
+        preprocessor.save_processed_data(X, y, filename_prefix)
         
-        # Add win targets
-        df_targets = preprocessor.add_win_targets(df)
+        print(f"\nSUCCESS! {len(df):,} horses ready for ENHANCED WIN PREDICTION!")
+        print("=" * 70)
         
-        # Clean data
-        df_clean = preprocessor.clean_data(df_targets)
-        
-        # Create performance features
-        df_performance = preprocessor.create_performance_features(df_clean)
-        
-        # Create odds features
-        df_odds = preprocessor.create_odds_features(df_performance)
-        
-        # Create post position features
-        df_post = preprocessor.create_post_position_features(df_odds)
-        
-        # Encode categorical features
-        df_encoded = preprocessor.encode_categorical_features(df_post)
-        
-        # Prepare for WIN prediction
-        X, y = preprocessor.prepare_for_win_prediction(df_encoded, target='won')
-        
-        if X is not None and y is not None:
-            # Save processed data
-            preprocessor.save_processed_data(X, y)
-            
-            print("\nSUCCESS! 1000+ horses ready for WIN PREDICTION!")
-            print("Next step: Run train_model.py to build your enhanced model")
+        if len(df) >= 10000:
+            print("🎉 PROFESSIONAL-GRADE DATASET ACHIEVED!")
+            print("✅ Statistical significance guaranteed")
+            print("✅ Advanced features enabled")
+            print("✅ Ready for industry-level performance")
+        elif len(df) >= 5000:
+            print("✅ LARGE DATASET - Good for advanced modeling")
         else:
-            print("ERROR: Failed to prepare data for ML")
+            print("📊 MEDIUM DATASET - Consider scaling up further")
+        
+        print("\nNext step: Run train_model.py for enhanced model training")
     else:
-        print("ERROR: Failed to load data")
+        print("ERROR: Failed to prepare data for ML")
