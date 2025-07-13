@@ -22,7 +22,7 @@ class WinProbabilityTrainer:
             X = pd.read_csv(X_path)
             y = pd.read_csv(y_path).values.ravel()  # Convert to 1D array
             
-            print(f"✅ Loaded win prediction data:")
+            print(f"SUCCESS: Loaded win prediction data:")
             print(f"   Features shape: {X.shape}")
             print(f"   Target shape: {y.shape}")
             print(f"   Win rate: {y.mean()*100:.1f}%")
@@ -30,7 +30,7 @@ class WinProbabilityTrainer:
             
             return X, y
         except Exception as e:
-            print(f"❌ Error loading processed data: {e}")
+            print(f"ERROR loading processed data: {e}")
             print("Make sure you've run preprocess_v2.py first!")
             return None, None
     
@@ -40,7 +40,7 @@ class WinProbabilityTrainer:
             X, y, test_size=test_size, random_state=random_state, stratify=y
         )
         
-        print(f"✅ Data split completed:")
+        print(f"SUCCESS: Data split completed:")
         print(f"   Training set: {X_train.shape[0]} samples (Win rate: {y_train.mean()*100:.1f}%)")
         print(f"   Test set: {X_test.shape[0]} samples (Win rate: {y_test.mean()*100:.1f}%)")
         
@@ -49,7 +49,7 @@ class WinProbabilityTrainer:
     def initialize_models(self):
         """
         Initialize CLASSIFICATION models for win prediction
-        🎯 KEY CHANGE: These predict WIN PROBABILITY, not speed ratings!
+        KEY CHANGE: These predict WIN PROBABILITY, not speed ratings!
         """
         self.models = {
             'Logistic Regression': LogisticRegression(
@@ -71,16 +71,16 @@ class WinProbabilityTrainer:
             )
         }
         
-        print("✅ Initialized WIN PREDICTION models:")
+        print("SUCCESS: Initialized WIN PREDICTION models:")
         for name in self.models.keys():
             print(f"   - {name}")
     
     def train_and_evaluate_models(self, X_train, X_test, y_train, y_test):
         """
         Train and evaluate WIN PREDICTION models
-        🎯 Uses classification metrics instead of regression metrics!
+        Uses classification metrics instead of regression metrics!
         """
-        print("\n🎯 TRAINING WIN PREDICTION MODELS")
+        print("\n=== TRAINING WIN PREDICTION MODELS ===")
         print("=" * 50)
         
         results = {}
@@ -136,7 +136,7 @@ class WinProbabilityTrainer:
         best_name = max(results.keys(), key=lambda x: results[x]['test_auc'])
         self.best_model = results[best_name]['model']
         
-        print(f"\n🏆 BEST WIN PREDICTION MODEL: {best_name}")
+        print(f"\n*** BEST WIN PREDICTION MODEL: {best_name} ***")
         print("=" * 40)
         print(f"Test AUC:      {results[best_name]['test_auc']:.3f}")
         print(f"Test Accuracy: {results[best_name]['test_accuracy']:.3f}")
@@ -154,7 +154,7 @@ class WinProbabilityTrainer:
                 'importance': model.feature_importances_
             }).sort_values('importance', ascending=False)
             
-            print("\n📊 WIN PREDICTION FEATURE IMPORTANCE")
+            print("\n=== WIN PREDICTION FEATURE IMPORTANCE ===")
             print("=" * 40)
             print("Top 10 most important features:")
             print(self.feature_importance.head(10))
@@ -167,22 +167,22 @@ class WinProbabilityTrainer:
                 'importance': np.abs(model.coef_[0])
             }).sort_values('importance', ascending=False)
             
-            print("\n📊 WIN PREDICTION FEATURE IMPORTANCE (Logistic Regression)")
+            print("\n=== WIN PREDICTION FEATURE IMPORTANCE (Logistic Regression) ===")
             print("=" * 40)
             print("Top 10 most important features:")
             print(self.feature_importance.head(10))
             
             return self.feature_importance
         else:
-            print(f"\n⚠️  {best_model_name} doesn't support feature importance")
+            print(f"\nWARNING: {best_model_name} doesn't support feature importance")
             return None
     
     def create_win_prediction_visualizations(self, results, X, y_test, best_model_name):
         """
         Create visualizations specifically for WIN PREDICTION
-        🎯 Different charts than regression - focuses on probabilities and classification
+        Different charts than regression - focuses on probabilities and classification
         """
-        print("\n📈 Creating win prediction visualizations...")
+        print("\n=== Creating win prediction visualizations ===")
         
         os.makedirs('plots', exist_ok=True)
         
@@ -270,14 +270,14 @@ class WinProbabilityTrainer:
         plt.savefig('plots/win_prediction_analysis.png', dpi=300, bbox_inches='tight')
         plt.show()
         
-        print("✅ Win prediction visualizations saved to plots/win_prediction_analysis.png")
+        print("SUCCESS: Win prediction visualizations saved to plots/win_prediction_analysis.png")
     
     def analyze_betting_performance(self, results, best_model_name, y_test):
         """
-        🎰 Analyze how well the model would perform for BETTING
+        Analyze how well the model would perform for BETTING
         This is what you ultimately want - finding value bets!
         """
-        print(f"\n🎰 BETTING PERFORMANCE ANALYSIS")
+        print(f"\n=== BETTING PERFORMANCE ANALYSIS ===")
         print("=" * 50)
         
         best_probs = results[best_model_name]['y_prob_test']
@@ -295,137 +295,3 @@ class WinProbabilityTrainer:
                 actual_win_rate = y_test[selected].mean()
                 expected_win_rate = best_probs[selected].mean()
                 print(f"{threshold:8.1%} | {selected.sum():10d} | {actual_win_rate:8.1%} | {expected_win_rate:14.1%}")
-        
-        # Find the best horses (top 10% by probability)
-        top_10_pct = np.percentile(best_probs, 90)
-        top_selections = best_probs >= top_10_pct
-        
-        if top_selections.sum() > 0:
-            top_win_rate = y_test[top_selections].mean()
-            print(f"\n🏆 TOP 10% PREDICTIONS:")
-            print(f"   Selections: {top_selections.sum()}")
-            print(f"   Win Rate: {top_win_rate:.1%}")
-            print(f"   Expected: {best_probs[top_selections].mean():.1%}")
-    
-    def save_model(self, model, model_name, filename=None):
-        """Save the trained win prediction model"""
-        if filename is None:
-            filename = f"models/win_prediction_model_{model_name.lower().replace(' ', '_')}.pkl"
-        
-        os.makedirs('models', exist_ok=True)
-        joblib.dump(model, filename)
-        print(f"✅ Win prediction model saved to {filename}")
-        return filename
-    
-    def predict_win_probabilities(self, race_features):
-        """
-        🎯 Predict WIN PROBABILITIES for new races
-        This is your ultimate goal - live race prediction!
-        """
-        if self.best_model is None:
-            print("❌ No trained model available. Train a model first!")
-            return None
-        
-        win_probabilities = self.best_model.predict_proba(race_features)[:, 1]
-        return win_probabilities
-    
-    def simulate_race_prediction(self, X, y, sample_size=8):
-        """
-        🏁 Simulate predicting a single race
-        Shows what your live system will look like!
-        """
-        if self.best_model is None:
-            print("❌ No trained model available!")
-            return None
-        
-        # Take a random sample to simulate a race
-        sample_indices = np.random.choice(len(X), size=min(sample_size, len(X)), replace=False)
-        race_X = X.iloc[sample_indices]
-        race_y = y[sample_indices]
-        
-        # Predict win probabilities
-        win_probs = self.predict_win_probabilities(race_X)
-        
-        # Create race results
-        race_results = pd.DataFrame({
-            'Horse': [f"Horse_{i+1}" for i in range(len(race_X))],
-            'Predicted_Win_Prob': win_probs,
-            'Actually_Won': race_y
-        })
-        
-        # Sort by predicted probability
-        race_results = race_results.sort_values('Predicted_Win_Prob', ascending=False)
-        race_results['Rank'] = range(1, len(race_results) + 1)
-        
-        print(f"\n🏁 SIMULATED RACE PREDICTION")
-        print("=" * 50)
-        print("Rank | Horse    | Win Prob | Actually Won")
-        print("-" * 45)
-        
-        for _, row in race_results.iterrows():
-            won_symbol = "🏆" if row['Actually_Won'] else "❌"
-            print(f"{row['Rank']:4d} | {row['Horse']:8s} | {row['Predicted_Win_Prob']:8.1%} | {won_symbol}")
-        
-        # Check if we picked the winner
-        top_pick_won = race_results.iloc[0]['Actually_Won']
-        actual_winner_rank = race_results[race_results['Actually_Won'] == 1]['Rank'].iloc[0] if any(race_results['Actually_Won']) else "No winner in sample"
-        
-        print(f"\n📊 PREDICTION RESULTS:")
-        print(f"   Top pick won: {'YES! 🎉' if top_pick_won else 'No 😞'}")
-        print(f"   Actual winner ranked: {actual_winner_rank}")
-        
-        return race_results
-
-# Main execution
-if __name__ == "__main__":
-    print("🏇 WIN PROBABILITY ML TRAINER")
-    print("=" * 50)
-    
-    # Initialize trainer
-    trainer = WinProbabilityTrainer()
-    
-    # Load processed data
-    X, y = trainer.load_processed_data()
-    
-    if X is not None and y is not None:
-        # Split data
-        X_train, X_test, y_train, y_test = trainer.split_data(X, y)
-        
-        # Initialize models
-        trainer.initialize_models()
-        
-        # Train and evaluate models
-        results = trainer.train_and_evaluate_models(X_train, X_test, y_train, y_test)
-        
-        # Select best model
-        best_name, best_result = trainer.select_best_model(results)
-        
-        # Analyze feature importance
-        trainer.analyze_feature_importance(X, best_name, best_result)
-        
-        # Create visualizations
-        trainer.create_win_prediction_visualizations(results, X, y_test, best_name)
-        
-        # Analyze betting performance
-        trainer.analyze_betting_performance(results, best_name, y_test)
-        
-        # Save the best model
-        model_path = trainer.save_model(best_result['model'], best_name)
-        
-        # Simulate a race prediction
-        trainer.simulate_race_prediction(X_test, y_test)
-        
-        print(f"\n🎉 WIN PREDICTION PIPELINE COMPLETE!")
-        print(f"✅ Best model: {best_name}")
-        print(f"✅ Model saved: {model_path}")
-        print(f"✅ Visualizations: plots/win_prediction_analysis.png")
-        
-        print(f"\n💡 Next steps:")
-        print(f"   1. Check your AUC score (>0.7 is good, >0.8 is excellent)")
-        print(f"   2. Look at feature importance - what matters most?")
-        print(f"   3. Scale up with 1000+ races from Equibase")
-        print(f"   4. Build live prediction interface")
-        
-    else:
-        print("❌ Failed to load processed data")
-        print("Make sure you've run preprocess_v2.py first!")
