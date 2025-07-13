@@ -8,15 +8,17 @@ class WinProbabilityPreprocessor:
         self.label_encoders = {}
         self.scaler = StandardScaler()
         
-    def load_data(self, filepath):
+    def load_data(self, filepath='data/horse_racing_data_1000.csv'):
         """Load the CSV data"""
         try:
             df = pd.read_csv(filepath)
             print(f"SUCCESS: Loaded {len(df)} records from {filepath}")
             print(f"Data shape: {df.shape}")
+            print(f"Date range: {df['race_date'].min()} to {df['race_date'].max()}")
             return df
         except Exception as e:
             print(f"ERROR loading data: {e}")
+            print("Make sure you've run data_generator.py first!")
             return None
     
     def explore_data(self, df):
@@ -24,24 +26,31 @@ class WinProbabilityPreprocessor:
         print("\n=== WIN PROBABILITY DATA EXPLORATION ===")
         print("=" * 50)
         
-        print("Column info:")
-        print(df.info())
-        
-        print("\nFirst few rows:")
-        print(df.head())
+        print("Dataset overview:")
+        print(f"Total horses: {len(df)}")
+        print(f"Unique races: {len(df.groupby(['race_date', 'track_name', 'race_number']))}")
+        print(f"Unique tracks: {df['track_name'].nunique()}")
+        print(f"Unique jockeys: {df['jockey'].nunique()}")
+        print(f"Unique trainers: {df['trainer'].nunique()}")
+        print(f"Average field size: {df.groupby(['race_date', 'track_name', 'race_number']).size().mean():.1f}")
         
         print("\nFinish position distribution:")
-        print(df['finish_position'].value_counts().sort_index())
+        finish_dist = df['finish_position'].value_counts().sort_index()
+        for pos, count in finish_dist.head(8).items():
+            print(f"  {pos}: {count} horses ({count/len(df)*100:.1f}%)")
         
-        print("\nMissing values:")
-        print(df.isnull().sum())
+        print(f"\nMissing values:")
+        missing = df.isnull().sum()
+        if missing.sum() > 0:
+            print(missing[missing > 0])
+        else:
+            print("  No missing values found!")
         
         return df
     
     def add_win_targets(self, df):
         """
-        KEY CHANGE: Create win/place/show targets instead of speed rating
-        This is the fundamental shift from regression to classification!
+        Create win/place/show targets for classification
         """
         print("\n=== CREATING WIN PROBABILITY TARGETS ===")
         print("=" * 50)
@@ -53,7 +62,7 @@ class WinProbabilityPreprocessor:
         df_targets['placed'] = (df_targets['finish_position'] <= 2).astype(int) 
         df_targets['showed'] = (df_targets['finish_position'] <= 3).astype(int)
         
-        # Add field size (crucial for win probability - harder to win with more horses)
+        # Add field size (crucial for win probability)
         df_targets['field_size'] = df_targets.groupby(['race_date', 'track_name', 'race_number'])['horse_name'].transform('count')
         
         print(f"SUCCESS: Win rate in data: {df_targets['won'].mean()*100:.1f}%")
@@ -61,51 +70,79 @@ class WinProbabilityPreprocessor:
         print(f"SUCCESS: Show rate in data: {df_targets['showed'].mean()*100:.1f}%")
         print(f"SUCCESS: Average field size: {df_targets['field_size'].mean():.1f}")
         
+        # Validate realistic win rates
+        expected_win_rate = 1.0 / df_targets['field_size'].mean()
+        actual_win_rate = df_targets['won'].mean()
+        print(f"Expected win rate (1/field_size): {expected_win_rate:.1%}")
+        print(f"Actual win rate: {actual_win_rate:.1%}")
+        
         return df_targets
     
     def create_performance_features(self, df):
         """
-        Create jockey/trainer performance features
-        These are MUCH more important for win prediction than for speed ratings!
+        Create jockey/trainer performance features with proper statistical handling
         """
         print("\n=== CREATING PERFORMANCE FEATURES ===")
         print("=" * 50)
         
         df_perf = df.copy()
         
-        # Jockey performance (this is HUGE for win prediction)
+        # Jockey performance with minimum ride requirements
         jockey_stats = df_perf.groupby('jockey').agg({
-            'won': 'mean',
+            'won': ['mean', 'sum', 'count'],
             'placed': 'mean',
-            'showed': 'mean',
-            'horse_name': 'count'  # Number of rides
-        }).rename(columns={'horse_name': 'jockey_rides'})
-        jockey_stats.columns = ['jockey_win_rate', 'jockey_place_rate', 'jockey_show_rate', 'jockey_rides']
+            'showed': 'mean'
+        }).round(3)
+        
+        # Flatten column names
+        jockey_stats.columns = ['jockey_win_rate', 'jockey_wins', 'jockey_rides', 
+                               'jockey_place_rate', 'jockey_show_rate']
+        
+        # Only use jockey stats for jockeys with 10+ rides (statistical significance)
+        min_rides = 10
+        jockey_stats.loc[jockey_stats['jockey_rides'] < min_rides, 'jockey_win_rate'] = df_perf['won'].mean()
+        jockey_stats.loc[jockey_stats['jockey_rides'] < min_rides, 'jockey_place_rate'] = df_perf['placed'].mean()
+        jockey_stats.loc[jockey_stats['jockey_rides'] < min_rides, 'jockey_show_rate'] = df_perf['showed'].mean()
         
         # Merge back to main dataframe
         df_perf = df_perf.merge(jockey_stats, left_on='jockey', right_index=True, how='left')
         
-        # Trainer performance
+        # Trainer performance with minimum starts requirements
         trainer_stats = df_perf.groupby('trainer').agg({
-            'won': 'mean',
-            'placed': 'mean', 
-            'showed': 'mean',
-            'horse_name': 'count'
-        }).rename(columns={'horse_name': 'trainer_starts'})
-        trainer_stats.columns = ['trainer_win_rate', 'trainer_place_rate', 'trainer_show_rate', 'trainer_starts']
+            'won': ['mean', 'sum', 'count'],
+            'placed': 'mean',
+            'showed': 'mean'
+        }).round(3)
+        
+        trainer_stats.columns = ['trainer_win_rate', 'trainer_wins', 'trainer_starts',
+                                'trainer_place_rate', 'trainer_show_rate']
+        
+        # Only use trainer stats for trainers with 15+ starts
+        min_starts = 15
+        trainer_stats.loc[trainer_stats['trainer_starts'] < min_starts, 'trainer_win_rate'] = df_perf['won'].mean()
+        trainer_stats.loc[trainer_stats['trainer_starts'] < min_starts, 'trainer_place_rate'] = df_perf['placed'].mean()
+        trainer_stats.loc[trainer_stats['trainer_starts'] < min_starts, 'trainer_show_rate'] = df_perf['showed'].mean()
         
         df_perf = df_perf.merge(trainer_stats, left_on='trainer', right_index=True, how='left')
         
         # Track/surface specific performance
         track_surface_stats = df_perf.groupby(['track_name', 'surface']).agg({
-            'won': 'mean'
-        })['won'].reset_index()
-        track_surface_stats.columns = ['track_name', 'surface', 'track_surface_win_rate']
+            'won': 'mean',
+            'horse_name': 'count'
+        }).round(3)
+        track_surface_stats.columns = ['track_surface_win_rate', 'track_surface_races']
         
+        # Only use track/surface stats with 20+ races
+        min_track_races = 20
+        track_surface_stats.loc[track_surface_stats['track_surface_races'] < min_track_races, 'track_surface_win_rate'] = df_perf['won'].mean()
+        
+        track_surface_stats = track_surface_stats[['track_surface_win_rate']].reset_index()
         df_perf = df_perf.merge(track_surface_stats, on=['track_name', 'surface'], how='left')
         
         print(f"SUCCESS: Added jockey performance features")
+        print(f"  Jockeys with 10+ rides: {(jockey_stats['jockey_rides'] >= min_rides).sum()}")
         print(f"SUCCESS: Added trainer performance features") 
+        print(f"  Trainers with 15+ starts: {(trainer_stats['trainer_starts'] >= min_starts).sum()}")
         print(f"SUCCESS: Added track/surface specific features")
         
         return df_perf
@@ -113,7 +150,6 @@ class WinProbabilityPreprocessor:
     def create_odds_features(self, df):
         """
         Create advanced odds-based features
-        These are CRITICAL for finding value bets and win prediction!
         """
         print("\n=== CREATING ODDS FEATURES ===")
         print("=" * 50)
@@ -134,42 +170,52 @@ class WinProbabilityPreprocessor:
         # Implied probability from odds
         df_odds['implied_probability'] = 1 / df_odds['odds']
         
+        # Normalize implied probabilities to sum to 1 (remove track takeout)
+        race_totals = df_odds.groupby(['race_date', 'track_name', 'race_number'])['implied_probability'].transform('sum')
+        df_odds['true_probability'] = df_odds['implied_probability'] / race_totals
+        
         # Odds categories
         df_odds['odds_category'] = pd.cut(df_odds['odds'], 
                                         bins=[0, 3, 6, 10, float('inf')], 
                                         labels=['favorite', 'second_choice', 'medium_odds', 'longshot'])
         
         print(f"SUCCESS: Created favorite indicator")
-        print(f"SUCCESS: Created odds ranking")
-        print(f"SUCCESS: Created implied probability features")
-        print(f"SUCCESS: Favorite win rate: {df_odds[df_odds['favorite']==1]['won'].mean()*100:.1f}%")
+        print(f"SUCCESS: Created odds ranking and probabilities")
+        print(f"VALIDATION: Favorite win rate: {df_odds[df_odds['favorite']==1]['won'].mean()*100:.1f}%")
+        print(f"VALIDATION: Longshot win rate: {df_odds[df_odds['odds_category']=='longshot']['won'].mean()*100:.1f}%")
         
         return df_odds
     
     def create_post_position_features(self, df):
         """
-        Post position is CRUCIAL for win probability
+        Post position analysis with statistical validation
         """
         print("\n=== CREATING POST POSITION FEATURES ===")
         print("=" * 50)
         
         df_post = df.copy()
         
-        # Inside post advantage (posts 1-3 often have advantage)
+        # Inside post advantage (posts 1-3)
         df_post['inside_post'] = (df_post['post_position'] <= 3).astype(int)
         df_post['outside_post'] = (df_post['post_position'] >= 8).astype(int)
         
-        # Post position win rate by track
+        # Post position win rate by track (with minimum sample sizes)
         post_track_stats = df_post.groupby(['track_name', 'post_position']).agg({
-            'won': 'mean'
-        })['won'].reset_index()
-        post_track_stats.columns = ['track_name', 'post_position', 'post_win_rate']
+            'won': ['mean', 'count']
+        }).round(3)
+        post_track_stats.columns = ['post_win_rate', 'post_count']
         
+        # Only use post position stats with 10+ races
+        min_post_races = 10
+        post_track_stats.loc[post_track_stats['post_count'] < min_post_races, 'post_win_rate'] = df_post['won'].mean()
+        
+        post_track_stats = post_track_stats[['post_win_rate']].reset_index()
         df_post = df_post.merge(post_track_stats, on=['track_name', 'post_position'], how='left')
         
         print(f"SUCCESS: Created inside/outside post indicators")
-        print(f"SUCCESS: Inside post win rate: {df_post[df_post['inside_post']==1]['won'].mean()*100:.1f}%")
-        print(f"SUCCESS: Outside post win rate: {df_post[df_post['outside_post']==1]['won'].mean()*100:.1f}%")
+        print(f"VALIDATION: Inside post win rate: {df_post[df_post['inside_post']==1]['won'].mean()*100:.1f}%")
+        print(f"VALIDATION: Outside post win rate: {df_post[df_post['outside_post']==1]['won'].mean()*100:.1f}%")
+        print(f"VALIDATION: Overall win rate: {df_post['won'].mean()*100:.1f}%")
         
         return df_post
     
@@ -201,7 +247,7 @@ class WinProbabilityPreprocessor:
             return np.nan
     
     def clean_data(self, df):
-        """Clean and prepare the data - enhanced for win prediction"""
+        """Clean and prepare the data for win prediction"""
         print("\n=== CLEANING DATA FOR WIN PREDICTION ===")
         print("=" * 40)
         
@@ -222,6 +268,11 @@ class WinProbabilityPreprocessor:
             df_clean['odds'] = pd.to_numeric(df_clean['odds'], errors='coerce')
             print(f"SUCCESS: Cleaned odds column")
         
+        # Create speed per furlong
+        if 'final_time_seconds' in df_clean.columns and 'distance_furlongs' in df_clean.columns:
+            df_clean['speed_per_furlong'] = df_clean['final_time_seconds'] / df_clean['distance_furlongs']
+            print(f"SUCCESS: Created speed per furlong feature")
+        
         # Handle missing values
         numeric_columns = df_clean.select_dtypes(include=[np.number]).columns
         for col in numeric_columns:
@@ -229,7 +280,7 @@ class WinProbabilityPreprocessor:
                 df_clean[col] = df_clean[col].fillna(df_clean[col].median())
                 print(f"SUCCESS: Filled missing values in {col}")
         
-        print(f"Data shape after cleaning: {df_clean.shape}")
+        print(f"Final data shape: {df_clean.shape}")
         return df_clean
     
     def encode_categorical_features(self, df):
@@ -254,7 +305,6 @@ class WinProbabilityPreprocessor:
     def prepare_for_win_prediction(self, df, target='won'):
         """
         Prepare final dataset for WIN PROBABILITY prediction
-        This completely replaces your speed rating preparation!
         """
         print(f"\n=== PREPARING FOR WIN PREDICTION (Target: {target}) ===")
         print("=" * 50)
@@ -265,7 +315,7 @@ class WinProbabilityPreprocessor:
             'distance_furlongs', 'post_position', 'weight', 'field_size',
             
             # Odds features (VERY important for win prediction)
-            'odds', 'log_odds', 'favorite', 'odds_rank', 'implied_probability',
+            'odds', 'log_odds', 'favorite', 'odds_rank', 'implied_probability', 'true_probability',
             
             # Performance features (the secret sauce)
             'jockey_win_rate', 'jockey_place_rate', 'jockey_rides',
@@ -274,6 +324,9 @@ class WinProbabilityPreprocessor:
             
             # Post position features
             'inside_post', 'outside_post', 'post_win_rate',
+            
+            # Speed features
+            'speed_per_furlong', 'speed_rating',
             
             # Encoded categorical features
             'surface_encoded', 'track_condition_encoded', 'odds_category_encoded'
@@ -291,7 +344,7 @@ class WinProbabilityPreprocessor:
         y = df[target]
         
         # Fill any remaining missing values
-        X = X.fillna(0)
+        X = X.fillna(X.median())
         
         # Scale features
         X_scaled = pd.DataFrame(
@@ -300,10 +353,20 @@ class WinProbabilityPreprocessor:
             index=X.index
         )
         
-        print(f"SUCCESS: Features prepared: {list(X_scaled.columns)}")
+        print(f"SUCCESS: Features prepared: {len(available_features)} features")
         print(f"SUCCESS: Target prepared: {target}")
         print(f"SUCCESS: Win rate in target: {y.mean()*100:.1f}%")
         print(f"Final shape: X={X_scaled.shape}, y={y.shape}")
+        
+        # Show feature summary
+        print(f"\nFEATURE CATEGORIES:")
+        odds_features = [f for f in available_features if 'odds' in f.lower() or 'favorite' in f.lower() or 'probability' in f.lower()]
+        performance_features = [f for f in available_features if 'win_rate' in f or 'place_rate' in f]
+        position_features = [f for f in available_features if 'post' in f.lower()]
+        print(f"  Odds-related: {len(odds_features)} features")
+        print(f"  Performance: {len(performance_features)} features") 
+        print(f"  Position: {len(position_features)} features")
+        print(f"  Other: {len(available_features) - len(odds_features) - len(performance_features) - len(position_features)} features")
         
         return X_scaled, y
     
@@ -325,46 +388,57 @@ class WinProbabilityPreprocessor:
 
 # Main execution
 if __name__ == "__main__":
-    print("HORSE RACING WIN PROBABILITY PREPROCESSOR")
-    print("=" * 50)
+    print("HORSE RACING WIN PROBABILITY PREPROCESSOR - 1000+ HORSES")
+    print("=" * 60)
     
     # Initialize preprocessor
     preprocessor = WinProbabilityPreprocessor()
     
-    # Load data
-    df = preprocessor.load_data('data/sample_race_data.csv')
+    # Load data (tries multiple file names)
+    data_files = ['data/horse_racing_data_1000.csv', 'data/sample_race_data.csv']
+    df = None
+    
+    for filepath in data_files:
+        if os.path.exists(filepath):
+            df = preprocessor.load_data(filepath)
+            break
+    
+    if df is None:
+        print("ERROR: No data file found!")
+        print("Run data_generator.py first to generate 1000+ horses")
+        exit()
     
     if df is not None:
         # Explore data
         df = preprocessor.explore_data(df)
         
-        # Add win targets (KEY CHANGE!)
+        # Add win targets
         df_targets = preprocessor.add_win_targets(df)
         
         # Clean data
         df_clean = preprocessor.clean_data(df_targets)
         
-        # Create performance features (NEW!)
+        # Create performance features
         df_performance = preprocessor.create_performance_features(df_clean)
         
-        # Create odds features (NEW!)
+        # Create odds features
         df_odds = preprocessor.create_odds_features(df_performance)
         
-        # Create post position features (NEW!)
+        # Create post position features
         df_post = preprocessor.create_post_position_features(df_odds)
         
         # Encode categorical features
         df_encoded = preprocessor.encode_categorical_features(df_post)
         
-        # Prepare for WIN prediction (not speed rating!)
+        # Prepare for WIN prediction
         X, y = preprocessor.prepare_for_win_prediction(df_encoded, target='won')
         
         if X is not None and y is not None:
             # Save processed data
             preprocessor.save_processed_data(X, y)
             
-            print("\nSUCCESS! Data is ready for WIN PREDICTION!")
-            print("\nNext step: Run train_win_model.py to build your WIN PROBABILITY model")
+            print("\nSUCCESS! 1000+ horses ready for WIN PREDICTION!")
+            print("Next step: Run train_model.py to build your enhanced model")
         else:
             print("ERROR: Failed to prepare data for ML")
     else:
