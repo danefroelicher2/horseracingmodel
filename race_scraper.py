@@ -4,90 +4,126 @@ import pandas as pd
 import time
 import os
 from datetime import datetime
+import json
 
-class EquibaseScraper:
+class HorseRacingScraper:
     def __init__(self):
         self.headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
         }
-        self.base_url = "https://www.equibase.com"
         
-    def scrape_race_results(self, track_code, date, race_number):
-        """
-        Scrape a single race result from Equibase
-        
-        Args:
-            track_code (str): Track code like 'SA' for Santa Anita
-            date (str): Date in MMDDYY format
-            race_number (int): Race number
-        """
-        # Construct URL - this is the Equibase results page format
-        url = f"{self.base_url}/static/entry/runningline/runningline.cfm?track={track_code}&raceDate={date}&raceNumber={race_number}"
-        
+    def test_connection(self, url):
+        """Test if we can connect to a URL"""
         try:
-            print(f"Scraping: {track_code} - {date} - Race {race_number}")
-            response = requests.get(url, headers=self.headers)
-            response.raise_for_status()
-            
-            soup = BeautifulSoup(response.content, 'html.parser')
-            
-            # Parse the race results table
-            race_data = []
-            
-            # Find the results table (this may need adjustment based on actual HTML structure)
-            table = soup.find('table', class_='results-table') or soup.find('table')
-            
-            if table:
-                rows = table.find_all('tr')[1:]  # Skip header row
-                
-                for row in rows:
-                    cols = row.find_all('td')
-                    if len(cols) >= 8:  # Ensure we have enough columns
-                        try:
-                            horse_data = {
-                                'race_date': date,
-                                'track_name': track_code,
-                                'race_number': race_number,
-                                'finish_position': cols[0].get_text(strip=True),
-                                'horse_name': cols[1].get_text(strip=True),
-                                'jockey': cols[2].get_text(strip=True),
-                                'odds': cols[3].get_text(strip=True),
-                                'final_time': cols[4].get_text(strip=True),
-                                'margin': cols[5].get_text(strip=True) if len(cols) > 5 else '',
-                                'weight': cols[6].get_text(strip=True) if len(cols) > 6 else '',
-                                'post_position': cols[7].get_text(strip=True) if len(cols) > 7 else ''
-                            }
-                            race_data.append(horse_data)
-                        except Exception as e:
-                            print(f"Error parsing row: {e}")
-                            continue
-            
-            return race_data
-            
-        except requests.exceptions.RequestException as e:
-            print(f"Error fetching {url}: {e}")
-            return []
+            response = requests.get(url, headers=self.headers, timeout=10)
+            print(f"Status Code: {response.status_code}")
+            print(f"URL: {url}")
+            if response.status_code == 200:
+                return True
+            else:
+                return False
         except Exception as e:
-            print(f"Error parsing data: {e}")
-            return []
+            print(f"Connection error: {e}")
+            return False
     
-    def scrape_multiple_races(self, track_code, date, num_races=10):
-        """
-        Scrape multiple races from a single day
-        """
+    def create_sample_data(self):
+        """Create sample horse racing data for testing our ML pipeline"""
+        print("Creating sample horse racing data...")
+        
+        # Sample data that mimics real horse racing results
+        sample_races = [
+            {
+                'race_date': '2024-07-01',
+                'track_name': 'Santa Anita',
+                'race_number': 1,
+                'distance': '6.0f',
+                'surface': 'Dirt',
+                'track_condition': 'Fast',
+                'horse_name': 'Thunder Strike',
+                'jockey': 'J. Rosario',
+                'trainer': 'B. Baffert',
+                'post_position': 3,
+                'final_time': '1:10.23',
+                'finish_position': 1,
+                'odds': '3.20',
+                'weight': 118,
+                'margin': 'Won by 2',
+                'speed_rating': 95
+            },
+            {
+                'race_date': '2024-07-01',
+                'track_name': 'Santa Anita',
+                'race_number': 1,
+                'distance': '6.0f',
+                'surface': 'Dirt',
+                'track_condition': 'Fast',
+                'horse_name': 'Lightning Bolt',
+                'jockey': 'F. Prat',
+                'trainer': 'J. Sadler',
+                'post_position': 5,
+                'final_time': '1:10.45',
+                'finish_position': 2,
+                'odds': '5.60',
+                'weight': 118,
+                'margin': '2',
+                'speed_rating': 92
+            },
+            {
+                'race_date': '2024-07-01',
+                'track_name': 'Santa Anita',
+                'race_number': 1,
+                'distance': '6.0f',
+                'surface': 'Dirt',
+                'track_condition': 'Fast',
+                'horse_name': 'Storm Chaser',
+                'jockey': 'M. Smith',
+                'trainer': 'D. O\'Neill',
+                'post_position': 1,
+                'final_time': '1:10.67',
+                'finish_position': 3,
+                'odds': '8.40',
+                'weight': 118,
+                'margin': '1.5',
+                'speed_rating': 89
+            }
+        ]
+        
+        # Generate more sample data for different races/days
+        import random
+        
+        horses = ['Thunder Strike', 'Lightning Bolt', 'Storm Chaser', 'Fire Wind', 'Golden Arrow', 
+                 'Silver Bullet', 'Midnight Runner', 'Speed Demon', 'Star Gazer', 'Wild Spirit']
+        jockeys = ['J. Rosario', 'F. Prat', 'M. Smith', 'L. Saez', 'I. Ortiz', 'J. Castellano']
+        trainers = ['B. Baffert', 'J. Sadler', 'D. O\'Neill', 'C. Brown', 'T. Pletcher', 'J. Shirreffs']
+        
         all_races = []
         
-        for race_num in range(1, num_races + 1):
-            race_data = self.scrape_race_results(track_code, date, race_num)
-            all_races.extend(race_data)
-            time.sleep(1)  # Be respectful to the server
+        for race_num in range(1, 6):  # 5 races
+            for pos in range(1, 9):  # 8 horses per race
+                race_data = {
+                    'race_date': '2024-07-01',
+                    'track_name': 'Santa Anita',
+                    'race_number': race_num,
+                    'distance': random.choice(['6.0f', '6.5f', '7.0f', '1m', '1.25m']),
+                    'surface': random.choice(['Dirt', 'Turf']),
+                    'track_condition': random.choice(['Fast', 'Good', 'Sloppy']),
+                    'horse_name': random.choice(horses),
+                    'jockey': random.choice(jockeys),
+                    'trainer': random.choice(trainers),
+                    'post_position': random.randint(1, 8),
+                    'final_time': f"1:{random.randint(8, 15)}.{random.randint(10, 99)}",
+                    'finish_position': pos,
+                    'odds': f"{random.uniform(2.0, 20.0):.2f}",
+                    'weight': random.randint(115, 126),
+                    'margin': f"{random.uniform(0.5, 5.0):.1f}" if pos > 1 else "Won by 1.5",
+                    'speed_rating': random.randint(75, 100)
+                }
+                all_races.append(race_data)
         
         return all_races
     
     def save_to_csv(self, race_data, filename):
-        """
-        Save race data to CSV file
-        """
+        """Save race data to CSV file"""
         if race_data:
             df = pd.DataFrame(race_data)
             
@@ -97,31 +133,63 @@ class EquibaseScraper:
             filepath = os.path.join('data', filename)
             df.to_csv(filepath, index=False)
             print(f"Saved {len(race_data)} records to {filepath}")
+            
+            # Show sample of the data
+            print("\nSample of saved data:")
+            print(df.head())
+            
             return filepath
         else:
             print("No data to save")
             return None
+    
+    def scrape_racing_reference(self, track_code, date):
+        """
+        Alternative scraper for Racing Reference (often more accessible)
+        This is a backup plan if Equibase doesn't work
+        """
+        # This would be implemented later with actual Racing Reference URLs
+        print(f"Racing Reference scraper not implemented yet")
+        return []
 
 # Example usage and testing
 if __name__ == "__main__":
-    scraper = EquibaseScraper()
+    scraper = HorseRacingScraper()
     
-    # Test with Santa Anita results
-    # Format: MMDDYY (e.g., 070124 for July 1, 2024)
-    test_date = "070124"  # July 1, 2024
-    test_track = "SA"     # Santa Anita
-    
-    print("Starting horse racing data scraper...")
+    print("🏇 Horse Racing Data Scraper")
     print("=" * 50)
     
-    # Scrape a few races as a test
-    race_data = scraper.scrape_multiple_races(test_track, test_date, num_races=3)
+    # Test different approaches
+    print("\n1. Testing Equibase connection...")
+    equibase_urls = [
+        "https://www.equibase.com",
+        "https://www.equibase.com/static/chart/summary/",
+        "https://www.equibase.com/static/entry/index.html"
+    ]
     
-    if race_data:
-        filename = f"{test_track}_{test_date}.csv"
-        scraper.save_to_csv(race_data, filename)
-        print(f"\nSuccess! Scraped {len(race_data)} horse records")
-        print(f"Data saved to: data/{filename}")
+    for url in equibase_urls:
+        print(f"Testing: {url}")
+        if scraper.test_connection(url):
+            print("✅ Connection successful")
+        else:
+            print("❌ Connection failed")
+        print()
+    
+    print("\n2. Creating sample data for ML development...")
+    sample_data = scraper.create_sample_data()
+    
+    if sample_data:
+        filename = "sample_race_data.csv"
+        scraper.save_to_csv(sample_data, filename)
+        print(f"\n✅ Success! Created {len(sample_data)} sample records")
+        print(f"📁 Data saved to: data/{filename}")
+        print("\n💡 Next steps:")
+        print("   - Use this sample data to build your ML model")
+        print("   - Test your preprocessing and training pipeline")
+        print("   - Once ML is working, we'll get real data")
     else:
-        print("No data scraped - check if the date/track combination has results")
-        print("You may need to adjust the HTML parsing based on Equibase's current structure")
+        print("❌ No sample data created")
+    
+    print("\n" + "=" * 50)
+    print("🎯 STRATEGY: Start with sample data, build ML pipeline first!")
+    print("   Real data scraping can be tricky, but ML development doesn't need to wait.")

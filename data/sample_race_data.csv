@@ -1,0 +1,41 @@
+race_date,track_name,race_number,distance,surface,track_condition,horse_name,jockey,trainer,post_position,final_time,finish_position,odds,weight,margin,speed_rating
+2024-07-01,Santa Anita,1,6.0f,Turf,Fast,Storm Chaser,M. Smith,C. Brown,5,1:14.59,1,17.92,117,Won by 1.5,79
+2024-07-01,Santa Anita,1,1.25m,Dirt,Sloppy,Star Gazer,I. Ortiz,D. O'Neill,8,1:8.34,2,16.59,122,3.7,84
+2024-07-01,Santa Anita,1,6.0f,Dirt,Good,Midnight Runner,F. Prat,B. Baffert,7,1:15.90,3,7.98,119,3.4,93
+2024-07-01,Santa Anita,1,6.0f,Turf,Sloppy,Star Gazer,J. Castellano,D. O'Neill,1,1:9.82,4,4.57,123,1.9,97
+2024-07-01,Santa Anita,1,1m,Dirt,Good,Silver Bullet,J. Rosario,B. Baffert,2,1:9.24,5,5.76,122,3.1,83
+2024-07-01,Santa Anita,1,6.5f,Turf,Good,Fire Wind,J. Castellano,J. Shirreffs,1,1:11.91,6,6.04,123,0.9,97
+2024-07-01,Santa Anita,1,1m,Turf,Good,Storm Chaser,M. Smith,J. Sadler,1,1:9.13,7,10.54,121,4.3,75
+2024-07-01,Santa Anita,1,6.5f,Dirt,Sloppy,Thunder Strike,L. Saez,J. Sadler,2,1:13.35,8,18.92,116,1.8,83
+2024-07-01,Santa Anita,2,6.5f,Turf,Fast,Golden Arrow,I. Ortiz,J. Shirreffs,1,1:11.11,1,9.73,121,Won by 1.5,80
+2024-07-01,Santa Anita,2,1.25m,Turf,Sloppy,Fire Wind,J. Rosario,C. Brown,5,1:13.18,2,3.99,116,1.3,92
+2024-07-01,Santa Anita,2,1m,Dirt,Fast,Fire Wind,J. Rosario,B. Baffert,4,1:15.70,3,12.03,126,2.9,76
+2024-07-01,Santa Anita,2,6.0f,Turf,Fast,Fire Wind,J. Castellano,C. Brown,5,1:10.45,4,11.94,115,2.9,97
+2024-07-01,Santa Anita,2,6.5f,Dirt,Good,Midnight Runner,L. Saez,C. Brown,1,1:15.64,5,4.97,124,2.0,86
+2024-07-01,Santa Anita,2,7.0f,Dirt,Sloppy,Speed Demon,L. Saez,B. Baffert,2,1:11.69,6,9.42,124,1.2,83
+2024-07-01,Santa Anita,2,7.0f,Dirt,Good,Golden Arrow,M. Smith,T. Pletcher,8,1:8.23,7,11.46,121,3.0,87
+2024-07-01,Santa Anita,2,1m,Turf,Good,Star Gazer,M. Smith,B. Baffert,6,1:9.92,8,2.67,124,1.9,79
+2024-07-01,Santa Anita,3,1.25m,Turf,Fast,Golden Arrow,M. Smith,J. Shirreffs,1,1:9.82,1,18.68,126,Won by 1.5,98
+2024-07-01,Santa Anita,3,1.25m,Turf,Good,Lightning Bolt,J. Rosario,J. Shirreffs,2,1:15.97,2,9.52,126,3.1,95
+2024-07-01,Santa Anita,3,1.25m,Dirt,Good,Star Gazer,I. Ortiz,B. Baffert,6,1:8.75,3,5.41,126,1.5,100
+2024-07-01,Santa Anita,3,6.0f,Turf,Fast,Storm Chaser,J. Castellano,C. Brown,3,1:9.69,4,11.04,123,3.3,79
+2024-07-01,Santa Anita,3,7.0f,Dirt,Sloppy,Midnight Runner,J. Rosario,J. Sadler,6,1:11.37,5,10.23,119,4.3,93
+2024-07-01,Santa Anita,3,6.0f,Turf,Sloppy,Midnight Runner,L. Saez,C. Brown,5,1:10.36,6,10.37,121,2.0,80
+2024-07-01,Santa Anita,3,1.25m,Turf,Good,Fire Wind,L. Saez,C. Brown,8,1:9.96,7,4.68,121,3.6,77
+2024-07-01,Santa Anita,3,1.25m,Turf,Good,Storm Chaser,J. Castellano,D. O'Neill,7,1:13.17,8,2.53,115,3.9,82
+2024-07-01,Santa Anita,4,1m,Turf,Fast,Wild Spirit,J. Rosario,J. Sadler,2,1:13.29,1,11.78,124,Won by 1.5,85
+2024-07-01,Santa Anita,4,1.25m,Dirt,Sloppy,Star Gazer,M. Smith,D. O'Neill,5,1:10.86,2,18.88,125,2.2,94
+2024-07-01,Santa Anita,4,1.25m,Turf,Good,Fire Wind,J. Rosario,C. Brown,5,1:13.59,3,14.22,126,1.3,75
+2024-07-01,Santa Anita,4,6.0f,Dirt,Good,Silver Bullet,L. Saez,C. Brown,8,1:13.67,4,8.93,126,2.3,86
+2024-07-01,Santa Anita,4,7.0f,Turf,Good,Fire Wind,M. Smith,C. Brown,7,1:10.80,5,18.35,117,2.2,86
+2024-07-01,Santa Anita,4,1m,Dirt,Good,Fire Wind,J. Rosario,D. O'Neill,5,1:10.78,6,2.82,118,1.3,84
+2024-07-01,Santa Anita,4,7.0f,Turf,Sloppy,Golden Arrow,L. Saez,T. Pletcher,1,1:11.34,7,5.30,116,2.8,93
+2024-07-01,Santa Anita,4,6.5f,Turf,Sloppy,Fire Wind,L. Saez,D. O'Neill,8,1:13.76,8,5.37,116,1.0,85
+2024-07-01,Santa Anita,5,1m,Turf,Fast,Lightning Bolt,J. Castellano,C. Brown,1,1:8.97,1,8.57,120,Won by 1.5,78
+2024-07-01,Santa Anita,5,1.25m,Turf,Sloppy,Fire Wind,I. Ortiz,C. Brown,3,1:11.93,2,17.80,124,2.9,99
+2024-07-01,Santa Anita,5,7.0f,Turf,Sloppy,Thunder Strike,F. Prat,J. Sadler,8,1:13.57,3,9.57,115,0.6,90
+2024-07-01,Santa Anita,5,6.0f,Dirt,Sloppy,Storm Chaser,I. Ortiz,C. Brown,2,1:14.25,4,18.94,117,1.8,83
+2024-07-01,Santa Anita,5,1.25m,Dirt,Fast,Star Gazer,J. Castellano,C. Brown,8,1:9.96,5,15.68,117,0.7,99
+2024-07-01,Santa Anita,5,1m,Turf,Fast,Silver Bullet,L. Saez,D. O'Neill,8,1:12.49,6,9.08,121,1.2,77
+2024-07-01,Santa Anita,5,1m,Dirt,Sloppy,Wild Spirit,I. Ortiz,B. Baffert,2,1:15.21,7,10.54,121,3.4,81
+2024-07-01,Santa Anita,5,1.25m,Turf,Good,Speed Demon,L. Saez,D. O'Neill,8,1:14.85,8,5.96,125,2.5,84
