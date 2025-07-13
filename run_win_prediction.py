@@ -1,6 +1,6 @@
 """
-RUN WIN PREDICTION PIPELINE
-===========================
+RUN WIN PREDICTION PIPELINE - WINDOWS COMPATIBLE
+===============================================
 
 This is your main script to run the complete win prediction pipeline.
 Save this as: run_win_prediction.py
@@ -20,7 +20,7 @@ import os
 def run_script(script_name, description):
     """Run a Python script and handle errors"""
     print(f"\n{'='*60}")
-    print(f"🚀 {description}")
+    print(f"RUNNING: {description}")
     print(f"{'='*60}")
     
     try:
@@ -32,12 +32,12 @@ def run_script(script_name, description):
             print(result.stderr)
         return True
     except subprocess.CalledProcessError as e:
-        print(f"❌ Error running {script_name}:")
+        print(f"ERROR running {script_name}:")
         print(e.stdout)
         print(e.stderr)
         return False
     except FileNotFoundError:
-        print(f"❌ File {script_name} not found!")
+        print(f"ERROR: File {script_name} not found!")
         print(f"Make sure you've created {script_name} in the current directory.")
         return False
 
@@ -55,7 +55,7 @@ def check_requirements():
             missing_files.append(file)
     
     if missing_files:
-        print("❌ Missing required files:")
+        print("ERROR: Missing required files:")
         for file in missing_files:
             print(f"   - {file}")
         return False
@@ -64,47 +64,47 @@ def check_requirements():
 
 def main():
     """Run the complete win prediction pipeline"""
-    print("🏇 COMPLETE WIN PREDICTION PIPELINE")
+    print("COMPLETE WIN PREDICTION PIPELINE")
     print("=" * 60)
     print("This will:")
-    print("1. ✨ Preprocess data for win prediction")
-    print("2. 🎯 Train win probability models") 
-    print("3. 📊 Create performance visualizations")
-    print("4. 🎰 Analyze betting performance")
+    print("1. Preprocess data for win prediction")
+    print("2. Train win probability models") 
+    print("3. Create performance visualizations")
+    print("4. Analyze betting performance")
     print("=" * 60)
     
     # Check if all required files exist
     if not check_requirements():
-        print("\n❌ Pipeline cannot run - missing files!")
+        print("\nERROR: Pipeline cannot run - missing files!")
         return False
     
     # Step 1: Run preprocessing
     if not run_script('preprocess_v2.py', "STEP 1: Preprocessing for Win Prediction"):
-        print("\n❌ Preprocessing failed! Cannot continue.")
+        print("\nERROR: Preprocessing failed! Cannot continue.")
         return False
     
     # Step 2: Run model training
     if not run_script('train_win_model.py', "STEP 2: Training Win Prediction Models"):
-        print("\n❌ Model training failed!")
+        print("\nERROR: Model training failed!")
         return False
     
     # Success!
     print(f"\n{'='*60}")
-    print("🎉 WIN PREDICTION PIPELINE COMPLETED SUCCESSFULLY!")
+    print("SUCCESS: WIN PREDICTION PIPELINE COMPLETED!")
     print(f"{'='*60}")
     
-    print("\n📊 Check your results:")
-    print("   📁 data/win_prediction_X.csv - Processed features")
-    print("   📁 data/win_prediction_y.csv - Win targets") 
-    print("   📁 models/ - Trained win prediction model")
-    print("   📁 plots/win_prediction_analysis.png - Performance charts")
+    print("\nCheck your results:")
+    print("   data/win_prediction_X.csv - Processed features")
+    print("   data/win_prediction_y.csv - Win targets") 
+    print("   models/ - Trained win prediction model")
+    print("   plots/win_prediction_analysis.png - Performance charts")
     
-    print("\n🎯 Key metrics to look for:")
+    print("\nKey metrics to look for:")
     print("   • AUC Score > 0.65 = Your model beats random guessing")
     print("   • AUC Score > 0.75 = Good predictive power")
     print("   • AUC Score > 0.85 = Excellent (rare with 40 data points)")
     
-    print("\n🚀 Next steps:")
+    print("\nNext steps:")
     print("   1. Review the plots/win_prediction_analysis.png")
     print("   2. Check which features are most important")
     print("   3. Scale up with 1000+ races from Equibase")
@@ -116,7 +116,7 @@ if __name__ == "__main__":
     success = main()
     
     if not success:
-        print("\n💡 Troubleshooting tips:")
+        print("\nTroubleshooting tips:")
         print("   1. Make sure you have all required files")
         print("   2. Check that data/sample_race_data.csv exists")
         print("   3. Install required packages: pip install -r requirements.txt")
