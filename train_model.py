@@ -49,8 +49,8 @@ def initialize_models(self, dataset_size):
                     random_state=42,
                     max_iter=2000,
                     class_weight='balanced',
-                    C=1.0
-                ),import pandas as pd
+                    C=1.0 )}
+import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split, cross_val_score, StratifiedKFold
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier

@@ -1,15 +1,9 @@
-def create_performance_features(self, df):
-        """
-        Create jockey/trainer performance features optimized for 10K+ horses
-        """
-        print("\n=== CREATING PERFORMANCE FEATURES (10K+ HORSES) ===")
-        print("=" * 60)
-        
-        df_perf = df.copy()
-        import pandas as pd
+import pandas as pd
 import numpy as np
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 import os
+import warnings
+warnings.filterwarnings('ignore')
 
 class WinProbabilityPreprocessor:
     def __init__(self):
@@ -251,15 +245,25 @@ class WinProbabilityPreprocessor:
         race_totals = df_odds.groupby(['race_date', 'track_name', 'race_number'])['implied_probability'].transform('sum')
         df_odds['true_probability'] = df_odds['implied_probability'] / race_totals
         
-        # Odds categories
+        # Odds categories using pandas cut
         df_odds['odds_category'] = pd.cut(df_odds['odds'], 
                                         bins=[0, 3, 6, 10, float('inf')], 
                                         labels=['favorite', 'second_choice', 'medium_odds', 'longshot'])
         
+        # Handle any NaN values in odds_category
+        df_odds['odds_category'] = df_odds['odds_category'].fillna('longshot')
+        
         print(f"SUCCESS: Created favorite indicator")
         print(f"SUCCESS: Created odds ranking and probabilities")
         print(f"VALIDATION: Favorite win rate: {df_odds[df_odds['favorite']==1]['won'].mean()*100:.1f}%")
-        print(f"VALIDATION: Longshot win rate: {df_odds[df_odds['odds_category']=='longshot']['won'].mean()*100:.1f}%")
+        
+        # Safe calculation for longshot win rate
+        longshots = df_odds[df_odds['odds_category']=='longshot']
+        if len(longshots) > 0:
+            longshot_win_rate = longshots['won'].mean()*100
+            print(f"VALIDATION: Longshot win rate: {longshot_win_rate:.1f}%")
+        else:
+            print(f"VALIDATION: No longshots found")
         
         return df_odds
     
@@ -374,7 +378,9 @@ class WinProbabilityPreprocessor:
                 if col not in self.label_encoders:
                     self.label_encoders[col] = LabelEncoder()
                 
-                df_encoded[f'{col}_encoded'] = self.label_encoders[col].fit_transform(df_encoded[col].astype(str))
+                # Convert to string and handle any NaN values
+                col_data = df_encoded[col].astype(str).fillna('unknown')
+                df_encoded[f'{col}_encoded'] = self.label_encoders[col].fit_transform(col_data)
                 print(f"SUCCESS: Encoded {col} ({df_encoded[col].nunique()} unique values)")
         
         return df_encoded
@@ -480,7 +486,13 @@ class WinProbabilityPreprocessor:
         y_path = f"data/{filename_prefix}_y.csv"
         
         X.to_csv(X_path, index=False)
-        y.to_csv(y_path, index=False)
+        
+        # Convert y to DataFrame if it's a Series or array
+        if hasattr(y, 'to_frame'):
+            y.to_frame('won').to_csv(y_path, index=False)
+        else:
+            y_df = pd.DataFrame({'won': y})
+            y_df.to_csv(y_path, index=False)
         
         print(f"SUCCESS: Saved win prediction data:")
         print(f"   Features: {X_path}")
